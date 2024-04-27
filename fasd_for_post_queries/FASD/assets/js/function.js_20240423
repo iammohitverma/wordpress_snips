@@ -1,0 +1,198 @@
+jQuery(document).ready(function() {
+    // toggle_menu for mobile
+    jQuery(".fasd_header .toggle_menu").click(function() {
+            jQuery(this).toggleClass("active");
+            jQuery(".fasd_header .navigationWrap").slideToggle();
+        })
+        // submenu toggle for mobile
+    jQuery(".fasd_header .subMenuAngle").click(function() {
+            jQuery(this).toggleClass("active");
+            jQuery(this).closest(".a-Wrap").next().slideToggle();
+        })
+        // search toggle for mobile
+    jQuery(".fasd_header .search_toggle_mobile button").click(function() {
+        jQuery(this).toggleClass("active");
+        jQuery(".fasd_header .search_wrap").slideToggle();
+    })
+
+    // Carousel For All Pages Start
+    $('#global_banner').owlCarousel({
+        loop: true,
+        margin: 24,
+        nav: false,
+        dots: false,
+        items: 1,
+        autoplay: true,
+        responsive: {
+            600: {
+                nav: true,
+            }
+        }
+    })
+
+    $('.beyond_da_hub_slider, #beyond_da_hub_slider, #beyond_da_hub_slider_1').owlCarousel({
+        loop: true,
+        margin: 24,
+        nav: false,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                nav: true,
+                items: 2
+            },
+            1000: {
+                nav: true,
+                items: 2
+            }
+        }
+    })
+
+    // changed all carousels icons (please change css path when go live)
+    $("#global_banner .owl-prev").html('<img src="/wp-content/uploads/2024/04/slider_arrow_left_home.png"/>');
+    $("#global_banner .owl-next").html('<img src="/wp-content/uploads/2024/04/slider_arrow_right_home.png"/>');
+    $(".beyond_da_hub_slider .owl-prev, #beyond_da_hub_slider .owl-prev, #beyond_da_hub_slider_1 .owl-prev").html('<img src="/wp-content/uploads/2024/04/slider_arrow_left.png"/>');
+    $(".beyond_da_hub_slider .owl-next, #beyond_da_hub_slider .owl-next, #beyond_da_hub_slider_1 .owl-next").html('<img src="/wp-content/uploads/2024/04/slider_arrow_right.png"/>');
+
+    // Carousel For All Pages Start
+
+
+    // hide show code for video element
+    $("[data-target-el]").each(function() {
+        $(this).find(".hideElem").append(`<img src="http://52.64.249.237/wp-content/uploads/2024/04/play-btn.svg" alt="" class="play_btn">`);
+
+    });
+
+    $("[data-target-el='hide-show-toggle']").click(function() {
+		if($(this).find(".videoBox").length == 0){
+			
+			let curElHeight = $(this).height();
+			let videoURL = $(this).attr("data-video");
+			$(this).find(".hideElem").hide();
+			$(this).find(".showElem").show();
+
+			// for video
+			$(this).append(`<div class="videoBox showElem"><video controls autoplay muted  style="height:${curElHeight}px">
+				<source src="${videoURL}" type="video/mp4">
+				Your browser does not support the video tag.
+			</video></div>`);
+		
+		}
+        // $(this).append(`<div class="videoBox showElem"><iframe src="${videoURL}" style="height:${curElHeight}px"></iframe></div>`);
+    })
+
+    // tab_slider start
+    var scrollAmount = jQuery(".tab_slider .items button").width(); // Scroll amount in pixels
+    $('.tab_slider .prev').on('click', function() {
+        var currentScrollLeft = $('.tab_slider .items').scrollLeft();
+        $('.tab_slider .items').animate({ scrollLeft: currentScrollLeft - scrollAmount }, 400);
+    });
+    $('.tab_slider .next').on('click', function() {
+        var currentScrollLeft = $('.tab_slider .items').scrollLeft();
+        $('.tab_slider .items').animate({ scrollLeft: currentScrollLeft + scrollAmount }, 400);
+    });
+    // tab_slider end
+
+    // tab functionality start
+    $('.tabbing_enabled .items button').on('click', function() {
+        var index = $(this).index();
+        $('.tabbing_enabled .items button').removeClass("active");
+        $(this).addClass("active");
+        $(".tab_content .content_wrap").removeClass("active");
+        $(".tab_content .content_wrap").eq(index).addClass("active");
+    });
+    // tab functionality end
+
+
+    // Governance page script
+    $(".left_tab_list_wrap li").click(function() {
+        let dataTab = $(this).data("tab");
+        $(".left_tab_list_wrap li").removeClass("active");
+        $(this).addClass("active");
+        $(".right_tab_text_wrap").hide();
+        $("#" + dataTab).fadeIn();
+    })
+
+    let $videoSrc = $(".video_duration_src");
+    let $videoDuration = $(".video_duration");
+
+    // Wait for the video metadata to load
+    $videoSrc.on('loadedmetadata', function() {
+        // Get the duration of the video in seconds
+        const duration = Math.floor(this.duration);
+
+        // Format the duration into HH:MM:SS format
+        const formattedDuration = formatVideoDuration(duration);
+
+        // Set the formatted duration to all .video_duration elements
+        $videoDuration.each(function() {
+            $(this).html(formattedDuration);
+        });
+
+        // console.log(formattedDuration);
+    });
+
+    // Function to format the video duration into HH:MM:SS format
+    function formatVideoDuration(durationInSeconds) {
+        let hours = Math.floor(durationInSeconds / 3600);  
+        let minutes = Math.floor((durationInSeconds % 3600) / 60);
+        let seconds = durationInSeconds % 60;
+
+        return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+    }
+
+    // Form validation for register service directory
+    let service_form = document.querySelector("#form_register_service");
+    service_form.addEventListener("submit", service_dir_validationFun);
+    
+    // SetError msg function
+    function setError(event, element, errMsg) {
+        let errorWrap = document.createElement("SPAN");
+        errorWrap.classList.add("errorBox");
+        element.parentElement.appendChild(errorWrap);
+        errorWrap.innerText = errMsg;
+        event.preventDefault();
+    }
+    
+    // Validation Function
+    function service_dir_validationFun(event) {
+        let currentForm = event.target.closest("form");
+        let allRequiredFields = currentForm.querySelectorAll(".required_field");
+        // console.log(allRequiredFields);
+    
+        // first remove old errorBox from current Form
+        let allErrorBox = currentForm.querySelectorAll(".errorBox");
+        allErrorBox.forEach((element) => {
+            element.remove();
+        });
+    
+        allRequiredFields.forEach((element) => {
+            let currInputVal = element.value;
+            console.log(currInputVal);
+            let currInputClass = element.getAttribute("class");
+            if (currInputVal === "") {
+                setError(event, element, "This field is required");
+            } else if (currInputClass.includes("email")) {
+                if (
+                    currInputVal.indexOf("@") <= 0 ||
+                    (currInputVal.charAt(currInputVal.length - 4) != "." &&
+                        currInputVal.charAt(currInputVal.length - 3) != ".")
+                ) {
+                    setError(event, element, "Please enter a valid email address");
+                }
+            } else if (currInputClass.includes("check-radio-wrap")) {
+                let getAllCheckedInput = element.querySelectorAll("input:checked");
+                if (getAllCheckedInput.length === 0) {
+                    setError(event, element.children[0], "Please select an option");
+                    element.classList.add("errorCheckRadio");
+                } else {
+                    element.classList.remove("errorCheckRadio");
+                }
+            }
+        });
+    }
+
+});    
+

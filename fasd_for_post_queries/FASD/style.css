@@ -1,0 +1,154 @@
+/*
+Theme Name: FASD
+Author: Techmind Softwares
+Author URI: http://techmind.co.in/
+Version: 2.0
+Text Domain: fasd
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*** for default theme's css ***/
+
+
+/* Contact Form 7 Error Default CSS */
+
+span.wpcf7-not-valid-tip {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    position: relative;
+    padding: 3px 10px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 13px;
+}
+
+.wpcf7-response-output {
+    position: relative !important;
+    padding: 12px 15px !important;
+    margin-bottom: 0;
+    border: 1px solid transparent !important;
+    border-radius: 0.25rem !important;
+    font-size: 18px !important;
+}
+
+.invalid .wpcf7-response-output {
+    color: #856404 !important;
+    background-color: #fff3cd !important;
+    border-color: #ffeeba !important;
+}
+
+.sent .wpcf7-response-output {
+    color: #155724 !important;
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+}
+
+.failed .wpcf7-response-output {
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+}
+
+
+/* error page design  */
+
+.error_template {
+    width: 900px !important;
+    max-width: 100% !important;
+    padding: 100px 15px;
+    box-shadow: 0px 0px 33px rgb(0 0 0 / 6%);
+    margin: 60px auto;
+}
+
+.error_template h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+.error_template h3 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.error_template p {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.error_template p a {
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none !important;
+}
+
+
+/* when page is empty  */
+body:has(.pageUnderDevelopment) {
+    background: #295576;
+}
+
+.pageUnderDevelopment {
+    position: relative;
+    padding: 50px 50px;
+    background: #fff;
+    width: 900px;
+    max-width: 95%;
+    margin: 100px auto;
+    color: #3a5766;
+    font-size: 32px;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 35px rgb(0 0 0 / 19%);
+}
+
+.pageUnderDevelopment::before {
+    position: absolute;
+    content: "Page Under Development: Stay Tuned for an Exciting New Experience Coming Soon!";
+    width: 640px;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.3;
+}
+
+@media screen and (max-width:992px) {
+    .pageUnderDevelopment {
+        font-size: 26px;
+        min-height: 200px;
+    }
+
+    .pageUnderDevelopment::before {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .pageUnderDevelopment {
+        font-size: 22px;
+        margin: 50px auto;
+    }
+
+    .pageUnderDevelopment::before {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .pageUnderDevelopment {
+        font-size: 18px;
+        margin: 40px auto;
+    }
+
+    .pageUnderDevelopment::before {
+        width: 80%;
+    }
+}

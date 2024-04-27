@@ -1,0 +1,292 @@
+.news-column-left {
+  @extend %pt_100;
+  @extend %pb_60;
+  .news-column-left-figure{
+    img{
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px;
+    }
+  }
+
+  .news-column-left-wrap {
+    @extend %pl_120;
+
+    .news-column-left-hdng {
+      @extend %fs_44;
+      color: $clr_004A63;
+      font-weight: 600;
+      @extend %mb_30;
+
+      @media (max-width: 767.99px) {
+        margin-top: 30px;
+      }
+    }
+
+    .news-column-left-desc {
+      @extend %fs_18;
+      color: $clr_6D6D6D;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+  }
+}
+
+// by kashish
+.news-editor {
+    position: relative;
+  .col-md-12 {
+    &:nth-child(1) {
+      .news-editor-wrap {
+        border-bottom: 2px solid $clr_D9D9D9;
+      }
+    }
+    &:last-child {
+      .news-editor-wrap {
+        border-bottom: 2px solid $clr_D9D9D9;
+      }
+    }
+    &:nth-child(3) {
+      .news-editor-wrap {
+        padding: 0;
+      }
+    }
+  }
+  .news-editor-wrap {
+    @extend %pb_80;
+    @extend %pt_80;
+
+    h2,
+    h3 {
+      @extend %fs_38;
+      font-weight: 600;
+      @extend %mb_30;
+      line-height: 1.2;
+      color: $clr_292929;
+    }
+    h4,
+    h5,
+    h6 {
+      @extend %fs_20;
+      color: $clr_292929;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    p {
+      @extend %fs_18;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $clr_6D6D6D;
+    }
+    img,
+    video {
+      width: 100%;
+      border-radius: 15px;
+      @extend %mb_60;
+    }
+  }
+  .news-editor-wrap blockquote {
+    border-radius: 15px;
+    background: $clr_EEF0E7;
+    @extend %pt_100;
+    @extend %pb_100;
+    @extend %pr_180;
+    @extend %pl_260;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 8%;
+      bottom: 0px;
+      width: 100px;
+      height: 60px;
+      background-image: url("/wp-content/uploads/2024/04/blockquote.svg");
+      background-repeat: no-repeat;
+      transform: translate(-8%, -25%);
+
+      @media (max-width: 991.98px) {
+        background-size: 50px;
+        height: 50px;
+      }
+
+      @media (max-width: 767.98px) {
+        background-size: 40px;
+        top: 8%;
+        left: 3%;
+      }
+      @media (max-width: 575.98px) {
+        top: 5%;
+        left: 5%;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 20%;
+      right: 12%;
+      width: 100px;
+      height: 60px;
+      background-image: url("/wp-content/uploads/2024/04/blockquote_right.svg");
+      background-repeat: no-repeat;
+      z-index: 99;
+      transform: translate(-20%, -17%);
+      @media (max-width: 199.98px) {
+        right: 7%;
+      }
+      @media (max-width: 991.98px) {
+        background-size: 50px;
+        height: 50px;
+        right: 0%;
+      }
+
+      @media (max-width: 767.98px) {
+        background-size: 40px;
+        bottom: -5%;
+        right: 0%;
+      }
+    }
+    p {
+      @extend %fs_28;
+      color: $clr_292929;
+      line-height: 1.5;
+      font-style: italic;
+      @extend %mb_40;
+      font-weight: 400;
+      &:last-child {
+        @extend %fs_18;
+        color: $clr_292929;
+        margin-bottom: 0;
+        font-style: normal;
+        line-height: 1.2;
+      }
+    }
+    h4 {
+      span {
+        display: block;
+        strong {
+          @extend %fs_20;
+          color: $clr_004A63;
+          margin-bottom: 8px;
+          font-weight: 500;
+          position: relative;
+          display: block;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            width: 350px;
+            max-width: 100%;
+            height: 2px;
+            background: #d9d9d9;
+            transform: translate(-50%, -50%);
+            @media (max-width: 1399.98px) {
+              left: 57%;
+              width: 283px;
+            }
+            @media (max-width: 1199.98px) {
+              width: 165px;
+            }
+            @media (max-width: 991.98px) {
+              left: 64%;
+            }
+
+            @media (max-width: 767.98px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .left_shape{
+    width: 8%;
+    max-width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 0;
+  }
+  .right_shape{
+    width: 8%;
+    max-width: 100%;
+    position: absolute;
+    top: 70%;
+    right: 0;
+  }
+}
+.podcast_sec {
+    @extend %pt_80;
+    @extend %pb_80;
+    .podcast_hdng {
+        @extend %fs_38;
+        font-weight: 600;
+        @extend %mb_30;
+        line-height: 1.2;
+        color: $clr_292929;
+    }
+
+    .podcast_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 991.98px) {
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+
+        .podact_health_wrap {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 991.98px) {
+                align-items: flex-start;
+            }
+
+            @media (max-width: 767.98px) {
+                flex-direction: column;
+                row-gap: 30px;
+            }
+
+            .podact_health_figure {
+                padding-right: 30px;
+            }
+
+            .podact_health_desc {
+                position: relative;
+                margin-bottom: 14px;
+
+                span {
+                    background: $clr_F2F2F2;
+                    margin-right: 10px;
+                    padding: 4px 16px;
+                    border-radius: 50px;
+                    color: $clr_005E7E;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .podact_health_hdng {
+                @extend %fs_20;
+                color: $clr_292929;
+                font-weight: 400;
+            }
+
+        }
+
+        .podcast_icons {
+            img {
+                @media (max-width: 1199.98px) {
+                    width: 40px;
+                    max-width: 100%;
+                }
+            }
+        }
+
+    }
+}

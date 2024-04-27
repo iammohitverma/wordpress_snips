@@ -1,0 +1,9 @@
+/* body {
+    display: none !important;
+} */
+
+.acf-fc-layout-handle::after {
+    content: attr(data-layout);
+    position: absolute;
+    margin-left: 10px;
+}

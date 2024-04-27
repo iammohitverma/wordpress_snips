@@ -1,0 +1,888 @@
+// Aditya scss For Health Professionals Page section start
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $clr_292929;
+}
+
+p {
+    color: $clr_6D6D6D;
+}
+
+a {
+    color: $clr_6D6D6D;
+    text-decoration: underline;
+}
+
+figure {
+    margin: 0;
+}
+
+.link_arrow {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-left: auto;
+    align-self: flex-end;
+    transition: 0.5s ease;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    svg {
+        stroke: #005e7e;
+        transition: 0.5s ease;
+    }
+    &:hover {
+        background-color: #005e7e;
+        stroke: #ffffff !important;
+        svg {
+            stroke: #ffffff !important;
+        }
+    }
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background: transparent !important;
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    top: 32%;
+}
+
+.owl-prev {
+    left: -50px;
+}
+
+.owl-next {
+    right: -50px;
+}
+
+#global_banner {
+    .owl-prev,
+    .owl-next {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .owl-prev {
+        left: -7%;
+    }
+    .owl-next {
+        right: -7%;
+    }
+}
+
+@media screen and (max-width: 575.99px) {
+    .owl-prev,
+    .owl-next {
+        position: unset;
+    }
+}
+
+// border button
+.brdr_btn {
+    width: 250px;
+    max-width: 100%;
+    border: 1px solid $clr_BF4846;
+    color: $clr_BF4846;
+    padding: 12px 12px;
+    display: inline-block;
+    @extend %fs_18;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: auto;
+    @media screen and (max-width: 767.99px) {
+        margin-left: unset;
+        margin-top: 15px;
+    }
+    &.black_btn {
+        background-color: $clr_303030;
+        border-color: $clr_303030;
+        color: $clr_white;
+    }
+    &.red_btn {
+        background-color: $clr_a73f3d;
+        border-color: $clr_a73f3d;
+        color: $clr_white;
+    }
+}
+
+// iske upar mee global css hai
+// for shapes css start
+section {
+    position: relative;
+}
+
+.container {
+    position: relative;
+    z-index: 9;
+}
+
+.main_desc {
+    @extend %fs_18;
+    color: $clr_6D6D6D;
+    a {
+        text-decoration: underline!important;
+    }
+    p,
+    li {
+        color: $clr_6D6D6D
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $clr_292929;
+        margin-bottom: 15px;
+    }
+    h1,
+    h2,
+    h3 {
+        @extend %fs_39;
+    }
+    h4,
+    h5,
+    h6 {
+        @extend %fs_28;
+    }
+    ul,
+    ol {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0 20px;
+        li {
+            position: relative;
+            padding-left: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 12px;
+                width: 4px;
+                height: 4px;
+                background-color: $clr_6D6D6D;
+                border-radius: 5px;
+            }
+        }
+    }
+    strong,
+    b {
+        font-weight: 600;
+    }
+}
+
+figure {
+    margin: 0;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right,
+.middle-left,
+.middle-right {
+    width: 8%;
+}
+
+.top-left,
+.top-right {
+    position: absolute;
+    top: 0;
+}
+
+.bottom-left,
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+}
+
+.middle-left,
+.middle-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-left,
+.bottom-left,
+.middle-left {
+    left: 0;
+}
+
+.top-right,
+.bottom-right,
+.middle-right {
+    right: 0;
+}
+
+// global css for video elements 
+.videoBox {
+    iframe,
+    video {
+        width: 100%;
+        height: 400px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+figure {
+    .play_btn {
+        width: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .feat_img {
+        width: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+// global css for video elements 
+// ==
+.colored_box {
+    @extend %pt_100;
+    @extend %pb_100;
+    background-color: #f4f5f1;
+    .box {
+        margin: 12px 0;
+        position: relative;
+        .inner {
+            padding: 40px 25px;
+            background-color: #ccf;
+            position: relative;
+            border-radius: 15px;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            transition: 0.5s ease;
+            cursor: pointer;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                top: 0;
+                background-image: url(/wp-content/uploads/2024/04/infinity.png);
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                pointer-events: none;
+            }
+            @media screen and (max-width: 1199.99px) {
+                padding: 25px 25px;
+            }
+            .hdng {
+                font-size: 31px;
+                margin: 0;
+                color: $clr_303030;
+                width: 200px;
+                max-width: 100%;
+                transition: 0.2s ease;
+                @media screen and (max-width: 1399.99px) {
+                    font-size: 26px;
+                }
+                @media screen and (max-width: 1199.99px) {
+                    font-size: 22px;
+                }
+                @media screen and (max-width: 767.99px) {
+                    font-size: 18px;
+                }
+            }
+            ul {
+                position: relative;
+                top: 30px;
+                opacity: 0;
+                transition: 0.5s ease;
+                margin-top: 20px;
+                @media screen and (max-width: 1199.99px) {
+                    margin-top: 10px;
+                }
+                li {
+                    position: relative;
+                    padding-left: 15px;
+                    margin-top: 10px;
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        top: 7px;
+                        background: url("/wp-content/uploads/2024/04/arrow_right.png") center/contain no-repeat;
+                        width: 10px;
+                        height: 10px;
+                    }
+                    // span {
+                    font-size: 16px;
+                    color: $clr_424242;
+                    @media screen and (max-width: 1199.99px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width: 1199.99px) {
+                        font-size: 13px;
+                    }
+                    // }
+                }
+            }
+            .link_arrow {
+                position: unset;
+            }
+            &:hover {
+                background-color: #ffffff !important;
+                .hdng {
+                    font-size: 26px;
+                    @media screen and (max-width: 1399.99px) {
+                        font-size: 22px;
+                    }
+                    @media screen and (max-width: 1199.99px) {
+                        font-size: 19px;
+                    }
+                    @media screen and (max-width: 767.99px) {
+                        font-size: 16px;
+                    }
+                }
+                ul {
+                    top: 0;
+                    opacity: 1;
+                }
+                .link_arrow {
+                    background-color: #005e7e;
+                    stroke: #ffffff !important;
+                    svg {
+                        stroke: #ffffff !important;
+                    }
+                }
+            }
+        }
+        &:nth-child(1) {
+            .inner {
+                background-color: #bce4d8;
+            }
+        }
+        &:nth-child(2) {
+            .inner {
+                background-color: #ffddbe;
+            }
+        }
+        &:nth-child(3) {
+            .inner {
+                background-color: #ffddbe;
+            }
+        }
+        &:nth-child(4) {
+            .inner {
+                background-color: #fccaca;
+            }
+        }
+        &:nth-child(5) {
+            .inner {
+                background-color: #e0e7c7;
+            }
+        }
+        &:nth-child(6) {
+            .inner {
+                background-color: #f6d3e6;
+            }
+        }
+    }
+}
+
+// Beyond the hub section
+.content_editor_module {
+    background-color: #f4f5f1;
+    @extend %pt_100;
+    @extend %pb_100;
+    .main_hdng {
+        @extend %fs_39;
+    }
+    .main_desc {
+        @extend %fs_18;
+        font-weight: 400;
+    }
+    .sub_hdng {
+        @extend %fs_25;
+        margin-bottom: 12px;
+    }
+    .image_wrap {
+        position: relative;
+        margin-bottom: 25px;
+        .feat_img {
+            width: 100%;
+            height: 265px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        // .link_arrow {
+        //     position: absolute;
+        //     bottom: 30px;
+        //     right: 30px;
+        // }
+    }
+    .hdng {
+        @extend %fs_25;
+        margin-bottom: 10px;
+        width: 350px;
+        max-width: 100%;
+        height: 60px;
+        overflow: hidden; // don;t get angry | ghar se kiya ye 
+    }
+    .desc {
+        @extend %fs_16;
+    }
+}
+
+// two column layout section
+.two_column_video_layout {
+    .two_elem {
+        figure {
+            @extend %mt_60;
+            position: relative;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        .cntnt_wrap {
+            .hdng {
+                @extend %fs_25;
+                width: 90%;
+                margin-top: 25px;
+            }
+            .desc {
+                @extend %fs_18;
+                width: 90%;
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+// fasd_action_plan section on For Policy Makers
+.fasd_action_plan {
+    background-color: #f4f5f1;
+    @extend %pt_100;
+    @extend %pb_100;
+    .main_hdng {
+        @extend %fs_39;
+    }
+    .main_desc {
+        @extend %fs_18;
+        font-weight: 400;
+    }
+    .sub_hdng {
+        @extend %fs_25;
+        margin-bottom: 12px;
+    }
+    figure {
+        @extend %mt_60;
+        position: relative;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+}
+
+// for shapes css end
+// Home page css
+.global_banner {
+    @extend %pt_100;
+    position: relative;
+    .container {
+        position: relative;
+        z-index: 9;
+    }
+    .hdng {
+        @extend %fs_64;
+        color: $clr_white;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .desc {
+        @extend %fs_22;
+        color: $clr_white;
+        margin-bottom: 40px;
+        width: 480px;
+        max-width: 100%;
+    }
+    .banner_btn {
+        display: inline-block;
+        text-decoration: none;
+        color: $clr_white;
+        width: 320px;
+        max-width: 80%;
+        @extend %fs_20;
+        padding: 12px 12px;
+        text-align: center;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    &.home_page {
+        @extend %pb_100;
+    }
+    &.inner_pages {
+        .hero_img {
+            width: 370px;
+            max-width: 80%;
+        }
+    }
+    // banner shapes
+    &>img {
+        position: absolute;
+        &.top-left {
+            top: 0;
+            left: 0;
+            width: 20%;
+        }
+        &.bottom-left {
+            bottom: 0;
+            left: 0;
+            width: 18%;
+        }
+        &.top-right {
+            top: 0;
+            right: 0;
+            width: 20%;
+        }
+        &.bottom-right {
+            bottom: 0;
+            right: 0;
+            width: 18%;
+        }
+    }
+}
+
+// home section 02 information seek
+.seeking_info {
+    background-color: $clr_EEF0E7;
+    @extend %pt_100;
+    @extend %pb_100;
+    .main_hdng {
+        @extend %fs_64;
+        text-align: center;
+        color: $clr_004A63;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .box {
+        background-color: $clr_white;
+        padding-top: 23px;
+        text-align: center;
+        border-radius: 8px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .hdng {
+            @extend %fs_23;
+            width: 180px;
+            margin: 0 auto 15px;
+        }
+        figure {
+            margin: 0;
+            align-self: flex-end;
+            width: 100%;
+            img {
+                max-width: 95%;
+            }
+        }
+    }
+}
+
+// colored_2_column_layout
+.colored_2_column_layout {
+    @extend %pt_60;
+    @extend %pb_60;
+    position: relative;
+    .container {
+        position: relative;
+        z-index: 9;
+    }
+    .hdng {
+        @extend %fs_39;
+        color: $clr_white;
+        margin-bottom: 12px;
+        width: 420px;
+        max-width: 100%;
+    }
+    .desc {
+        @extend %fs_16;
+        color: $clr_white;
+        width: 450px;
+        max-width: 100%;
+        margin-bottom: 50px;
+        @media screen and (max-width: 767.99px) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+//  css for three image layout with contnt 
+.three_image_layout_with_content {
+    img {
+        width: 100%;
+    }
+    .img_desc {
+        @extend %fs_16;
+        margin-top: 15px;
+    }
+}
+
+// css for two column layout for repeater 
+.two_column_only_content_list {
+    @extend %pt_100;
+    @extend %pb_100;
+    .hdng {
+        width: 412px;
+        max-width: 95%;
+        @extend %fs_39;
+        font-weight: 600;
+    }
+    .main_desc {
+        h4 {
+            @extend %fs_25;
+            margin-top: 25px;
+        }
+        li {
+            &:not(:last-child) {
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid $clr_D9D9D9;
+            }
+        }
+    }
+}
+
+// Aditya scss For Health Professionals Page section End
+//  kaushal scss paste below
+.latest_news {
+    position: relative;
+    .latest_news_wrap {
+        position: relative;
+        @extend %pt_100;
+        @extend %pb_100;
+        .latest_news_heading {
+            position: relative;
+            @extend %mb_40;
+            h3 {
+                @extend %fs_48;
+                font-weight: 600;
+                line-height: 1;
+                color: $clr_292929;
+            }
+        }
+        .latest_news_content {
+            position: relative;
+            .latest_news_card {
+                position: relative;
+                margin-bottom: 40px;
+                @media only screen and (max-width: 991.98px) {
+                    margin-bottom: 30px;
+                }
+                @media only screen and (max-width: 767.98px) {
+                    margin-bottom: 20px;
+                }
+                .card_image {
+                    position: relative;
+                    @extend %mb_40;
+                    img {
+                        width: 100%;
+                        max-width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+                .card_details {
+                    .card_date {
+                        position: relative;
+                        margin-bottom: 16px;
+                        span {
+                            @extend %fs_16;
+                            font-weight: 500;
+                            line-height: 1.4;
+                            color: $clr_292929;
+                            border: 2px solid #005e7e66;
+                            border-radius: 50px;
+                            padding: 0 15px;
+                        }
+                    }
+                    .card_heading {
+                        position: relative;
+                        margin-bottom: 16px;
+                        h3 {
+                            @extend %fs_31;
+                            font-weight: 600;
+                            line-height: 1;
+                            color: $clr_292929;
+                        }
+                    }
+                    .card_desc {
+                        position: relative;
+                        p {
+                            @extend %fs_16;
+                            font-weight: 400;
+                            line-height: 1.4;
+                            color: $clr_292929;
+                        }
+                    }
+                }
+            }
+            .news_right_cards {
+                position: relative;
+                padding-left: 40px;
+                @media only screen and (max-width: 1399.98px) {
+                    padding-left: 30px;
+                }
+                @media only screen and (max-width: 1199.98px) {
+                    padding-left: 20px;
+                }
+                @media only screen and (max-width: 991.98px) {
+                    padding-left: 0;
+                }
+                .card_image {
+                    margin-bottom: 20px;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .card_details {
+                    .card_date {
+                        margin-bottom: 10px;
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .card_heading {
+                    margin: 0 !important;
+                    h3 {
+                        font-size: 20px !important;
+                        @media only screen and (max-width: 991.98px) {
+                            font-size: 18px !important;
+                        }
+                        @media only screen and (max-width: 767.98px) {
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// form section css
+// vikas scss paste below
+.form_section {
+    position: relative;
+    background-color: $clr_EEF0E7;
+    .col-12 {
+        margin-bottom: 30px;
+        @media (max-width: 767.98px) {
+            margin-bottom: 20px;
+        }
+    }
+    .inner {
+        position: relative;
+        max-width: 60%;
+        margin: 0 auto;
+        @media (max-width: 991.98px) {
+            max-width: 80%;
+        }
+        @media (max-width: 767.98px) {
+            max-width: 90%;
+        }
+        .head {
+            position: relative;
+            .form_title {
+                font-weight: 600;
+                color: $clr_292929;
+                line-height: 1.1;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            p {
+                @extend %fs_18;
+                color: $clr_6D6D6D;
+                font-weight: 400;
+                line-height: 1.3;
+                text-align: center;
+                @extend %mb_40;
+            }
+        }
+        .form_wrap {
+            position: relative;
+            label {
+                color: $clr_252525;
+                @extend %fs_16;
+                font-weight: 500;
+                line-height: 1.1;
+                opacity: 0.8;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea {
+                width: 100%;
+                background-color: $clr_FAFBF7;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+                @media (max-width: 575.98px) {
+                    padding: 8px;
+                }
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+            textarea {
+                height: 120px;
+            }
+            .submit_btn {
+                text-align: center;
+            }
+        }
+        .form_btm_content {
+            position: relative;
+            @extend %mt_40;
+            h3 {
+                @extend %fs_24;
+                font-weight: 500;
+                line-height: 1;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            p {
+                @extend %fs_16;
+                font-weight: 400;
+                line-height: 1.4;
+                color: $clr_292929;
+                text-align: center;
+            }
+        }
+        .errorBox {
+            color: $clr_842029;
+            background-color: #f8d7da;
+            position: relative;
+            padding: 5px;
+            border: 1px solid #f5c2c7;
+            display: inline-block;
+            width: 100%;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+    }
+}

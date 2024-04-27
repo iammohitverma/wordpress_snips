@@ -1,0 +1,19 @@
+mailto:support@goldenwestcoldstorage.com.au
+
+Force From Email = ON
+
+From Name = Golden West Cold Storage
+
+Other SMTP
+
+SMTP Host = email-smtp.ap-southeast-2.amazonaws.com
+
+Encryption = TLS
+
+SMTP Port = 587
+
+Authentication = ON
+
+SMTP Username
+
+SMTP Password

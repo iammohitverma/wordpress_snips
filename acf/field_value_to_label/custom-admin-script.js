@@ -5,8 +5,8 @@
     // Add a clickable link to the label line of flexible content fields
     $(".acf-field-flexible-content > .acf-label").append(
       '<a class="' +
-      collapseButtonClass +
-      '" style="position: absolute; top: 0; right: 0; cursor: pointer;">Collapse All</a>'
+        collapseButtonClass +
+        '" style="position: absolute; top: 0; right: 0; cursor: pointer;">Collapse All</a>'
     );
 
     // Toggle function for collapsing/expanding all flexible content items
@@ -30,9 +30,31 @@
         jQuery(layoutHandle).attr("data-layout", " - " + layoutValue);
       });
     }
-
     // Run the function on page load
     updateLayoutValues();
+
+    function moveHeadingTagFun() {
+      // append heading tags field to heading field
+      jQuery("[data-name='select_heading_tag']").each(function (index) {
+        let selectField = jQuery(this).find(".acf-input");
+        jQuery(selectField).addClass("selectTag");
+        console.log("selectField " + selectField);
+
+        // jQuery(this)
+        //   .closest(".acf-fields")
+        //   .find("[data-name='heading'] .acf-input")
+        //   .append(selectField);
+
+        // jQuery(this).remove();
+
+        jQuery(this).next(".acf-field").find(".acf-input").append(selectField);
+
+        jQuery(this).remove();
+      });
+    }
+
+    // Run the function on page load
+    moveHeadingTagFun();
 
     // Bind the function to a click event
     jQuery(document).on("click", function () {

@@ -7,3 +7,22 @@
     position: absolute;
     margin-left: 10px;
 }
+
+[data-name="heading"]:has(.selectTag) .acf-input,
+[data-name="section_heading"]:has(.selectTag) .acf-input,
+[data-name="title"]:has(.selectTag) .acf-input {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+[data-name="heading"]:has(.selectTag) .acf-input-wrap,
+[data-name="section_heading"]:has(.selectTag) .acf-input-wrap,
+[data-name="title"]:has(.selectTag) .acf-input-wrap {
+    width: calc(100% - 100px);
+}
+
+[data-name="heading"]:has(.selectTag) .selectTag,
+[data-name="section_heading"]:has(.selectTag) .selectTag,
+[data-name="title"]:has(.selectTag) .selectTag {
+    width: 100px;
+}

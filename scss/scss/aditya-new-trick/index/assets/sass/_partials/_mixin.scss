@@ -1,0 +1,152 @@
+// Paddings
+// For Padding Top
+// @mixin pt-resp($p, $p-sm, $p-md, $p-lg, $p-xl, $p-xxl) {
+//     @if $p !=null {
+//         padding-top: $p;
+//     }
+//     @media (min-width: 576px) {
+//         @if $p-sm !="" and $p-sm !=null {
+//             padding-top: $p-sm;
+//         }
+//     }
+//     @media (min-width: 768px) {
+//         @if $p-md !="" and $p-md !=null {
+//             padding-top: $p-md;
+//         }
+//     }
+//     @media (min-width: 992px) {
+//         @if $p-lg !="" and $p-lg !=null {
+//             padding-top: $p-lg;
+//         }
+//     }
+//     @media (min-width: 1200px) {
+//         @if $p-xl !="" and $p-xl !=null {
+//             padding-top: $p-xl;
+//         }
+//     }
+//     @media (min-width: 1400px) {
+//         @if $p-xxl !="" and $p-xxl !=null {
+//             padding-top: $p-xxl;
+//         }
+//     }
+// }
+@mixin pt-resp($p, $p-sm, $p-md, $p-lg, $p-xl, $p-xxl) {
+    $breakpoints: ( null, // default
+    576px, // small devices
+    768px, // medium devices
+    992px, // large devices
+    1200px, // extra large devices
+    1400px // extra extra large devices
+    );
+    $values: ($p, $p-sm, $p-md, $p-lg, $p-xl, $p-xxl);
+    @for $i from 1 through length($values) {
+        $value: nth($values, $i);
+        $breakpoint: nth($breakpoints, $i);
+        @if $value !=null {
+            @if $breakpoint==null {
+                padding-top: $value;
+            }
+            @else {
+                @media (min-width: $breakpoint) {
+                    padding-top: $value;
+                }
+            }
+        }
+    }
+}
+
+// For Padding Bottom
+@mixin pb-resp($p, $p-sm, $p-md, $p-lg, $p-xl, $p-xxl) {
+    @if $p !=null {
+        padding-bottom: $p;
+    }
+    @media (min-width: 576px) {
+        @if $p-sm !="" and $p-sm !=null {
+            padding-bottom: $p-sm;
+        }
+    }
+    @media (min-width: 768px) {
+        @if $p-md !="" and $p-md !=null {
+            padding-bottom: $p-md;
+        }
+    }
+    @media (min-width: 992px) {
+        @if $p-lg !="" and $p-lg !=null {
+            padding-bottom: $p-lg;
+        }
+    }
+    @media (min-width: 1200px) {
+        @if $p-xl !="" and $p-xl !=null {
+            padding-bottom: $p-xl;
+        }
+    }
+    @media (min-width: 1400px) {
+        @if $p-xxl !="" and $p-xxl !=null {
+            padding-bottom: $p-xxl;
+        }
+    }
+}
+
+// For Padding Left
+@mixin pl-resp($p, $p-sm, $p-md, $p-lg, $p-xl, $p-xxl) {
+    @if $p !=null {
+        padding-left: $p;
+    }
+    @media (min-width: 576px) {
+        @if $p-sm !="" and $p-sm !=null {
+            padding-left: $p-sm;
+        }
+    }
+    @media (min-width: 768px) {
+        @if $p-md !="" and $p-md !=null {
+            padding-left: $p-md;
+        }
+    }
+    @media (min-width: 992px) {
+        @if $p-lg !="" and $p-lg !=null {
+            padding-left: $p-lg;
+        }
+    }
+    @media (min-width: 1200px) {
+        @if $p-xl !="" and $p-xl !=null {
+            padding-left: $p-xl;
+        }
+    }
+    @media (min-width: 1400px) {
+        @if $p-xxl !="" and $p-xxl !=null {
+            padding-left: $p-xxl;
+        }
+    }
+}
+
+// For Padding Right
+@mixin pr-resp($p, $p-sm, $p-md, $p-lg, $p-xl, $p-xxl) {
+    @if $p !=null {
+        padding-right: $p;
+    }
+    @media (min-width: 576px) {
+        @if $p-sm !="" and $p-sm !=null {
+            padding-right: $p-sm;
+        }
+    }
+    @media (min-width: 768px) {
+        @if $p-md !="" and $p-md !=null {
+            padding-right: $p-md;
+        }
+    }
+    @media (min-width: 992px) {
+        @if $p-lg !="" and $p-lg !=null {
+            padding-right: $p-lg;
+        }
+    }
+    @media (min-width: 1200px) {
+        @if $p-xl !="" and $p-xl !=null {
+            padding-right: $p-xl;
+        }
+    }
+    @media (min-width: 1400px) {
+        @if $p-xxl !="" and $p-xxl !=null {
+            padding-right: $p-xxl;
+        }
+    }
+}

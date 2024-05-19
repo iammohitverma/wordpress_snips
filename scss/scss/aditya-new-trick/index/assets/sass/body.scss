@@ -1,0 +1,9 @@
+// Usage
+.element {
+    // all parameters are set according to ascending order such as 0px,576px,768px,992px,1200px,1400px
+    // if no need to set padding then set null
+    @include pt-resp(40px, 60px, null, 80px, 100px, 120px);
+    @include pb-resp(40px, 60px, null, 80px, 100px, 120px);
+    @include pl-resp(40px, 60px, null, 80px, 100px, 120px);
+    @include pr-resp(40px, 60px, null, 80px, 100px, 120px);
+}

@@ -10,19 +10,65 @@
 
 [data-name="heading"]:has(.selectTag) .acf-input,
 [data-name="section_heading"]:has(.selectTag) .acf-input,
-[data-name="title"]:has(.selectTag) .acf-input {
+[data-name="title"]:has(.selectTag) .acf-input,
+[data-name="left_side_heading"]:has(.selectTag) .acf-input,
+[data-name="right_side_heading"]:has(.selectTag) .acf-input,
+[data-name="image_heading"]:has(.selectTag) .acf-input,
+[data-name="visual_heading"]:has(.selectTag) .acf-input,
+[data-name="filter_heading"]:has(.selectTag) .acf-input,
+[data-name="video_heading"]:has(.selectTag) .acf-input {
     display: flex;
     flex-direction: row-reverse;
 }
 
 [data-name="heading"]:has(.selectTag) .acf-input-wrap,
 [data-name="section_heading"]:has(.selectTag) .acf-input-wrap,
-[data-name="title"]:has(.selectTag) .acf-input-wrap {
+[data-name="title"]:has(.selectTag) .acf-input-wrap,
+[data-name="left_side_heading"]:has(.selectTag) .acf-input-wrap,
+[data-name="right_side_heading"]:has(.selectTag) .acf-input-wrap,
+[data-name="image_heading"]:has(.selectTag) .acf-input-wrap,
+[data-name="visual_heading"]:has(.selectTag) .acf-input-wrap,
+[data-name="filter_heading"]:has(.selectTag) .acf-input-wrap,
+[data-name="video_heading"]:has(.selectTag) .acf-input-wrap {
     width: calc(100% - 100px);
 }
 
 [data-name="heading"]:has(.selectTag) .selectTag,
 [data-name="section_heading"]:has(.selectTag) .selectTag,
-[data-name="title"]:has(.selectTag) .selectTag {
+[data-name="title"]:has(.selectTag) .selectTag,
+[data-name="left_side_heading"]:has(.selectTag) .selectTag,
+[data-name="right_side_heading"]:has(.selectTag) .selectTag,
+[data-name="image_heading"]:has(.selectTag) .selectTag,
+[data-name="visual_heading"]:has(.selectTag) .selectTag,
+[data-name="filter_heading"]:has(.selectTag) .selectTag,
+[data-name="video_heading"]:has(.selectTag) .selectTag {
     width: 100px;
+}
+
+
+.iris-palette-container,
+.iris-palette-container * {
+    box-sizing: border-box !important;
+}
+
+.iris-palette-container {
+    width: 100%;
+    padding: 10px 0px 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iris-palette-container>a {
+    width: 20px !important;
+    height: 20px !important;
+    margin: 2px 2px !important;
+}
+
+.iris-border .iris-picker-inner,
+.iris-palette-container {
+    position: unset !important;
+}
+
+.wp-picker-container .iris-picker {
+    height: auto !important
 }

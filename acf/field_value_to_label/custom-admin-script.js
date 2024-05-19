@@ -5,8 +5,8 @@
     // Add a clickable link to the label line of flexible content fields
     $(".acf-field-flexible-content > .acf-label").append(
       '<a class="' +
-        collapseButtonClass +
-        '" style="position: absolute; top: 0; right: 0; cursor: pointer;">Collapse All</a>'
+      collapseButtonClass +
+      '" style="position: absolute; top: 0; right: 0; cursor: pointer;">Collapse All</a>'
     );
 
     // Toggle function for collapsing/expanding all flexible content items

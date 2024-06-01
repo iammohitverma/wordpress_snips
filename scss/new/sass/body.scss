@@ -1,0 +1,20 @@
+// Usage
+// how to use this mixin 
+// firstly pass the property name then all values in the sequence of mobile to desktop such as mobile,576,768,992,1200,1400 and above
+// .element {
+//     @include jn-standalone((
+//         padding-top: (40px, 60px, null, 80px, 100px, 120px),
+//         font-size: (40px, 60px, null, 80px, 100px, 120px),
+//         font-weight: (400, 600, null, 800, 100, 100),
+//     ), min);
+//     @include jn-standalone((
+//         padding-top: (40px, 60px, null, 80px, 100px, 120px),
+//         font-size: (40px, 60px, null, 80px, 100px, 120px),
+//         font-weight: (400, 600, null, 800, 100, 100),
+//     ), min);
+// }
+
+// h1{
+//     font-family: $gotham_font;
+//     // font-family: $pp_editorial_font;
+// }

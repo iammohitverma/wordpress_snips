@@ -1,0 +1,54 @@
+// only used for min media query
+// @mixin jn-standalone($properties) {
+//     $breakpoints: (null, 576px, 768px, 992px, 1200px, 1400px);
+//     // Base styles (no media queries)
+//     @each $property,
+//     $vals in $properties {
+//         $value: nth($vals, 1); // Get the value for the first (base) breakpoint
+//         @if $value !=null {
+//             #{$property}: $value;
+//         }
+//     }
+//     // Responsive styles
+//     @for $i from 2 through length($breakpoints) {
+//         $breakpoint: nth($breakpoints, $i);
+//         @if $breakpoint {
+//             @media (min-width: $breakpoint) {
+//                 @each $property, $vals in $properties {
+//                     $value: nth($vals, $i);
+//                     @if $value !=null {
+//                         #{$property}: $value;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+
+// used for both type of media queries | min & max
+@mixin jn-standalone($properties, $media-type: min) {
+    $breakpoints: (null, 576px, 768px, 992px, 1200px, 1400px);
+    // Base styles (no media queries)
+    @each $property, $vals in $properties {
+        $value: nth($vals, 1); // Get the value for the first (base) breakpoint
+        @if $value != null {
+            #{$property}: $value;
+        }
+    }
+    // Responsive styles
+    @for $i from 2 through length($breakpoints) {
+        $breakpoint: nth($breakpoints, $i);
+        @if $breakpoint {
+            @media (#{$media-type}-width: $breakpoint) {
+                @each $property, $vals in $properties {
+                    $value: nth($vals, $i);
+                    @if $value != null {
+                        #{$property}: $value;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,1540 @@
+<!-- gsap js  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<!-- swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Global scripts -->
+<script>
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector(".newme_header");
+    if (window.scrollY > 50) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  });
+
+  jQuery(document).ready(function () {
+    // Add active class on menu item according to current page
+    var currentPageUrl = window.location.href;
+    var ifFound = $(`.nav-menu-two a[href='${currentPageUrl}']`);
+    if (ifFound.length > 0) {
+      $(`.nav-menu-two a[href='${currentPageUrl}']`).addClass("w-curent");
+    }
+    // Add the active class to the dropdown whose item's page is currently active.
+    $(".w-dropdown .nav-dropdown-list a").each(function () {
+      if ($(this).hasClass("w--current")) {
+        $(this).closest(".w-dropdown").addClass("w-current-parent");
+      }
+    });
+
+    //   surgeon modal script start
+    jQuery(".surgeon_popup_trigger").click(function name() {
+      jQuery(this)
+        .closest(".w-dyn-item")
+        .find(".surgeon_modal")
+        .removeClass("hide");
+      jQuery("html, body").addClass("overflow-hidden");
+    });
+
+    // Function to hide the modal
+    function hideModal() {
+      jQuery(".surgeon_modal").addClass("hide");
+      jQuery("html, body").removeClass("overflow-hidden");
+    }
+
+    // Click event handler for .surgeon_modal_close elements
+    jQuery(".surgeon_modal_close").click(function () {
+      hideModal();
+    });
+
+    // Click event handler for .surgeon_modal_overlay elements
+    jQuery(".surgeon_modal_overlay").click(function () {
+      hideModal();
+    });
+
+    // Add event listener for keydown event (ESC button)
+    jQuery(document).keydown(function (event) {
+      // Check if the pressed key is the escape key (key code 27)
+      if (event.keyCode === 27) {
+        hideModal();
+      }
+    });
+
+    // accordion script
+    // jQuery(".faq_accordion_wrap .accordion_item").eq(0).addClass("active");
+    jQuery(".faq_accordion_wrap .accordion_item .accordion_item_header").click(
+      function (e) {
+        e.preventDefault();
+        let currItem = jQuery(this).closest(".accordion_item");
+        jQuery(currItem).siblings().removeClass("active");
+        if (currItem.hasClass("active")) {
+          jQuery(currItem).removeClass("active");
+          jQuery(currItem).find(".accordion_item_body").slideUp();
+        } else {
+          jQuery(currItem).addClass("active");
+          jQuery(currItem)
+            .closest(".faq_accordion_wrap")
+            .find(".accordion_item_body")
+            .slideUp();
+          jQuery(currItem).find(".accordion_item_body").slideDown();
+        }
+      }
+    );
+    //   surgeon modal script end
+
+    //   video play pause start
+    jQuery(".play_video_btn").click(function () {
+      jQuery(this)
+        .closest(".full_screen_video_container")
+        .toggleClass("isPlaying");
+    });
+    //   video play pause end
+  });
+
+  //   <!-- Initialize Swiper -->
+  var teamswiper = new Swiper(".who_we_are_sec  .teamswiper", {
+    loop: true,
+    preventClicks: true,
+    preventClicksPropagation: true,
+    navigation: {
+      nextEl: ".who_we_are_sec .swiper-button-next",
+      prevEl: ".who_we_are_sec .swiper-button-prev",
+    },
+    pagination: {
+      el: ".who_we_are_sec .swiper-pagination",
+      clickable: true,
+    },
+  });
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    var cardslider = new Swiper(".understand_choice  .cardslider", {
+      effect: "coverflow",
+      centeredSlides: true,
+      loop: true,
+      grabCursor: true,
+      preventClicks: true,
+      preventClicksPropagation: true,
+      navigation: {
+        nextEl: ".understand_choice .swiper-button-next",
+        prevEl: ".understand_choice .swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 5,
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 1000,
+            modifier: 1,
+            slideShadows: true,
+          },
+        },
+      },
+    });
+  }
+  if (window.matchMedia("(max-width: 1200px)").matches) {
+    var flipslider = new Swiper(".patient_journey .flipslider", {
+      loop: true,
+      grabCursor: true,
+      autoHeight: true,
+      preventClicks: true,
+      preventClicksPropagation: true,
+      navigation: {
+        nextEl: ".patient_journey .swiper-button-next",
+        prevEl: ".patient_journey .swiper-button-prev",
+      },
+    });
+  }
+  var storiesslider = new Swiper(".success_stories .storiesslider", {
+    loop: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -400],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    },
+    grabCursor: true,
+    preventClicks: true,
+    preventClicksPropagation: true,
+    preventClicksPropagation: true,
+    navigation: {
+      nextEl: ".success_stories .arrow_btn_tm.right",
+      prevEl: ".success_stories .arrow_btn_tm.left",
+    },
+  });
+  var galleyThumbSwiper = new Swiper(".gallery_wrap .thumbnailsslider", {
+    spaceBetween: 25,
+    slidesPerView: 5,
+    loop: true,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 25,
+      },
+    },
+  });
+  var gallerySliderTop = new Swiper(".gallery_wrap .topslider ", {
+    spaceBetween: 10,
+    loop: true,
+    autoHeight: true,
+    navigation: {
+      nextEl: ".gallery_wrap .swiper-button-next",
+      prevEl: ".gallery_wrap .swiper-button-prev",
+    },
+    thumbs: {
+      swiper: galleyThumbSwiper,
+    },
+  });
+  // Function to hide navigation arrows based on breakpoints
+  function hideNavigationArrows() {
+    console.log(jQuery(".gallery_wrap .topslider").length);
+    if (
+      window.innerWidth < 992 &&
+      jQuery(".gallery_wrap .topslider").length > 0
+    ) {
+      if (gallerySliderTop.navigation.nextEl) {
+        gallerySliderTop.navigation.nextEl.style.display = "none";
+        gallerySliderTop.navigation.prevEl.style.display = "none";
+      }
+    } else {
+      if (gallerySliderTop.navigation.nextEl) {
+        gallerySliderTop.navigation.nextEl.style.display = "block";
+        gallerySliderTop.navigation.prevEl.style.display = "block";
+      }
+    }
+  }
+
+  // Call the function on page load
+  window.addEventListener("load", function () {
+    hideNavigationArrows();
+  });
+
+  // Call the function on window resize
+  window.addEventListener("resize", function () {
+    hideNavigationArrows();
+  });
+</script>
+
+<!-- GSAP start -->
+<script>
+  // initialize GSAP function
+  function gsapInit() {
+    var headerTL = gsap.timeline({
+      onComplete: function () {
+        // Add class to header when timeline ends
+        document.querySelector(".newme_header").classList.add("timeline_ended");
+      },
+    });
+    headerTL.from(".newme_header", {
+      opacity: 0,
+      duration: 0.25,
+      ease: "back.out(1.7)",
+    });
+    headerTL.from(".newme_header .navbar-brand", {
+      opacity: 0,
+      y: "-100px",
+      duration: 0.5,
+      ease: "back.out(1.7)",
+    });
+    headerTL.from(".newme_header .nav_menu_wrapper > ul > .list-item", {
+      opacity: 0,
+      y: "-100px",
+      duration: 0.5,
+      stagger: 0.075,
+      ease: "back.out(1.7)",
+    });
+    headerTL.from(".newme_header .nav_menu_wrapper > ul > .header_btns a", {
+      opacity: 0,
+      y: "-100px",
+      duration: 0.5,
+      stagger: 0.075,
+      ease: "back.out(1.7)",
+    });
+
+    if (
+      document.querySelector(".home_banner") ||
+      document.querySelector(".page_banner")
+    ) {
+      headerTL.from(".home_banner h1, .page_banner h1", {
+        opacity: 0,
+        y: 100,
+        duration: 0.5,
+        ease: "back.out(1.7)",
+      });
+    }
+
+    if (
+      document.querySelector(".home_banner") ||
+      document.querySelector(".page_banner")
+    ) {
+      gsap.from(".home_banner", {
+        opacity: 0,
+        duration: 1,
+        ease: "back.out(1.7)",
+      });
+      gsap.from(".page_banner", {
+        opacity: 0,
+        duration: 1,
+        ease: "back.out(1.7)",
+      });
+    }
+    // about section animation start
+    if (document.querySelector(".home_pg_about_us_sec")) {
+      var home_pg_about_us_sec = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home_pg_about_us_sec",
+          scroller: "body",
+          markers: false,
+          start: "top 70%",
+          end: "bottom 0%",
+        },
+      });
+
+      home_pg_about_us_sec.from(".home_pg_about_us_sec .left", {
+        duration: 0.5,
+        x: -100,
+        opacity: 0,
+        ease: "back.out(2)",
+      });
+      home_pg_about_us_sec.from(".home_pg_about_us_sec .right", {
+        duration: 0.5,
+        x: 100,
+        opacity: 0,
+        ease: "back.out(2)",
+      });
+    }
+
+    /*****************************/
+    if (document.querySelector(".home_pg_who_we_are_sec")) {
+      var home_pg_who_we_are_sec = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home_pg_who_we_are_sec",
+          scroller: "body",
+          markers: false,
+          start: "top 70%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".home_pg_who_we_are_sec")
+            .classList.add("timeline_ended");
+        },
+      });
+
+      home_pg_who_we_are_sec.from(".home_pg_who_we_are_sec .left", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      home_pg_who_we_are_sec.from(".home_pg_who_we_are_sec .right", {
+        duration: 0.35,
+        opacity: 0,
+        stagger: 0.35,
+      });
+    }
+
+    /*****************************/
+    if (document.querySelector(".weight_loss_surgery ")) {
+      var weight_loss_surgery = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".weight_loss_surgery ",
+          scroller: "body",
+          markers: false,
+          start: "top 80%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".weight_loss_surgery ")
+            .classList.add("timeline_ended");
+        },
+      });
+
+      weight_loss_surgery.from(".weight_loss_surgery ", {
+        duration: 0.5,
+        opacity: 0,
+        y: 50,
+      });
+      weight_loss_surgery.from(".weight_loss_surgery  .content_wrap", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      weight_loss_surgery.from(".weight_loss_surgery  .left", {
+        duration: 0.5,
+        x: -50,
+        opacity: 0,
+        ease: "back.out(2)",
+      });
+      weight_loss_surgery.from(".weight_loss_surgery  .right", {
+        duration: 0.5,
+        opacity: 0,
+        scale: 0.7,
+        ease: "back.out(1.7)",
+      });
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".home_pg_understand_choice.desktop")) {
+      var home_pg_understand_choice = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home_pg_understand_choice.desktop",
+          scroller: "body",
+          markers: false,
+          start: "top 70%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".home_pg_understand_choice.desktop")
+            .classList.add("timeline_ended");
+        },
+      });
+
+      home_pg_understand_choice.from(
+        ".home_pg_understand_choice.desktop .w-richtext",
+        {
+          duration: 0.5,
+          opacity: 0,
+          y: 100,
+          ease: "back.out(2)",
+        }
+      );
+      home_pg_understand_choice.from(
+        ".home_pg_understand_choice.desktop .choice_card",
+        {
+          duration: 0.35,
+          y: 30,
+          opacity: 0,
+          stagger: 0.15,
+          ease: "back.out(2)",
+        }
+      );
+    }
+    /*****************************/
+
+    if (document.querySelector(".partners_section ")) {
+      var home_pg_understand_choice = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".partners_section ",
+          scroller: "body",
+          markers: false,
+          start: "top 70%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".partners_section")
+            .classList.add("timeline_ended");
+        },
+      });
+
+      home_pg_understand_choice.from(".partners_section  .w-richtext", {
+        duration: 0.5,
+        opacity: 0,
+        y: 100,
+        ease: "back.out(2)",
+      });
+      home_pg_understand_choice.from(
+        ".partners_section .three_cards_wrap  .card",
+        {
+          duration: 0.35,
+          y: 30,
+          opacity: 0,
+          stagger: 0.15,
+          ease: "back.out(2)",
+        }
+      );
+    }
+    /*****************************/
+    if (document.querySelector(".home_pg_patient_journey.desktop")) {
+      var home_pg_patient_journey = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".home_pg_patient_journey.desktop",
+          scroller: "body",
+          markers: false,
+          start: "top 70%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".home_pg_patient_journey.desktop")
+            .classList.add("timeline_ended");
+        },
+      });
+      home_pg_patient_journey.from(".home_pg_patient_journey.desktop", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      home_pg_patient_journey.from(
+        ".home_pg_patient_journey.desktop .content_wrap",
+        {
+          duration: 0.5,
+          opacity: 0,
+          ease: "back.out(1.7)",
+        }
+      );
+      home_pg_patient_journey.from(
+        ".home_pg_patient_journey.desktop .content_wrap h3",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+          ease: "back.out(2)",
+        }
+      );
+      home_pg_patient_journey.from(
+        ".home_pg_patient_journey.desktop .content_wrap .w-richtext",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+          ease: "back.out(2)",
+        }
+      );
+      home_pg_patient_journey.from(
+        ".home_pg_patient_journey.desktop .journey_block",
+        {
+          duration: 0.35,
+          opacity: 0,
+          stagger: 0.15,
+        }
+      );
+      home_pg_patient_journey.from(
+        ".home_pg_patient_journey.desktop .center",
+        {
+          duration: 0.25,
+          opacity: 0,
+          y: 50,
+          ease: "back.out(2)",
+        },
+        "-=0.15"
+      );
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".homepg_success_stories")) {
+      var homepg_success_stories = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".homepg_success_stories",
+          scroller: "body",
+          markers: false,
+          start: "top 60%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".homepg_success_stories")
+            .classList.add("timeline_ended");
+        },
+      });
+      homepg_success_stories.from(".homepg_success_stories", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      homepg_success_stories.from(".homepg_success_stories .left", {
+        duration: 0.5,
+        x: -100,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+      homepg_success_stories.from(".homepg_success_stories .quote_icon", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      homepg_success_stories.from(".homepg_success_stories .inner", {
+        duration: 0.5,
+        y: 100,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+    }
+    /*****************************/
+    if (document.querySelector(".who_we_are_section_1")) {
+      var who_we_are_section_1 = gsap.timeline({
+        delay: 2,
+        scrollTrigger: {
+          trigger: ".who_we_are_section_1",
+          scroller: "body",
+          markers: false,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".who_we_are_section_1")
+            .classList.add("timeline_ended");
+        },
+      });
+      who_we_are_section_1.from(".who_we_are_section_1", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      who_we_are_section_1.from(".who_we_are_section_1 .left", {
+        duration: 0.5,
+        x: -100,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+      who_we_are_section_1.from(".who_we_are_section_1 .right", {
+        duration: 0.5,
+        y: 100,
+        opacity: 0,
+        ease: "back.out(1.7)",
+        stagger: 0.35,
+      });
+    }
+    /*****************************/
+    if (document.querySelector(".two_column_text.for_referrers_pg")) {
+      two_column_text_for_referrers_pg = gsap.timeline({
+        delay: 2,
+        scrollTrigger: {
+          trigger: ".two_column_text.for_referrers_pg",
+          scroller: "body",
+          markers: false,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".two_column_text.for_referrers_pg")
+            .classList.add("timeline_ended");
+        },
+      });
+      two_column_text_for_referrers_pg.from(
+        ".two_column_text.for_referrers_pg",
+        {
+          duration: 0.5,
+          opacity: 0,
+        }
+      );
+      two_column_text_for_referrers_pg.from(
+        ".two_column_text.for_referrers_pg .left",
+        {
+          duration: 0.5,
+          x: -100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+        }
+      );
+      two_column_text_for_referrers_pg.from(
+        ".two_column_text.for_referrers_pg .right",
+        {
+          duration: 0.5,
+          y: 100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+          stagger: 0.35,
+        }
+      );
+    }
+    /*****************************/
+    if (document.querySelector(".two_column_text.cost_two_column_text")) {
+      two_column_text_cost_two_column_text = gsap.timeline({
+        delay: 2,
+        scrollTrigger: {
+          trigger: ".two_column_text.cost_two_column_text",
+          scroller: "body",
+          markers: false,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".two_column_text.cost_two_column_text")
+            .classList.add("timeline_ended");
+        },
+      });
+      two_column_text_cost_two_column_text.from(
+        ".two_column_text.cost_two_column_text",
+        {
+          duration: 0.5,
+          opacity: 0,
+        }
+      );
+      two_column_text_cost_two_column_text.from(
+        ".two_column_text.cost_two_column_text .grid_col_2_text  .left",
+        {
+          duration: 0.5,
+          x: -100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+        }
+      );
+      two_column_text_cost_two_column_text.from(
+        ".two_column_text.cost_two_column_text .grid_col_2_text  .right",
+        {
+          duration: 0.5,
+          y: 100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+          stagger: 0.35,
+        }
+      );
+    }
+
+    /*****************************/
+    if (document.querySelector(".two_column_text.cost_two_column_text")) {
+      two_column_text_cost_two_column_text2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".two_column_text.cost_two_column_text",
+          scroller: "body",
+          markers: false,
+          start: "top 40%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".two_column_text.cost_two_column_text")
+            .classList.add("timeline_ended");
+        },
+      });
+      two_column_text_cost_two_column_text2.from(
+        ".two_column_text.cost_two_column_text .costing.dark",
+        {
+          duration: 0.5,
+          y: 100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+          stagger: 0.35,
+        }
+      );
+      two_column_text_cost_two_column_text2.from(
+        ".two_column_text.cost_two_column_text .costing.purple_tint",
+        {
+          delay: 1,
+          duration: 0.5,
+          y: 100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+          stagger: 0.35,
+        }
+      );
+      two_column_text_cost_two_column_text2.from(
+        ".two_column_text.cost_two_column_text .full_width_section ",
+        {
+          delay: 1.5,
+          duration: 0.5,
+          y: 100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+          stagger: 0.35,
+        }
+      );
+    }
+
+    /*****************************/
+    if (document.querySelector(".two_column_text.for_referrers_pg")) {
+      two_column_text_for_referrers_pg = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".two_column_text.for_referrers_pg",
+          scroller: "body",
+          markers: false,
+          start: "top 50%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".two_column_text.for_referrers_pg")
+            .classList.add("timeline_ended");
+        },
+      });
+      two_column_text_for_referrers_pg.from(
+        ".two_column_text.for_referrers_pg .referral_form",
+        {
+          duration: 0.5,
+          y: 50,
+          opacity: 0,
+          stagger: 0.2,
+          ease: "back.out(1.7)",
+        }
+      );
+    }
+    /*****************************/
+    if (document.querySelector(".who_we_are_section_2")) {
+      var who_we_are_section_2 = gsap.timeline({
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".who_we_are_section_2",
+          scroller: "body",
+          markers: false,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".who_we_are_section_2")
+            .classList.add("timeline_ended");
+        },
+      });
+      who_we_are_section_2.from(
+        ".who_we_are_section_2 .left",
+        {
+          duration: 0.5,
+          x: -100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+        },
+        "same"
+      );
+      who_we_are_section_2.from(
+        ".who_we_are_section_2 .right",
+        {
+          duration: 0.5,
+          x: 100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+        },
+        "same"
+      );
+    }
+    /*****************************/
+    if (document.querySelector(".our_surgeons")) {
+      var our_surgeons = gsap.timeline({
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".our_surgeons",
+          scroller: "body",
+          markers: false,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".our_surgeons")
+            .classList.add("timeline_ended");
+        },
+      });
+      our_surgeons.from(".our_surgeons h2", {
+        duration: 0.5,
+        y: 100,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".treatment_stages")) {
+      var treatment_stages = gsap.timeline({
+        delay: 2.5,
+        scrollTrigger: {
+          trigger: ".treatment_stages",
+          scroller: "body",
+          markers: false,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".treatment_stages")
+            .classList.add("timeline_ended");
+        },
+      });
+      treatment_stages.from(".treatment_stages h2", {
+        duration: 0.5,
+        y: 100,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+      treatment_stages.from(".treatment_stages ul", {
+        duration: 0.5,
+        opacity: 0,
+        y: 40,
+      });
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".who_we_are_section_4.desktop")) {
+      var who_we_are_section_4 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".who_we_are_section_4.desktop",
+          scroller: "body",
+          markers: false,
+          start: "top 70%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".who_we_are_section_4.desktop")
+            .classList.add("timeline_ended");
+        },
+      });
+      who_we_are_section_4.from(".who_we_are_section_4.desktop", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      who_we_are_section_4.from(".who_we_are_section_4.desktop .content_wrap", {
+        duration: 0.5,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+      who_we_are_section_4.from(
+        ".who_we_are_section_4.desktop .content_wrap h3",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+          ease: "back.out(2)",
+        }
+      );
+      who_we_are_section_4.from(
+        ".who_we_are_section_4.desktop .content_wrap .w-richtext",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+          ease: "back.out(2)",
+        }
+      );
+      who_we_are_section_4.from(
+        ".who_we_are_section_4.desktop .journey_block",
+        {
+          duration: 0.35,
+          opacity: 0,
+          stagger: 0.15,
+        }
+      );
+      who_we_are_section_4.from(
+        ".who_we_are_section_4.desktop .center",
+        {
+          duration: 0.25,
+          opacity: 0,
+          y: 50,
+          ease: "back.out(2)",
+        },
+        "-=0.15"
+      );
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".post_operative_care")) {
+      var post_operative_care = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".post_operative_care",
+          scroller: "body",
+          markers: false,
+          start: "top 90%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".post_operative_care")
+            .classList.add("timeline_ended");
+        },
+      });
+      post_operative_care.from(".post_operative_care", {
+        duration: 1.5,
+        opacity: 0,
+      });
+      post_operative_care.from(".post_operative_care .left", {
+        duration: 0.35,
+        x: -100,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+      post_operative_care.from(".post_operative_care .right", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".psychology_assessment")) {
+      var psychology_assessment = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".psychology_assessment",
+          scroller: "body",
+          markers: false,
+          start: "top 90%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".psychology_assessment")
+            .classList.add("timeline_ended");
+        },
+      });
+      psychology_assessment.from(".psychology_assessment", {
+        duration: 1.5,
+        opacity: 0,
+        ease: "back.out(2)",
+      });
+      psychology_assessment.from(".psychology_assessment .left", {
+        duration: 0.35,
+        x: 100,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+      psychology_assessment.from(".psychology_assessment .right", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+      });
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".about_this_surgery")) {
+      var about_this_surgery = gsap.timeline({
+        delay: 2.5,
+        scrollTrigger: {
+          trigger: ".about_this_surgery",
+          scroller: "body",
+          markers: false,
+          start: "top 80%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".about_this_surgery")
+            .classList.add("timeline_ended");
+        },
+      });
+      about_this_surgery.from(".about_this_surgery", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      about_this_surgery.from(".about_this_surgery .left", {
+        duration: 0.35,
+        x: -100,
+        opacity: 0,
+        stagger: 0.35,
+      });
+      about_this_surgery.from(".about_this_surgery .right", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+        stagger: 0.35,
+      });
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".advantage_disadvantage")) {
+      var advantage_disadvantage = gsap.timeline({
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".advantage_disadvantage",
+          scroller: "body",
+          markers: false,
+          start: "top 80%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".advantage_disadvantage")
+            .classList.add("timeline_ended");
+        },
+      });
+      advantage_disadvantage.from(".advantage_disadvantage", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      advantage_disadvantage.from(".advantage_disadvantage .content_wrap", {
+        duration: 0.5,
+        opacity: 0,
+        ease: "back.out(1.7)",
+      });
+      advantage_disadvantage.from(".advantage_disadvantage .left", {
+        duration: 0.35,
+        x: 50,
+        opacity: 0,
+      });
+      advantage_disadvantage.from(".advantage_disadvantage .right", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+      });
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".is_this_right_for_me.version_1")) {
+      var is_this_right_for_me_v1 = gsap.timeline({
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".is_this_right_for_me.version_1",
+          scroller: "body",
+          markers: false,
+          start: "top 80%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".is_this_right_for_me.version_1")
+            .classList.add("timeline_ended");
+        },
+      });
+      is_this_right_for_me_v1.from(
+        ".is_this_right_for_me.version_1 .img_wrap",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+          ease: "back.out(2)",
+        }
+      );
+      is_this_right_for_me_v1.from(".is_this_right_for_me.version_1 .left", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+      });
+      is_this_right_for_me_v1.from(".is_this_right_for_me.version_1 .right", {
+        duration: 0.35,
+        x: 50,
+        opacity: 0,
+      });
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".is_this_right_for_me.version_2")) {
+      var is_this_right_for_me_v2 = gsap.timeline({
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".is_this_right_for_me.version_2",
+          scroller: "body",
+          markers: false,
+          start: "top 80%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".is_this_right_for_me.version_2")
+            .classList.add("timeline_ended");
+        },
+      });
+      is_this_right_for_me_v2.from(
+        ".is_this_right_for_me.version_2 .img_wrap",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+          ease: "back.out(2)",
+        }
+      );
+      is_this_right_for_me_v2.from(".is_this_right_for_me.version_2 .left", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+      });
+      is_this_right_for_me_v2.from(".is_this_right_for_me.version_2 .right", {
+        duration: 0.35,
+        x: -50,
+        opacity: 0,
+      });
+    }
+
+    /*****************************/
+
+    if (document.querySelector(".faq_section.bg_white_accordion")) {
+      var faq_section_bg_white_accordion = gsap.timeline({
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".faq_section.bg_white_accordion",
+          scroller: "body",
+          markers: false,
+          start: "top 80%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".faq_section.bg_white_accordion")
+            .classList.add("timeline_ended");
+        },
+      });
+      faq_section_bg_white_accordion.from(
+        ".faq_section.bg_white_accordion h2",
+        {
+          duration: 0.35,
+          x: -100,
+          opacity: 0,
+          ease: "back.out(2)",
+        }
+      );
+      faq_section_bg_white_accordion.from(
+        ".faq_section.bg_white_accordion .accordion_item ",
+        {
+          duration: 0.15,
+          x: 20,
+          opacity: 0,
+          stagger: 0.1,
+        }
+      );
+      faq_section_bg_white_accordion.from(
+        ".faq_section.bg_white_accordion .dark_btn",
+        {
+          duration: 0.25,
+          y: 50,
+          opacity: 0,
+        }
+      );
+    }
+    if (document.querySelector(".faq_section.bg_f7f7f7")) {
+      var faq_section_bg_f7f7f7 = gsap.timeline({
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".faq_section.bg_f7f7f7",
+          scroller: "body",
+          markers: false,
+          start: "top 80%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".faq_section.bg_f7f7f7")
+            .classList.add("timeline_ended");
+        },
+      });
+      faq_section_bg_f7f7f7.from(".faq_section.bg_f7f7f7 h2", {
+        duration: 0.35,
+        x: -100,
+        opacity: 0,
+        ease: "back.out(2)",
+      });
+      faq_section_bg_f7f7f7.from(".faq_section.bg_f7f7f7 .accordion_item ", {
+        duration: 0.15,
+        x: 20,
+        opacity: 0,
+        stagger: 0.1,
+      });
+      faq_section_bg_f7f7f7.from(".faq_section.bg_f7f7f7 .dark_btn", {
+        duration: 0.25,
+        y: 50,
+        opacity: 0,
+      });
+    }
+    /*****************************/
+    if (document.querySelector(".faq_section.bg_f5f6ff")) {
+      var faq_section_bg_f5f6ff = gsap.timeline({
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".faq_section.bg_f5f6ff",
+          scroller: "body",
+          markers: false,
+          start: "top 80%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".faq_section.bg_f5f6ff")
+            .classList.add("timeline_ended");
+        },
+      });
+      faq_section_bg_f5f6ff.from(".faq_section.bg_f5f6ff h2", {
+        duration: 0.35,
+        x: -100,
+        opacity: 0,
+        ease: "back.out(2)",
+      });
+      faq_section_bg_f5f6ff.from(".faq_section.bg_f5f6ff .accordion_item ", {
+        duration: 0.15,
+        x: 20,
+        opacity: 0,
+        stagger: 0.1,
+      });
+      faq_section_bg_f5f6ff.from(".faq_section.bg_f5f6ff .dark_btn", {
+        duration: 0.25,
+        y: 50,
+        opacity: 0,
+      });
+    }
+    /*****************************/
+    if (
+      document.querySelector(".what_is_weight_loss_surgery .grid_col_2_text")
+    ) {
+      var what_is_weight_loss_surgery_grid_col_2_text = gsap.timeline({
+        delay: 2,
+        scrollTrigger: {
+          trigger: ".what_is_weight_loss_surgery .grid_col_2_text",
+          scroller: "body",
+          markers: false,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".what_is_weight_loss_surgery .grid_col_2_text")
+            .classList.add("timeline_ended");
+        },
+      });
+      what_is_weight_loss_surgery_grid_col_2_text.from(
+        ".what_is_weight_loss_surgery .grid_col_2_text",
+        {
+          duration: 0.5,
+          opacity: 0,
+        }
+      );
+      what_is_weight_loss_surgery_grid_col_2_text.from(
+        ".what_is_weight_loss_surgery .grid_col_2_text .left",
+        {
+          duration: 0.5,
+          x: -100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+        }
+      );
+      what_is_weight_loss_surgery_grid_col_2_text.from(
+        ".what_is_weight_loss_surgery .grid_col_2_text .right",
+        {
+          duration: 0.5,
+          y: 100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+          stagger: 0.35,
+        }
+      );
+    }
+    if (
+      document.querySelector(".what_is_weight_loss_surgery .grid_col_2_text")
+    ) {
+      var what_is_weight_loss_surgery_grid_col_2_text2 = gsap.timeline({
+        delay: 2,
+        scrollTrigger: {
+          trigger: ".what_is_weight_loss_surgery .grid_col_2_text",
+          scroller: "body",
+          markers: false,
+          start: "top 55%",
+          end: "bottom 40%",
+        },
+      });
+
+      what_is_weight_loss_surgery_grid_col_2_text2.from(
+        ".what_is_weight_loss_surgery .full_width_section",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+          ease: "back.out(1.7)",
+        }
+      );
+    }
+    /*****************************/
+    if (document.querySelector(".wait_i_loose_section")) {
+      var wait_i_loose_section = gsap.timeline({
+        delay: 1,
+        scrollTrigger: {
+          trigger: ".wait_i_loose_section",
+          scroller: "body",
+          markers: false,
+          start: "top 80%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".wait_i_loose_section")
+            .classList.add("timeline_ended");
+        },
+      });
+      wait_i_loose_section.from(".wait_i_loose_section", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      wait_i_loose_section.from(".wait_i_loose_section .left", {
+        duration: 0.35,
+        x: 50,
+        opacity: 0,
+      });
+      wait_i_loose_section.from(".wait_i_loose_section .right", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+      });
+    }
+    /*****************************/
+    if (document.querySelector(".stories_section")) {
+      var stories_section = gsap.timeline({
+        delay: 2.5,
+        scrollTrigger: {
+          trigger: ".stories_section",
+          scroller: "body",
+          markers: false,
+          start: "top 100%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".stories_section")
+            .classList.add("timeline_ended");
+        },
+      });
+      stories_section.from(".stories_section", {
+        duration: 0.5,
+        opacity: 0,
+      });
+      stories_section.from(".stories_section .weight_loss_story.first .left", {
+        duration: 0.35,
+        x: -50,
+        opacity: 0,
+      });
+      stories_section.from(".stories_section .weight_loss_story.first .right", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+      });
+    }
+    /*****************************/
+    if (
+      document.querySelector(
+        ".stories_section .weight_loss_story.not_first:nth-child(2)"
+      )
+    ) {
+      var stories_section2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".stories_section .weight_loss_story.not_first:nth-child(2)",
+          scroller: "body",
+          markers: false,
+          start: "top 50%",
+          end: "bottom 20%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".stories_section")
+            .classList.add("timeline_ended");
+        },
+      });
+      stories_section2.from(
+        ".stories_section .weight_loss_story.not_first:nth-child(2) .left",
+        {
+          duration: 0.35,
+          x: -50,
+          opacity: 0,
+        }
+      );
+      stories_section2.from(
+        ".stories_section .weight_loss_story.not_first:nth-child(2) .right",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+        }
+      );
+    }
+    /*****************************/
+    if (
+      document.querySelector(
+        ".stories_section .weight_loss_story.not_first:nth-child(3)"
+      )
+    ) {
+      var stories_section2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".stories_section .weight_loss_story.not_first:nth-child(3)",
+          scroller: "body",
+          markers: false,
+          start: "top 50%",
+          end: "bottom 20%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".stories_section")
+            .classList.add("timeline_ended");
+        },
+      });
+      stories_section2.from(
+        ".stories_section .weight_loss_story.not_first:nth-child(3) .left",
+        {
+          duration: 0.35,
+          x: -50,
+          opacity: 0,
+        }
+      );
+      stories_section2.from(
+        ".stories_section .weight_loss_story.not_first:nth-child(3) .right",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+        }
+      );
+      stories_section2.from(".stories_section .full_width_section", {
+        delay: 0.5,
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+      });
+    }
+    /*****************************/
+    if (document.querySelector(".two_column_text.robotics_pg")) {
+      var robotics_pg = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".two_column_text.robotics_pg",
+          scroller: "body",
+          markers: false,
+          start: "top 40%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".stories_section")
+            .classList.add("timeline_ended");
+        },
+      });
+      robotics_pg.from(
+        ".two_column_text.robotics_pg .full_screen_video_container",
+        {
+          duration: 0.35,
+          y: 50,
+          opacity: 0,
+        }
+      );
+    }
+    /*****************************/
+    if (document.querySelector(".gallery_section ")) {
+      var robotics_pg = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".gallery_section ",
+          scroller: "body",
+          markers: false,
+          start: "top 40%",
+          end: "bottom 0%",
+        },
+        onComplete: function () {
+          document
+            .querySelector(".stories_section")
+            .classList.add("timeline_ended");
+        },
+      });
+      robotics_pg.from(".gallery_section  .w-richtext", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+      });
+      robotics_pg.from(".gallery_section  .gallery_wrap", {
+        duration: 0.35,
+        y: 50,
+        opacity: 0,
+      });
+    }
+  }
+
+  function pageIsLoaded(e) {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+      gsapInit();
+    }
+  }
+
+  window.addEventListener("load", pageIsLoaded);
+</script>
+<!-- GSAP end -->

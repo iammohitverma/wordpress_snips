@@ -1,0 +1,20 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    background: #ffffff83;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    &.active{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}

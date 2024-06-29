@@ -1,0 +1,4 @@
+Webflow form's data to google sheet
+
+Using Logic Flows in webflow with apico dev api
+https://apico.dev/blog/webflow-form-submissions-to-google-sheets

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('AktivGrotesk-Medium.woff2') format('woff2'),
+        url('AktivGrotesk-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('AktivGrotesk-Regular.woff2') format('woff2'),
+        url('AktivGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('AktivGrotesk-Thin.woff2') format('woff2'),
+        url('AktivGrotesk-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('AktivGrotesk-Black.woff2') format('woff2'),
+        url('AktivGrotesk-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('AktivGrotesk-Bold.woff2') format('woff2'),
+        url('AktivGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk-XBold';
+    src: url('AktivGrotesk-XBold.woff2') format('woff2'),
+        url('AktivGrotesk-XBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk';
+    src: url('AktivGrotesk-Light.woff2') format('woff2'),
+        url('AktivGrotesk-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AktivGrotesk-Hairline';
+    src: url('AktivGrotesk-Hairline.woff2') format('woff2'),
+        url('AktivGrotesk-Hairline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

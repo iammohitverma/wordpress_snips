@@ -1,0 +1,54 @@
+/*
+Theme Name: responsesystems
+Author: Aditya Chauhan
+Author URI: http://techmind.co.in/
+Version: 2.0
+Text Domain: responsesystems
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/*** for default theme's css ***/
+
+
+/* Contact Form 7 Error Default CSS */
+
+span.wpcf7-not-valid-tip {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    position: relative;
+    padding: 3px 10px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.wpcf7-response-output {
+    position: relative !important;
+    padding: 12px 15px !important;
+    margin-bottom: 0;
+    border: 1px solid transparent !important;
+    border-radius: 0.25rem !important;
+    font-size: 18px !important;
+}
+
+.invalid .wpcf7-response-output {
+    color: #856404 !important;
+    background-color: #fff3cd !important;
+    border-color: #ffeeba !important;
+}
+
+.sent .wpcf7-response-output {
+    color: #155724 !important;
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+}
+
+.failed .wpcf7-response-output {
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb !important;
+}

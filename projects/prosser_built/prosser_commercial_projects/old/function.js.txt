@@ -1,0 +1,55 @@
+// Projects filter
+  function filterProjects() {
+    var dataTab = $(".filter_projects.active").data("tab");
+
+    // Show preloader
+    $(".preloader").addClass('active');
+
+    var data = {
+      action: "projects_filter", // Ajax action name
+      dataTab: dataTab,
+    };
+
+    $.ajax({
+      url: "/wp-admin/admin-ajax.php",
+      type: "POST",
+      data: data,
+      dataType: "json", // Expect JSON response
+      success: function (response) {
+        if (response.length > 0) {
+          $(".project_list").empty(); // Clear existing posts
+          response.forEach((post) => {
+            $(".project_list").append(`
+                        <div class="project_list_images">
+                                    <div class="project_image">
+                                        <img src="${post.thumbnail_url}"
+                                            alt="Project image for ${post.alt_text}">
+                                    </div>
+                                    <div class="project_image_info">
+                                        <h3 class="hdng">${post.title}</h3>
+                                    </div>
+                                    <a href="${post.permalink}" class="absolute_set"></a>
+                                </div>
+                    `);
+          });
+        } else {
+          $(".project_list").html(
+            "<span class='no_data_found alert alert-danger text-center' role='alert'>No posts found</span>"
+          );
+        }
+      },
+      error: function (xhr, status, error) {
+        console.error(xhr);
+      },
+      complete: function () {
+        // Hide preloader
+        $("body").find(".preloader").removeClass('active');
+      },
+    });
+  }
+
+  $(".filter_projects").click(function () {
+    $(".filter_projects").removeClass("active"); // Remove the "active" class from all elements
+    $(this).addClass("active"); // Add the "active" class to the clicked element
+    filterProjects(); // Call the filterProjects function on click
+  });

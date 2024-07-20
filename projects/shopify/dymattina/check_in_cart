@@ -1,0 +1,14 @@
+<script>
+// Check if specific product ID is in cart
+const specificProductId = '7512132550847';
+const cart = Shopify.checkout.cart;
+const productIdsInCart = cart.items.map(item => item.product_id);
+
+if (productIdsInCart.includes(specificProductId)) {
+    // Hide discount code input
+    document.querySelector('.ReductionsInput0').style.display = 'none';
+    // Hide gift card input
+    document.querySelector('.ReductionsInput0').style.display = 'none';
+}
+
+</script>

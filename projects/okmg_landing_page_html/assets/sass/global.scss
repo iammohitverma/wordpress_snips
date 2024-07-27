@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $dm_sans_font;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    counter-reset: section;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+span,
+a {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0!important;
+}
+
+li {
+    list-style-type: none;
+}
+
+img,
+video {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+:root {
+    --containerWidth: 1320px;
+    @media (max-width: 1399.98px) {
+        --containerWidth: 1140px;
+    }
+    @media (max-width: 1199.98px) {
+        --containerWidth: 960px;
+    }
+    @media (max-width: 991.98px) {
+        --containerWidth: 720px;
+    }
+    @media (max-width: 767.98px) {
+        --containerWidth: 540px;
+    }
+    @media (max-width: 575.98px) {
+        --containerWidth: 100%;
+    }
+}
+
+// common
+
+
+// use this class  for grid headings
+.grid-sec-hdng{
+    color: $clr_183B56;
+    font-weight: 500;
+    line-height: 1.25; 
+    letter-spacing: 0.3px;
+    @include jn-standalone((
+        font-size: (24px, 26px, 28px, 32px, 34px, 36px),
+        margin-bottom: (25px, null, 28px, null, 32px, null),
+    ), min);
+    
+    &.center{
+        text-align: center;
+    }
+    &.start{
+        text-align: left;
+    }
+    &.end{
+        text-align: right;
+    }
+}
+
+// use this class for full section headings
+.full-sec-hdng{
+    color: $clr_183B56;
+    font-weight: 500;
+    line-height: 1.2; 
+    letter-spacing: -0.96px;
+    margin-bottom: 10px;
+    @include jn-standalone((
+        font-size: (28px, 32px, 36px, 40px, 44px, 48px),
+    ), min);
+
+
+    &.center{
+        text-align: center;
+    }
+    &.start{
+        text-align: left;
+    }
+    &.end{
+        text-align: right;
+    }
+}
+
+
+.banner-desc{
+    color: $clr_5A7184;
+    font-weight: 400;
+    line-height: 1.5;
+    @include jn-standalone((
+        font-size: (16px, null, 18px, null, 22px, null),
+        margin-bottom: (25px, null, 28px, null, 32px, null),
+    ), min);
+}
+
+// use this class  for section description
+.sec-desc{
+    color: $clr_5A7184;
+    font-weight: 400;
+    line-height: 1.5;
+    @include jn-standalone((
+        font-size: (15px, null, 16px, null, 18px, null),
+        margin-bottom: (25px, null, 28px, null, 32px, null),
+    ), min);
+}
+
+
+
+// use this class  for sub desc
+.sub-desc{
+    color: $clr_0075FF;
+    font-weight: 400;
+    line-height: 1.3;
+    @include jn-standalone((
+        font-size: (14px, null, 16px, null, 16px, null),
+        margin-bottom: (25px, null, 28px, null, 32px, null),
+    ), min);
+}
+
+// use this class  for common buttons
+.cmn-btn{
+    display: inline-block;
+    // background-color: $clr_white;
+    color: $clr_183B56;
+    text-transform: capitalize;
+    font-weight: 700;
+    @include jn-standalone((
+        font-size: (16px, null, 18px, null, 20px, null),
+        padding: (16px 40px, null, 18px 45px, null, 20px 50px, 20px 60px)
+    ), min);
+
+    &.primary{
+        background-color: $clr_0075FF;
+        color: $clr_white;
+    }
+    
+    &.secondary{
+        background-color: $clr_183B56;
+        color:$clr_white;
+    }
+}

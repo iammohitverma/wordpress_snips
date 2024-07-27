@@ -1,0 +1,358 @@
+/*
+
+.element {
+    @include jn-standalone((
+        padding-top: (40px, 60px, null, 80px, 100px, 120px),
+        font-size: (40px, 60px, null, 80px, 100px, 120px),
+        font-weight: (400, 600, null, 800, 100, 100),
+    ), min);
+    @include jn-standalone((
+        padding-top: (40px, 60px, null, 80px, 100px, 120px),
+        font-size: (40px, 60px, null, 80px, 100px, 120px),
+        font-weight: (400, 600, null, 800, 100, 100),
+    ), min);
+}
+
+.xyz {
+    @include flexbox(
+      ('flex-direction', row),
+      ('justify-content', center),
+      ('align-items', center),
+      ('order',4)
+    );
+  }
+  
+
+
+  use .jn-holder instead of .container
+  use .jn-row instead of .container
+  use .cell-[screen]-[value] instead of .container. eg. cell-lg-12
+
+  */
+
+  .item-figure{
+    text-align: center !important;
+}
+
+.banner-section {
+    background-color: $clr_F4F6F7;
+    @include jn-standalone((padding: (40px 0px, 60px 0px, null, 70px 0px, 80px 0px, 100px 0px),
+        ), min);
+
+    .banner-wrapping {
+        @include jn-standalone((margin-bottom: (30px, null, 0px, null, null, 0px),
+            ), min);
+
+        .logo {
+            @include jn-standalone((margin-bottom: (30px, 35px, null, 40px, 45px, 50px),
+                ), min);
+        }
+
+        .banner-hdng {
+            @include jn-standalone((font-size: (30px, 40px, null, 50px, 60px, 72px),
+                    margin-bottom: (20px, 22px, null, 25px, 30px, 32px),
+                ), min);
+        }
+
+        .rating-wrap {
+            @include jn-standalone((margin-top: (20px, 25px, null, 30px, 35px, 40px),
+                ), min);
+
+            .rating-desc {
+                font-size: 16px;
+                color: $clr_black;
+                margin: 10px 0px;
+            }
+        }
+    }
+}
+
+
+.carousel-section {
+    background-color: $clr_EEE;
+    @include jn-standalone((padding: (40px 0px, 60px 0px, null, 70px 0px, 80px 0px, 100px 0px),
+        ), min);
+
+    .home-demo1 {
+        .carousel-hdng {
+            text-align: center;
+
+            @include jn-standalone((font-size: (18px, null, 20px, null, 24px, null),
+                    margin-bottom: (25px, null, 30px, null, 40px, null),
+                ), min);
+
+        }
+        .item-figure{
+            text-align: center;
+        }
+    }
+
+   
+   
+}
+
+
+.grid-wrapping {
+    .grid-section {
+        background: $clr_F3F3F3;
+        @include jn-standalone((padding: (40px 0px, 60px 0px, null, 70px 0px, 80px 0px, 100px 0px),
+            ), min);
+
+
+        &:nth-child(odd) {
+            background-color: $clr_white;
+        }
+
+        &:nth-child(even) {
+            .jn-row {
+                @include jn-standalone((flex-direction: (null, null, row-reverse, null, null, null),
+                    ), min);
+            }
+        }
+
+        .jn-row {
+            .grid-desc-wrap {
+                @include jn-standalone((margin-top: (40px, null, 0px, null, null, 0px),
+                    ), min);
+
+            }
+
+            .grid-figure-wrap {
+                s img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+.testimonials-section {
+    background-color: $clr_F3F3F3;
+    @include jn-standalone((padding: (40px 0px, 60px 0px, null, 70px 0px, 80px 0px, 100px 0px),
+        ), min);
+
+    .testimonials-wrapping {
+        text-align: center;
+        @include jn-standalone((margin-bottom: (30px, null, 40px, null, 60px, null),
+            ), min);
+    }
+
+    .item {
+
+        .card {
+            background-color: $clr_white;
+            width: 100%;
+            height: 100%;
+
+            .card-body {
+                padding: 45px;
+                @include jn-standalone((padding: (22px, null, 30px, null, 45px, null),
+
+                    ), min);
+
+                img {
+                    width: auto;
+                }
+
+                .star-figure {
+                    margin: 20px 0px;
+                    display: block;
+                }
+
+                .cutomer-desc {
+                    color: $clr_202225;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin-bottom: 5px;
+
+                    @include jn-standalone((font-size: (15px, null, 16px, null, 18px, null),
+
+                        ), min);
+                }
+
+            }
+        }
+    }
+
+    .testimonial_bottom_content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include jn-standalone((padding-top: (20px, 30px, 40px, 50px, 60px, null),
+            ), min);
+
+        .swiper-pagination {
+            position: relative;
+            width: 70%;
+
+            @media only screen and (max-width: 767.98px) {
+                width: 50%;
+            }
+
+            .swiper-pagination-progressbar-fill {
+                background-color: $clr_183B56;
+            }
+        }
+
+        .bottom_text {
+            position: relative;
+            width: 30%;
+            text-align: right;
+
+            @media only screen and (max-width: 767.98px) {
+                width: 50%;
+            }
+
+            p {
+                color: $clr_5A7184;
+                font-weight: 400;
+                line-height: 1.6;
+                @include jn-standalone((font-size: (12px, null, 14px, null, 16px, null),
+                    ), min);
+            }
+        }
+    }
+}
+
+
+.faq-section {
+    @include jn-standalone((padding: (40px 0px, 60px 0px, null, 70px 0px, 80px 0px, 100px 0px),
+        ), min);
+
+    .faq-wrapping {
+        text-align: center;
+    }
+
+    .accordion {
+        width: 1000px;
+        max-width: 100%;
+        margin: 2rem auto;
+        border-top: 1px solid $clr_183B56;
+
+        .accordion-item {
+            .accordion-item-header {
+                min-height: 5.5rem;
+                line-height: 1.25rem;
+                display: flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                padding: 1.5rem 3rem 1.5rem 0px;
+
+                &::after {
+                    content: "\002B";
+                    font-size: 2rem;
+                    position: absolute;
+                    right: 1rem;
+                }
+
+                .accordion-hdng {
+                    font-weight: 500;
+                    @include jn-standalone((font-size: (16px, null, 18px, 20px, 22px, 24px),
+                        ), min);
+                }
+            }
+
+            .active {
+                &::after {
+                    content: "\2212";
+                }
+            }
+
+            .accordion-item-body {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                border-bottom: 1px solid $clr_183B56;
+
+                .accordion-item-body-content {
+                    padding: 1rem;
+                    padding-left: 0px;
+                    line-height: 1.5rem;
+                    border-top: 1px solid;
+                    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+
+                    .accordion-desc {
+                        color: $clr_5A7184;
+                        line-height: 1.6rem;
+                        font-weight: 400;
+                        @include jn-standalone((font-size: (14px, null, 16px, null, 16px, null),
+                            ), min);
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+
+.cta-section {
+    background-color: $clr_F3F3F3;
+    @include jn-standalone((padding: (40px 0px, 60px 0px, null, 70px 0px, 80px 0px, 100px 0px),
+        ), min);
+
+    .cta-wrapping {
+        text-align: center;
+    }
+}
+
+
+
+.main-footer {
+    @include jn-standalone((padding: (25px 0px, 30px 0px, null, 35px 0px, 40px 0px, null),
+        ), min);
+
+    .footer-wrapping {
+        border-bottom: 1px solid $clr_82909D;
+        @include jn-standalone((margin-bottom: (25px, null, 28px, null, 32px, null),
+            ), min);
+
+        .footer-logo {
+            margin-bottom: 10px
+        }
+    }
+
+    .copyright-wrapping {
+        @include flexbox(('flex-direction', row),
+            ('justify-content', space-between),
+            ('justify-content', space-between),
+            ('flex-wrap', wrap),
+            ('order', 4));
+
+        .copyright-desc {
+            font-size: 14px;
+            color: $clr_757185;
+            margin-bottom: 20px;
+
+            a {
+                color: $clr_757185;
+            }
+        }
+
+        .social-icons {
+            a {
+                margin-right: 20px;
+                margin-right: 20px;
+
+                &:last-child {
+                    margin: 0px;
+                }
+
+                .add-icons {
+
+                    width: 30px;
+
+
+                }
+            }
+
+        }
+
+
+    }
+}

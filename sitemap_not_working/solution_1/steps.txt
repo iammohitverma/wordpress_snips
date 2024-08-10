@@ -1,0 +1,11 @@
+> go to wp root folder
+
+
+upload fix_whitespace_issue.php file here
+
+
+download index.php
+
+
+include this file
+include("fix_whitespace_issue.php");

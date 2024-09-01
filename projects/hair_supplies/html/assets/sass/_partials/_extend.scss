@@ -1,0 +1,117 @@
+%pt_120 {
+    padding-top: 60px;
+    @media only screen and (min-width: 576px) {
+        padding-top: 80px;
+    }
+}
+
+%pt_100 {
+    @include jn-standalone(
+            (
+                    padding-top: (
+                            40px,
+                            null,
+                            null,
+                            60px,
+                            80px,
+                            100px
+                    )
+            ),
+            min
+    );
+}
+
+%pb_100 {
+    @include jn-standalone(
+            (
+                    padding-bottom: (
+                            40px,
+                            null,
+                            null,
+                            60px,
+                            80px,
+                            100px
+                    )
+            ),
+            min
+    );
+}
+
+%fs_36 {
+    @include jn-standalone(
+            (
+                    font-size: (
+                            20px,
+                            null,
+                            24px,
+                            28px,
+                            32px,
+                            36px
+                    )
+            ),
+            min
+    );
+}
+
+%mb_50 {
+    @include jn-standalone(
+            (
+                    margin-bottom: (
+                            25px,
+                            30px,
+                            null,
+                            null,
+                            40px,
+                            50px
+                    )
+            ),
+            min
+    );
+}
+
+%fs_26 {
+    @include jn-standalone(
+            (
+                    font-size: (
+                            18px,
+                            null,
+                            20px,
+                            22px,
+                            24px,
+                            26px
+                    )
+            ),
+            min
+    );
+}
+
+%fs_18 {
+    @include jn-standalone(
+            (
+                    font-size: (
+                            16px,
+                            null,
+                            17px,
+                            null,
+                            null,
+                            18px
+                    )
+            ),
+            min
+    );
+}
+%fs_20 {
+    @include jn-standalone(
+            (
+                    font-size: (
+                            18px,
+                            null,
+                            null,
+                            null,
+                            null,
+                            20px
+                    )
+            ),
+            min
+    );
+}

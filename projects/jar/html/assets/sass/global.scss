@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $work_sans_font;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    counter-reset: section;
+}
+
+p,
+a {
+    margin: 0;
+    padding: 0;
+    font-family: $work_sans_font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span {
+    margin: 0;
+    padding: 0;
+    font-family: $barlow_font;
+}
+
+p {
+    // color: $clr_black;
+}
+
+span,
+a {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    // color: $clr_22619D;
+}
+
+ul {
+    margin: 0;
+    padding: 0 !important;
+}
+
+li {
+    list-style-type: none;
+}
+
+img,
+video {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+:root {
+    --containerWidth: 1320px;
+    @media (max-width: 1399.98px) {
+        --containerWidth: 1140px;
+    }
+    @media (max-width: 1199.98px) {
+        --containerWidth: 960px;
+    }
+    @media (max-width: 991.98px) {
+        --containerWidth: 720px;
+    }
+    @media (max-width: 767.98px) {
+        --containerWidth: 540px;
+    }
+    @media (max-width: 575.98px) {
+        --containerWidth: 100%;
+    }
+
+    --customContainerWidth: 1440px;
+    @media (max-width: 1399.98px) {
+        --customContainerWidth: 1240px;
+    }
+    @media (max-width: 1199.98px) {
+        --customContainerWidth: 992px;
+    }
+    @media (max-width: 991.98px) {
+        --customContainerWidth: 768px;
+    }
+    @media (max-width: 767.98px) {
+        --customContainerWidth: 576px;
+    }
+    @media (max-width: 575.98px) {
+        --customContainerWidth: 100%;
+    }
+}
+.custom_container {
+    position: relative;
+    width: var(--customContainerWidth);
+    max-width: 100%;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+.absolute_link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+section {
+    position: relative;
+}
+
+.arrow_btn {
+    position: relative;
+    font-size: 16px;
+    color: $clr_white;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    padding-right: 50px;
+    transition: 0.5s;
+    @extend %mt_40;
+
+    @media (max-width: 575.98px) {
+        padding: 10px 15px;
+        padding-right: 45px;
+    }
+
+    &.arrow_v1 {
+        background: url("../images/icon_right_arrow.png") no-repeat calc(100% - 15px) center / 24px;
+        background-color: $clr_black;
+
+        @media (max-width: 575.98px) {
+            background-size: 20px;
+        }
+    }
+
+    &:hover {
+        background-color: $clr_f54f01;
+    }
+}
+
+.scrolling_section {
+    position: relative;
+    padding: 20px 0;
+
+    @media (max-width: 575.98px) {
+        padding: 15px 0;
+    }
+
+    &.dark {
+        background-color: $clr_black;
+    }
+
+    .scrollable_wrapper {
+        display: flex;
+
+        ul {
+            display: flex;
+            flex-shrink: 0;
+            animation: scrollingAnimation 20s linear infinite forwards;
+
+            @keyframes scrollingAnimation {
+                0% {
+                    transform: translateX(-100%);
+                }
+                100% {
+                    transform: translateX(0%);
+                }
+            }
+
+            li {
+                @extend %fs_20;
+                font-family: $barlow_font;
+                text-transform: uppercase;
+                flex-shrink: 0;
+            }
+        }
+    }
+    &.black {
+        background-color: $clr_black;
+
+        ul {
+            li {
+                color: $clr_white;
+                padding-left: 20px;
+                padding-right: 40px;
+                background: url("../images/white_star.svg") no-repeat calc(100%) center / 25px;
+            }
+        }
+    }
+    &.grey {
+        background-color: $clr_3b3b3b;
+
+        ul {
+            li {
+                color: $clr_white;
+                padding-left: 20px;
+                padding-right: 40px;
+                background: url("../images/white_star.svg") no-repeat calc(100%) center / 25px;
+            }
+        }
+    }
+    &.white {
+        background-color: $clr_white;
+
+        ul {
+            li {
+                color: $clr_black;
+                padding-left: 20px;
+                padding-right: 40px;
+                background: url("../images/black_star.svg") no-repeat calc(100%) center / 25px;
+            }
+        }
+    }
+}

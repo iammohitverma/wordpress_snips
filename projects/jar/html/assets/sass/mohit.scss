@@ -1,0 +1,96 @@
+.hero_v1 {
+    background-color: $clr_e8eaf0;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:
+            url("../images/glow3.png") no-repeat center / cover,
+            url("../images/glow2.png") no-repeat center / cover;
+        z-index: 10;
+        mix-blend-mode: lighten;
+        opacity: 80%;
+        pointer-events: none;
+    }
+
+    .jar_anim {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 35vw;
+        // height: 90vh;
+        object-fit: contain;
+        pointer-events: none;
+        animation: blinkAnim 1s steps(3) infinite alternate;
+        @keyframes blinkAnim {
+            0% {
+                opacity: 0.35;
+            }
+            70% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    .text_wrap {
+        @extend %pt_140;
+        @extend %pb_140;
+        h1 {
+            @extend %fs_70;
+            text-transform: uppercase;
+            font-weight: 700;
+            line-height: 98%;
+            @extend %mb_40;
+
+            span {
+                color: $clr_f54f01;
+            }
+        }
+    }
+    .image_area {
+        position: relative;
+        text-align: center;
+        .banner_player {
+            position: relative;
+            max-height: 800px;
+            filter: grayscale(1);
+            z-index: 2;
+        }
+        .dark_box {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 90%;
+            height: 500px;
+            background: rgba($color: #000000, $alpha: 0.9) url("../images/layers.png") no-repeat center / contain;
+            z-index: 0;
+
+            .ball_wrap {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-50%, -50%);
+
+                .ball {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+    }
+    .scrolling_section.white {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: rotate(-45deg);
+    }
+}

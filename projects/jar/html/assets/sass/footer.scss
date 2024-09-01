@@ -1,0 +1,189 @@
+.site_footer {
+  position: relative;
+  background-color: $clr_black;
+  .top_footer {
+    @extend %pt_50;
+    @extend %pb_50;
+    @extend %mb_30;
+    border-bottom: 2px solid rgba($color: $clr_969696, $alpha: 0.3);
+    .inner {
+      @include flexbox(
+        ("flex-direction", row),
+        ("justify-content", space-between),
+        ("align-items", center),
+        ("flex-wrap", wrap)
+      );
+      @media (max-width: 767.98px) {
+        flex-direction: column;
+        align-items: flex-start;
+        & > div {
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .footer_logo{
+        img{
+          width: 50px;
+          object-fit: contain;
+        }
+      }
+      .footer_menu {
+        padding: 0 20px;
+        @media (max-width: 767.98px) {
+          padding: 0;
+        }
+        ul {
+          @include flexbox(
+            ("flex-direction", row),
+            ("justify-content", space-between),
+            ("align-items", center),
+            ("flex-wrap", wrap)
+          );
+          @media (max-width: 767.98px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          li {
+            @media (max-width: 767.98px) {
+                margin-bottom: 5px;
+            }
+            .a-Wrap {
+              a {
+                position: relative;
+                @include jn-standalone(
+                  (
+                    font-size: (
+                      16px,
+                      null,
+                      17px,
+                      null,
+                      18px,
+                      19px,
+                    ),
+                  ),
+                  min
+                );
+                color: rgba($color: $clr_white, $alpha: 0.6);
+                line-height: 1.5;
+                font-weight: 600;
+                &::before {
+                  content: "";
+                  position: absolute;
+                  width: 0%;
+                  height: 1px;
+                  background-color: rgba($color: $clr_white, $alpha: 0.6);
+                  top: 100%;
+                  transition: all 0.4s;
+                }
+                &:hover {
+                  &::before {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            &:not(:last-child) {
+              margin-right: 50px;
+              @media (max-width: 1199.98px) {
+                margin-right: 30px;
+              }
+            }
+          }
+        }
+      }
+      .social_menus {
+        position: relative;
+        a {
+          &:not(:last-child) {
+            margin-right: 20px;
+          }
+          img {
+            transition: all 0.4s;
+            width: 30px;
+            object-fit: contain;
+            @media (max-width: 767.98px) {
+              width: 25px;
+            }
+          }
+          &:hover {
+            img {
+              filter: sepia(1);
+            }
+          }
+        }
+      }
+    }
+  }
+  .bottom_footer {
+    padding: 20px 0;
+    @media (max-width: 767.98px) {
+      padding-top: 10px;
+    }
+    .inner_wrap {
+      @include flexbox(
+        ("flex-direction", row),
+        ("justify-content", space-between),
+        ("align-items", center),
+        ("flex-wrap", wrap)
+      );
+      @media (max-width: 575.98px) {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+      }
+      .left {
+        p {
+          @extend %fs_16;
+          line-height: 1.5;
+          font-weight: 400;
+          color: rgba($color: $clr_white, $alpha: 0.7);
+          a {
+            color: rgba($color: $clr_white, $alpha: 0.7);
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 0%;
+              height: 1px;
+              background-color: rgba($color: $clr_white, $alpha: 0.6);
+              top: 100%;
+              transition: all 0.4s;
+            }
+            &:hover {
+              &::before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        a {
+          position: relative;
+          @extend %fs_16;
+          line-height: 1.5;
+          font-weight: 400;
+          color: rgba($color: $clr_white, $alpha: 0.7);
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            background-color: rgba($color: $clr_white, $alpha: 0.6);
+            top: 100%;
+            transition: all 0.4s;
+          }
+          &:hover {
+            &::before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

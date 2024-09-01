@@ -1,0 +1,603 @@
+%pt_140 {
+  @include jn-standalone(
+    (
+      padding-top: (
+        40px,
+        50px,
+        80px,
+        null,
+        120px,
+        140px
+      )
+    ),
+    min
+  );
+}
+
+%pb_140 {
+  @include jn-standalone(
+    (
+      padding-bottom: (
+        40px,
+        50px,
+        80px,
+        null,
+        120px,
+        140px
+      )
+    ),
+    min
+  );
+}
+%pt_120 {
+  @include jn-standalone(
+    (
+      padding-top: (
+        40px,
+        50px,
+        80px,
+        null,
+        100px,
+        120px
+      )
+    ),
+    min
+  );
+}
+
+%pb_120 {
+  @include jn-standalone(
+    (
+      padding-bottom: (
+        40px,
+        50px,
+        80px,
+        null,
+        100px,
+        120px
+      )
+    ),
+    min
+  );
+}
+
+%pt_100 {
+  @include jn-standalone(
+    (
+      padding-top: (
+        40px,
+        50px,
+        60px,
+        null,
+        80px,
+        100px
+      )
+    ),
+    min
+  );
+}
+
+%pb_100 {
+  @include jn-standalone(
+    (
+      padding-bottom: (
+        40px,
+        50px,
+        60px,
+        null,
+        80px,
+        100px
+      )
+    ),
+    min
+  );
+}
+
+%pt_150 {
+  @include jn-standalone(
+    (
+      padding-top: (
+        60px,
+        80px,
+        100px,
+        120px,
+        130px,
+        150px
+      )
+    ),
+    min
+  );
+}
+
+%pb_150 {
+  @include jn-standalone(
+    (
+      padding-bottom: (
+        60px,
+        80px,
+        100px,
+        120px,
+        130px,
+        150px
+      )
+    ),
+    min
+  );
+}
+
+%pb_50 {
+  @include jn-standalone(
+    (
+      padding-bottom: (
+        25px,
+        30px,
+        35px,
+        40px,
+        45px,
+        50px
+      )
+    ),
+    min
+  );
+}
+
+%pt_50 {
+  @include jn-standalone(
+    (
+      padding-top: (
+        25px,
+        30px,
+        35px,
+        40px,
+        45px,
+        50px
+      )
+    ),
+    min
+  );
+}
+
+%pl_50 {
+  @include jn-standalone(
+    (
+      padding-left: (
+        25px,
+        30px,
+        35px,
+        40px,
+        45px,
+        50px
+      )
+    ),
+    min
+  );
+}
+
+%pr_50 {
+  @include jn-standalone(
+    (
+      padding-right: (
+        25px,
+        30px,
+        35px,
+        40px,
+        45px,
+        50px
+      )
+    ),
+    min
+  );
+}
+
+%pl_100 {
+  @include jn-standalone(
+    (
+      padding-left: (
+        30px,
+        40px,
+        50px,
+        60px,
+        80px,
+        100px
+      )
+    ),
+    min
+  );
+}
+
+%pr_100 {
+  @include jn-standalone(
+    (
+      padding-right: (
+        30px,
+        40px,
+        50px,
+        60px,
+        80px,
+        100px
+      )
+    ),
+    min
+  );
+}
+
+%p_60 {
+  @include jn-standalone(
+    (
+      padding: (
+        20px,
+        20px,
+        30px,
+        40px,
+        50px,
+        60px
+      )
+    ),
+    min
+  );
+}
+
+%p_50 {
+  @include jn-standalone(
+    (
+      padding: (
+        25px,
+        30px,
+        35px,
+        40px,
+        45px,
+        50px
+      )
+    ),
+    min
+  );
+}
+
+%p_40 {
+  @include jn-standalone(
+    (
+      padding: (
+        20px,
+        null,
+        25px,
+        30px,
+        35px,
+        40px
+      )
+    ),
+    min
+  );
+}
+
+%p_80 {
+  @include jn-standalone(
+    (
+      padding: (
+        30px,
+        40px,
+        50px,
+        60px,
+        70px,
+        80px
+      )
+    ),
+    min
+  );
+}
+
+%fs_70 {
+  @include jn-standalone(
+    (
+      font-size: (
+        null,
+        30px,
+        40px,
+        50px,
+        60px,
+        70px
+      )
+    ),
+    min
+  );
+}
+%fs_74 {
+  @include jn-standalone(
+    (
+      font-size: (
+        null,
+        34px,
+        44px,
+        54px,
+        64px,
+        74px
+      )
+    ),
+    min
+  );
+}
+
+%fs_54 {
+  @include jn-standalone(
+    (
+      font-size: (
+        28px,
+        32px,
+        36px,
+        42px,
+        48px,
+        54px
+      )
+    ),
+    min
+  );
+}
+
+%fs_56 {
+  @include jn-standalone(
+    (
+      font-size: (
+        28px,
+        32px,
+        36px,
+        42px,
+        48px,
+        56px
+      )
+    ),
+    min
+  );
+}
+
+%fs_48 {
+  @include jn-standalone(
+    (
+      font-size: (
+        24px,
+        30px,
+        36px,
+        40px,
+        44px,
+        48px
+      )
+    ),
+    min
+  );
+}
+
+%fs_36 {
+  @include jn-standalone(
+    (
+      font-size: (
+        18px,
+        20px,
+        24px,
+        28px,
+        32px,
+        36px
+      )
+    ),
+    min
+  );
+}
+
+%fs_32 {
+  @include jn-standalone(
+    (
+      font-size: (
+        18px,
+        20px,
+        24px,
+        28px,
+        30px,
+        32px
+      )
+    ),
+    min
+  );
+}
+
+%fs_28 {
+  @include jn-standalone(
+    (
+      font-size: (
+        18px,
+        null,
+        20px,
+        22px,
+        24px,
+        28px
+      )
+    ),
+    min
+  );
+}
+
+%fs_22 {
+  @include jn-standalone(
+    (
+      font-size: (
+        16px,
+        18px,
+        20px,
+        20px,
+        22px,
+        22px
+      )
+    ),
+    min
+  );
+}
+
+%fs_20 {
+  @include jn-standalone(
+    (
+      font-size: (
+        16px,
+        16px,
+        null,
+        18px,
+        19px,
+        20px
+      )
+    ),
+    min
+  );
+}
+
+%fs_18 {
+  @include jn-standalone(
+    (
+      font-size: (
+        15px,
+        16px,
+        null,
+        18px,
+        null,
+        null
+      )
+    ),
+    min
+  );
+}
+
+%fs_16 {
+  @include jn-standalone(
+    (
+      font-size: (
+        14px,
+        14px,
+        null,
+        16px,
+        null,
+        null
+      )
+    ),
+    min
+  );
+}
+
+%mb_40 {
+  @include jn-standalone(
+    (
+      margin-bottom: (
+        15px,
+        20px,
+        25px,
+        30px,
+        35px,
+        40px
+      )
+    ),
+    min
+  );
+}
+
+%mb_30 {
+  @include jn-standalone(
+    (
+      margin-bottom: (
+        20px,
+        20px,
+        24px,
+        26px,
+        28px,
+        30px
+      )
+    ),
+    min
+  );
+}
+
+%mb_20 {
+  @include jn-standalone(
+    (
+      margin-bottom: (
+        15px,
+        null,
+        null,
+        18px,
+        null,
+        20px
+      )
+    ),
+    min
+  );
+}
+%mt_40 {
+  @include jn-standalone(
+    (
+      margin-top: (
+        15px,
+        20px,
+        25px,
+        30px,
+        35px,
+        40px
+      )
+    ),
+    min
+  );
+}
+%mt_30 {
+  @include jn-standalone(
+    (
+      margin-top: (
+        20px,
+        22px,
+        24px,
+        26px,
+        28px,
+        30px
+      )
+    ),
+    min
+  );
+}
+
+%mb_50 {
+  @include jn-standalone(
+    (
+      margin-bottom: (
+        25px,
+        30px,
+        35px,
+        40px,
+        45px,
+        50px
+      )
+    ),
+    min
+  );
+}
+
+%mt_50 {
+  @include jn-standalone(
+    (
+      margin-top: (
+        25px,
+        30px,
+        35px,
+        40px,
+        45px,
+        50px
+      )
+    ),
+    min
+  );
+}
+
+%mb_100 {
+  @include jn-standalone(
+    (
+      margin-bottom: (
+        30px,
+        40px,
+        50px,
+        60px,
+        80px,
+        100px
+      )
+    ),
+    min
+  );
+}

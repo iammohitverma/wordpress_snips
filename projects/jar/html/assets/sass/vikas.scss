@@ -1,0 +1,282 @@
+.overview_of_jar {
+  position: relative;
+  @extend %pt_120;
+  @extend %pb_120;
+  .head_wrap {
+    .sec_hdng {
+      color: $clr_0f0000;
+      @extend %fs_56;
+      font-weight: 700;
+      line-height: 1.1;
+      text-transform: uppercase;
+      max-width: 300px;
+      margin-bottom: 20px;
+      @media (max-width: 767.98px) {
+        max-width: 100%;
+      }
+    }
+  }
+  .text_wrap {
+    p {
+      @extend %fs_16;
+      color: $clr_555555;
+      font-weight: 400;
+      line-height: 1.5;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        @media (max-width: 767.98px) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .link_wrap {
+    @extend %mt_50;
+    text-align: end;
+    a {
+      @extend %fs_16;
+      color: $clr_black;
+      font-weight: 600;
+      line-height: 1.5;
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+  .img_wrap {
+    @extend %mt_50;
+  }
+}
+.schedule_section {
+  position: relative;
+  @extend %pt_100;
+  @extend %pb_100;
+  background-color: $clr_e8eaf0;
+  background-image: url("/wp-content/uploads/2024/08/jar_bg_img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .head {
+    @include flexbox(
+      ("flex-direction", row),
+      ("justify-content", space-between),
+      ("align-items", center),
+      ("flex-wrap", wrap)
+    );
+    @extend %mb_50;
+    @media (max-width: 575.98px) {
+      margin-bottom: 10px;
+    }
+    .sec_hdng {
+      color: $clr_black;
+      @extend %fs_56;
+      font-weight: 700;
+      line-height: 1.1;
+      text-transform: uppercase;
+      padding-right: 10px;
+    }
+    a {
+      @extend %fs_16;
+      color: $clr_black;
+      font-weight: 600;
+      line-height: 1.5;
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+  .schedule_list {
+    .list_wrap {
+      @include flexbox(
+        ("flex-direction", row),
+        ("justify-content", space-between),
+        ("align-items", center),
+        ("flex-wrap", wrap)
+      );
+      padding: 30px 20px;
+      border-bottom: 1px solid rgba($color: $clr_black, $alpha: 0.25);
+      @media (max-width: 767.98px) {
+        padding: 20px 10px;
+      }
+      .list_title {
+        color: $clr_0d0d0d;
+        line-height: 1.1;
+        font-weight: 400;
+        @extend %fs_48;
+        font-family: $work_sans_font;
+      }
+      .info {
+        width: 150px;
+        @media (max-width: 767.98px) {
+          width: 100%;
+          margin-top: 10px;
+        }
+        p {
+          color: $clr_0d0d0d;
+          line-height: 1.3;
+          @extend %fs_20;
+          font-weight: 400;
+        }
+        .date {
+          color: $clr_585858;
+          @extend %fs_16;
+          line-height: 1.1;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+.news_and_insights {
+  position: relative;
+  @extend %pt_100;
+  @extend %pb_100;
+  .head {
+    @include flexbox(
+      ("flex-direction", row),
+      ("justify-content", space-between),
+      ("align-items", flex-end),
+      ("flex-wrap", wrap)
+    );
+    @extend %mb_30;
+    .sec_hdng {
+      color: $clr_black;
+      @extend %fs_56;
+      font-weight: 700;
+      line-height: 1.1;
+      text-transform: uppercase;
+      padding-right: 10px;
+    }
+    a {
+      @extend %fs_16;
+      color: $clr_black;
+      font-weight: 600;
+      line-height: 1.5;
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+  .row {
+    row-gap: 30px;
+  }
+  .news_card {
+    position: relative;
+    .card_img {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        min-height: 300px;
+        object-fit: cover;
+        transition: all 0.5s;
+      }
+    }
+    .card_info {
+      position: relative;
+      & > div {
+        margin: 15px 0;
+        @media (max-width: 767.98px) {
+          margin: 10px 0;
+        }
+      }
+      .tags {
+        h5 {
+          color: $clr_7f7f7f;
+          @extend %fs_16;
+          font-weight: 400;
+          line-height: 1.1;
+        }
+      }
+      .title {
+        p {
+          color: $clr_202020;
+          @extend %fs_20;
+          font-weight: 600;
+          line-height: 1.1;
+          transition: all 0.5s;
+        }
+      }
+      .brief {
+        p {
+          color: $clr_7f7f7f;
+          @extend %fs_16;
+          font-weight: 400;
+          line-height: 1.4;
+        }
+      }
+    }
+    &:hover {
+      .card_img {
+        img {
+          transform: rotate(5deg) scale(1.1);
+        }
+      }
+      .title {
+        p {
+          color: $clr_f54f01;
+        }
+      }
+    }
+  }
+}
+.instagram_feeds {
+  position: relative;
+  // @extend %pt_50;
+  // @extend %pb_50;
+  .head {
+    .sec_hdng {
+      color: $clr_black;
+      @extend %fs_56;
+      font-weight: 900;
+      line-height: 1.1;
+      text-transform: uppercase;
+      padding-right: 10px;
+      max-width: 200px;
+      a {
+        color: $clr_f54f01;
+        text-decoration: underline;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+.follow_me{
+    position: relative;
+    @extend %pt_100;
+    @extend %pb_100;
+    .container{
+        background-color: $clr_e8eaf0;
+    }
+    .inner{
+        position: relative;
+        .row{
+            @media (max-width: 767.98px) {
+                flex-direction: column-reverse;
+            }
+        }
+        .head{
+            max-width: 80%;
+            @extend %pt_50;
+            @extend %pb_50;
+            @media (max-width: 767.98px) {
+                max-width: 100%;
+            }
+            .sec_hdng{
+                color: $clr_black;
+                @extend %fs_56;
+                font-weight: 900;
+                line-height: 1.1;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            p{
+                @extend %fs_16;
+                font-weight: 400;
+                line-height: 1.5;
+                color: $clr_black;
+            }
+        }
+    }
+}

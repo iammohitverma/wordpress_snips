@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+.jn-primary-btn {
+  font-family: $ins_sans_font;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: $clr_B2CB23;
+  color: $clr_3B3B3B;
+  display: inline-flex;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  
+  @media (max-width: 767.98px) {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+  @media (max-width: 575.98px) {
+    font-size: 14px;
+  }
+  svg {
+    margin-left: 10px;
+    transition: all 0.5s;
+  }
+  &:hover{
+      svg{
+        transform: translateX(5px);
+    }
+  }
+}
+
+.jn-home-banner {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include jn-standalone(
+    (
+      padding-top: (
+        80px,
+        100px,
+        125px,
+        175px,
+        225px,
+        275px,
+      ),
+      padding-bottom: (
+        80px,
+        100px,
+        125px,
+        175px,
+        225px,
+        275px,
+      ),
+    ),
+    min
+  );
+
+  .main-hdng,
+  .banner-desc {
+    color: $clr_white;
+    line-height: 1.1;
+    font-weight: 400;
+    font-family: $ins_sans_font;
+    text-align: center;
+  }
+
+  .main-hdng {
+    font-size: 60px;
+    @include jn-standalone(
+      (
+        font-size: (
+          32px,
+          36px,
+          42px,
+          48px,
+          54px,
+          60px,
+        ),
+      ),
+      min
+    );
+    margin: 0;
+  }
+  .banner-desc {
+    @include jn-standalone(
+      (
+        font-size: (
+          16px,
+          18px,
+          20px,
+          22px,
+          24px,
+          26px,
+        ),
+      ),
+      min
+    );
+    margin: 13px 0 0;
+  }
+
+  .banner-btn {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+.register-trade {
+  background-color: $clr_black;
+  @include jn-standalone(
+    (
+      padding-top: (
+        40px,
+        null,
+        55px,
+        null,
+        65px,
+        null,
+      ),
+      padding-bottom: (
+        40px,
+        null,
+        55px,
+        null,
+        65px,
+        null,
+      ),
+    ),
+    min
+  );
+  color: $clr_white;
+  .hdng {
+    font-family: $ins_sans_font;
+    @include jn-standalone(
+      (
+        font-size: (
+          20px,
+          22px,
+          24px,
+          26px,
+          28px,
+          30px,
+        ),
+      ),
+      min
+    );
+  }
+  .jn-row{
+    row-gap: 10px;
+  }
+  .jn-primary-btn{
+    @media (max-width: 767.98px) {
+        margin-top: 20px;
+    }
+  }
+}
+
+// vikas css start
+
+.shop_by_brand {
+  position: relative;
+  @extend %pt_100;
+  @extend %pb_100;
+  .head {
+    @extend %mb_50;
+    @include flexbox(
+      (flex-direction, row),
+      (justify-content, space-between),
+      (align-items, center),
+      (flex-wrap, nowrap)
+    );
+    .sec_hdng {
+      @extend %fs_36;
+      color: $clr_2d2d2e;
+      line-height: 1.1;
+      font-weight: 600;
+      font-family: $ins_sans_font;
+      @media (max-width: 575.95px) {
+        padding-right: 20px;
+      }
+    }
+    .jn-primary-btn {
+      background-color: $clr_2d2d2e;
+      color: $clr_white;
+      svg {
+        filter: invert(1);
+      }
+    }
+  }
+  .brands{
+    a{
+        width: 100%;
+        display: inline;
+    }
+    img{
+        padding: 5px;
+        width: 100%;
+        object-fit: cover;
+    }
+  }
+  .slick-arrow {
+    width: unset;
+    padding: 0;
+    &.slick-next{
+        right: -50px;
+        @media (max-width: 991.98px) {
+            right: -30px;
+        }
+    }
+    &.slick-prev{
+        left: -50px;
+        @media (max-width: 991.98px) {
+            left: -30px;
+        }
+    }
+  }
+  .slick-list {
+    padding-left: 0;
+    padding-right: 0;
+    padding-right: 0;
+  }
+}
+.shop_by_category {
+  position: relative;
+  @extend %pt_100;
+  @extend %pb_100;
+  background-color: $clr_c6d862;
+  .head {
+    @extend %mb_50;
+    @include flexbox(
+      (flex-direction, row),
+      (justify-content, space-between),
+      (align-items, center),
+      (flex-wrap, nowrap)
+    );
+    .sec_hdng {
+      @extend %fs_36;
+      color: $clr_2d2d2e;
+      line-height: 1.1;
+      font-weight: 600;
+      font-family: $ins_sans_font;
+      @media (max-width: 575.95px) {
+        padding-right: 20px;
+      }
+    }
+    .jn-primary-btn {
+      background-color: $clr_2d2d2e;
+      color: $clr_white;
+      svg {
+        filter: invert(1);
+      }
+    }
+  }
+  .product_card {
+    position: relative;
+    margin-bottom: 30px;
+    // padding: 10px;
+    @media (max-width: 767.98px) {
+      margin-bottom: 15px;
+    }
+    .product_img {
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.5s;
+      }
+    }
+    .card_title {
+      background-color: $clr_e3ebc3;
+      padding: 20px;
+      .title {
+        @extend %fs_26;
+        color: $clr_2d2d2e;
+        line-height: 1.1;
+        font-weight: 400;
+        font-family: $ins_sans_font;
+      }
+      @media (max-width: 767.98px) {
+        padding: 15px;
+      }
+    }
+    &:hover{
+        img{
+            transform: scale(1.1)rotate(5deg);
+        }
+    }
+  }
+}
+.shop_by_new_arrival {
+  position: relative;
+  background-color: $clr_f3f6f0;
+  @extend %pt_100;
+  @extend %pb_100;
+  .head {
+    @extend %mb_50;
+    @include flexbox(
+      (flex-direction, row),
+      (justify-content, space-between),
+      (align-items, center),
+      (flex-wrap, nowrap)
+    );
+    .sec_hdng {
+      @extend %fs_36;
+      color: $clr_2d2d2e;
+      line-height: 1.1;
+      font-weight: 600;
+      font-family: $ins_sans_font;
+      @media (max-width: 575.95px) {
+        padding-right: 20px;
+      }
+    }
+    .jn-primary-btn {
+      background-color: $clr_B2CB23;
+      color: $clr_black;
+    }
+  }
+  .product_slider {
+    position: relative;
+    margin-bottom: 20px;
+    @media (max-width: 575.98px) {
+        margin-bottom: 50px;
+    }
+  }
+  .card_product {
+    // padding: 10px;
+    position: relative;
+    margin: 10px;
+    .product_img {
+    transition: all 0.5s;
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .product_info {
+      padding-top: 20px;
+      .title {
+        @extend %fs_18;
+        color: $clr_2d2d2e;
+        line-height: 1.1;
+        font-weight: 400;
+        font-family: $ins_sans_font;
+        margin-bottom: 5px;
+        transition: all 0.5s;
+      }
+      span {
+        @extend %fs_20;
+        color: $clr_2d2d2e;
+        line-height: 1.1;
+        font-weight: 600;
+        font-family: $ins_sans_font;
+        display: inline;
+        &.price {
+          opacity: 0.7;
+          text-decoration: line-through;
+        }
+      }
+      @media (max-width: 767.98px) {
+        padding-top: 15px;
+      }
+    }
+    &:hover{
+        .product_info{
+            .title{
+                color: $clr_B2CB23;
+            }
+        }
+    }
+  }
+  .slick-arrow {
+    width: unset;
+    padding: 0;
+    top: 40%;
+    &.slick-next{
+        right: -50px;
+        @media (max-width: 991.98px) {
+            right: -30px;
+        }
+    }
+    &.slick-prev{
+        left: -50px;
+        @media (max-width: 991.98px) {
+            left: -30px;
+        }
+    }
+  }
+  .slick-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.instagram_feeds {
+  position: relative;
+  @extend %pt_100;
+  @extend %pb_100;
+  .head {
+    @extend %mb_50;
+    .sec_hdng {
+      @extend %fs_36;
+      color: $clr_2d2d2e;
+      line-height: 1.1;
+      font-weight: 600;
+      font-family: $ins_sans_font;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .social_grid {
+      @include flexbox(
+        (flex-direction, row),
+        (justify-content, center),
+        (align-items, center),
+        (flex-wrap, wrap)
+      );
+      .social{
+        @include flexbox(
+        (flex-direction, row),
+        (justify-content, center),
+        (align-items, center),
+        (flex-wrap, wrap)
+      );
+      &:nth-child(1){
+        margin-right: 20px;
+      }
+      img{
+        margin-right: 5px;
+      }
+      p{
+        @extend %fs_20;
+        color: $clr_2d2d2e;
+        line-height: 1.1;
+        font-weight: 400;
+        font-family: $ins_sans_font;
+      }
+      &.facebook{
+        p{
+            opacity: 0.7;
+        }
+      }
+      }
+    }
+  }
+}
+// vikas css end

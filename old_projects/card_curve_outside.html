@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      main {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        background: #232526;
+      }
+      section {
+        position: relative;
+        padding: 100px;
+      }
+      .container {
+        max-width: 1320px;
+        width: 100%;
+        padding: 0 15px;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+      }
+      .col-4 {
+        width: calc(100% / 3);
+        padding: 0 15px;
+      }
+      .card {
+        position: relative;
+        padding: 130px 30px 130px;
+        border-bottom-right-radius: 200px;
+        border-bottom-left-radius: 200px;
+        box-shadow: 0 20px 0 0px #fff, inset 0 -10px 0 0px #ffffff4f;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .card::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 150%;
+        background: linear-gradient(45deg, #fff, transparent);
+        opacity: 0.2;
+        top: -100px;
+        left: 150px;
+        transform: rotate(15deg);
+        z-index: -1;
+      }
+      .col-4:nth-of-type(3n + 1) .card {
+        background: #ff4e50; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #f9d423,
+          #ff4e50
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #f9d423,
+          #ff4e50
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+      }
+      .col-4:nth-of-type(3n + 2) .card {
+        background: #780206; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #061161,
+          #780206
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #061161,
+          #780206
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .col-4:nth-of-type(3n + 3) .card {
+        background: #4776e6; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #8e54e9,
+          #4776e6
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #8e54e9,
+          #4776e6
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .card .card-icon {
+        position: relative;
+        color: #fff;
+        font-size: 48px;
+        margin: 0 auto 10px;
+        width: 100px;
+        height: 100px;
+        background: #232526;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 10px 0 0px #fff, inset 0 -8px 0 0px #ffffff4f;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+      .card .card-icon::before,
+      .card .card-icon::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 0;
+      }
+      .card .card-icon::before {
+        left: -40px;
+        border-top-right-radius: 30px;
+        box-shadow: 10px -10px 0px 10px #232526;
+      }
+      .card .card-icon::after {
+        right: -40px;
+        border-top-left-radius: 30px;
+        box-shadow: -10px -10px 0px 10px #232526;
+      }
+      .card .card-content {
+        text-align: center;
+      }
+      .card h3 {
+        color: #fff;
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+
+      .card p {
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-icon">
+                  <ion-icon name="accessibility-outline"></ion-icon>
+                </div>
+                <div class="card-content">
+                  <h3>Lorem Ipsum</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    non cumque et consequatur reprehenderit, dignissimos illum
+                    atque quidem totam aperiam magni architecto nihil neque
+                    deleniti repellat, error libero modi laborum?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-icon">
+                  <ion-icon name="accessibility-outline"></ion-icon>
+                </div>
+                <div class="card-content">
+                  <h3>Lorem Ipsum</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    non cumque et consequatur reprehenderit, dignissimos illum
+                    atque quidem totam aperiam magni architecto nihil neque
+                    deleniti repellat, error libero modi laborum?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-icon">
+                  <ion-icon name="accessibility-outline"></ion-icon>
+                </div>
+                <div class="card-content">
+                  <h3>Lorem Ipsum</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    non cumque et consequatur reprehenderit, dignissimos illum
+                    atque quidem totam aperiam magni architecto nihil neque
+                    deleniti repellat, error libero modi laborum?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

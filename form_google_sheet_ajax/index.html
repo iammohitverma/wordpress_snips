@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formId" method="POST">
+      <input name="Email" type="email" placeholder="Email" required />
+      <input name="Name" type="text" placeholder="Name" required />
+      <button type="submit">Send</button>
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery Script -->
+    <script>
+      $(document).ready(function () {
+        $("#formId").submit(function (event) {
+          debugger;
+          event.preventDefault(); // Prevent default form submission
+
+          let form = $("#formId");
+          let url =
+            "https://script.google.com/macros/s/AKfycbyJBBrdqSwHqFqBVvKPDPu7zXhLf41C4e3pDWgrNXArt39TCP5YfG0dxBj-mz-yCmeI/exec";
+
+          $.ajax({
+            type: "POST",
+            url: url,
+            data: {
+              Name: "Mohit",
+              Email: "Mohit@abc.com",
+            },
+            // Serialize form data
+            success: function (data) {
+              alert("Form Submitted Successfully");
+            },
+            error: function (data) {
+              alert("Error occurred while submitting the form");
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

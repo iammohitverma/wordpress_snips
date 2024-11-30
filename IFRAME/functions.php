@@ -1,0 +1,2 @@
+// Here's an easier one-liner to set X-Frame-Options SAMEORIGIN OR DENY that works, add the following to the functions.php file in your current Wordpress theme:
+add_action( 'send_headers', 'send_frame_options_header', 10, 0 );

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Upload and Compare</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", serif;
+      }
+      img {
+        max-width: 100%;
+      }
+      section {
+        min-height: 50vh;
+      }
+      .container {
+        max-width: 1620px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+      .banners_area {
+        padding: 100px 20px;
+        background: #effaff;
+      }
+      .banners {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .form_area {
+        padding: 100px 20px;
+        background: #ffeebc;
+      }
+      .banners img {
+        max-width: 100%;
+        border: 5px solid #fff;
+      }
+      h1 {
+        font-size: 52px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        font-family: "Cookie", serif;
+        color: #53250e;
+      }
+      .form_area form {
+        margin-bottom: 40px;
+      }
+      .form_area h2 {
+        font-size: 22px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: #f44336;
+      }
+      .matching_images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="banners_area">
+      <div class="container">
+        <h1>Delightful Cakes for Every Occasion</h1>
+        <div class="banners">
+          <img
+            src="{{ url_for('static', filename='banners/banner.png') }}"
+            alt="Banner 1"
+          />
+          <img
+            src="{{ url_for('static', filename='banners/banner_cake_2.png') }}"
+            alt="Banner 1"
+          />
+          <img
+            src="{{ url_for('static', filename='banners/banner_cake_3.png') }}"
+            alt="Banner 1"
+          />
+          <img
+            src="{{ url_for('static', filename='banners/banner_cake_4.png') }}"
+            alt="Banner 2"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="form_area">
+      <div class="container">
+        <h1>Upload Your Cake Image for Comparison</h1>
+        <form
+          id="uploadForm"
+          enctype="multipart/form-data"
+          method="POST"
+          action="/compare_image"
+        >
+          <input type="file" name="image" required />
+          <button type="submit">Upload & Process</button>
+        </form>
+
+        {% if result_images %}
+        <h2>Matching Results:</h2>
+        <div class="matching_images">
+          {% for image in result_images %}
+          <img src="{{ image }}" alt="Comparison Result" />
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+    </section>
+  </body>
+</html>

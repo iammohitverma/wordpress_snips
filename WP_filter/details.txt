@@ -1,0 +1,7 @@
+
+uname: breight-admin
+pwd: breightadmin
+
+templates/simple.php
+inc/sc/queries.php
+function.js

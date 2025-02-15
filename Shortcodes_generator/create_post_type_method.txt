@@ -1,0 +1,8 @@
+Post type
+    Category = skincare
+    Child Category / Tags 
+        - Child Category Name With Parent Category Name = skincare-makeup
+
+
+Shortcode
+    Pass argument with parent category name

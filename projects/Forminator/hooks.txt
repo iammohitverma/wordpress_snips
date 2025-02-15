@@ -1,0 +1,80 @@
+Form Submission Hooks
+forminator_custom_form_before_handle_submit: Perform actions before a form is submitted.
+forminator_custom_form_after_handle_submit: Perform actions after a form is submitted.
+forminator_custom_form_before_save_entry: Perform actions before an entry is saved.
+forminator_custom_form_after_save_entry: Perform actions after an entry is saved.
+forminator_custom_form_before_send_email: Perform actions before an email is sent.
+forminator_custom_form_after_send_email: Perform actions after an email is sent.
+
+
+General Hooks
+forminator_form_settings_fields: Add custom fields to the form settings page.
+forminator_form_settings_after_save: Perform actions after a form is saved.
+forminator_form_settings_delete_form: Perform actions before a form is deleted.
+forminator_form_settings_clone_form: Perform actions before a form is cloned.
+forminator_entry_detail_page_after_content: Add content to the entry detail page after the main content.
+forminator_entry_detail_page_before_content: Add content to the entry detail page before the main content.
+forminator_entry_detail_page_actions: Add buttons or links to the entry detail page actions area.
+forminator_entry_detail_page_delete_entry: Perform actions before an entry is deleted.
+forminator_entry_detail_page_export_entry: Perform actions before an entry is exported.
+forminator_entry_detail_page_print_entry: Perform actions before an entry is printed.
+
+
+Field-Specific Hooks
+forminator_fields_render_field: Modify the rendering of a field.
+forminator_fields_validate_field: Validate the input for a field.
+forminator_fields_sanitize_field: Sanitize the input for a field.
+
+
+Other Hooks
+forminator_admin_menu_items: Add custom menu items to the Forminator admin menu.
+forminator_enqueue_scripts: Enqueue scripts and styles.
+forminator_enqueue_styles: Enqueue styles.
+
+
+Removed deprecated filters:Copy heading anchor to clipboard
+forminator_poll_chart_color
+forminator_get_admin_email_recipients
+forminator_poll_mail_admin_recipients
+forminator_custom_form_mail_admin_recipients
+forminator_email_field_custom_validation_message
+
+
+Removed deprecated actions:Copy heading anchor to clipboard
+forminator_custom_form_before_handle_submit
+forminator_custom_form_after_handle_submit
+forminator_custom_form_before_save_entry
+forminator_custom_form_after_save_entry
+
+
+Removed filters:Copy heading anchor to clipboard
+forminator_custom_form_calculation_entry_data
+forminator_custom_form_get_captcha_field
+forminator_field_calculation_converted_formula
+forminator_field_{$field_slug}_dummy_calculable_value
+forminator_calculator_max_nested_formula
+forminator_field_calculation_calculated_value
+forminator_fields_to_array
+
+
+Removed actions:Copy heading anchor to clipboard
+forminator_custom_form_after_calculate_field
+forminator_custom_form_before_calculate_field
+
+
+Renamed filters:Copy heading anchor to clipboard
+forminator_field_{$field_slug}_calculable_precision renamed to forminator_field_calculable_precision
+forminator_custom_form_pseudo_submitted_data renamed to forminator_prepared_data
+
+
+Changed filter attributes amount:Copy heading anchor to clipboard
+forminator_field_paypal_payment_amount
+forminator_field_stripe_payment_amount
+forminator_replace_form_data
+forminator_form_settings
+forminator_field_stripe_payment_amount
+forminator_field_stripe_subscription_quantity
+
+
+Changed action attributes amount:Copy heading anchor to clipboard
+forminator_cform_user_registered

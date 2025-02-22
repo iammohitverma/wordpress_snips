@@ -1,0 +1,22 @@
+🔧 Enable Debugging in WordPress
+1️⃣ Open your wp-config.php file (found in the root WordPress directory).
+2️⃣ Find the line that says:
+define('WP_DEBUG', false);
+
+3️⃣ Replace it with the following debug configuration:
+define('WP_DEBUG', true);  // Enable debugging
+define('WP_DEBUG_LOG', true);  // Save errors to wp-content/debug.log
+define('WP_DEBUG_DISPLAY', false);  // Don't show errors on screen
+@ini_set('log_errors', 1);
+@ini_set('display_errors', 0);
+
+4️⃣ Save the file and refresh your website.
+
+
+
+📂 Where to Find Error Logs
+Log file location:
+👉 wp-content/debug.log
+How to view errors:
+Open the debug.log file in Notepad, VS Code, or any text editor.
+Check the latest entries at the bottom of the file.

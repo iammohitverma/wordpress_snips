@@ -1,0 +1,16 @@
+[_site_title] "Inquiry from [Firstname] [LastName]"
+Thank You, [Firstname] [LastName]! We've Received Your Inquiry | [_site_title]
+
+
+
+live
+Post Launch Techmind
+-------------
+Pre Checklist 
+
+Akismet Anti-spam: Spam Protection
+Yoast Seo
+reCaptcha
+Wordfence
+SMTP and forms setup
+Manage WP

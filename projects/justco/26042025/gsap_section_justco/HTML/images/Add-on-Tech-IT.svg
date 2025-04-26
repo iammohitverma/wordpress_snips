@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68">
+  <g id="Add_on-Tech_IT" data-name="Add on-Tech IT" transform="translate(1.5 1.5)">
+    <rect id="Rectangle_209" data-name="Rectangle 209" width="65" height="22.358" rx="2.87" transform="translate(0 42.642)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"></rect>
+    <line id="Line_109" data-name="Line 109" y2="19.553" transform="translate(8.374 22.723)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"></line>
+    <path id="Path_5027" data-name="Path 5027" d="M11.8,13.8a8.374,8.374,0,0,1,8.374,8.374" transform="translate(-3.426 0.347)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"></path>
+    <path id="Path_5028" data-name="Path 5028" d="M11.8,10.22A15.36,15.36,0,0,1,27.166,25.586" transform="translate(-3.426 -3.228)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"></path>
+    <path id="Path_5029" data-name="Path 5029" d="M11.8,6.63A22.358,22.358,0,0,1,34.158,28.988" transform="translate(-3.426 -6.63)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"></path>
+    <circle id="Ellipse_331" data-name="Ellipse 331" cx="2.785" cy="2.785" r="2.785" transform="translate(15.577 52.438)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"></circle>
+    <circle id="Ellipse_332" data-name="Ellipse 332" cx="2.785" cy="2.785" r="2.785" transform="translate(29.715 52.438)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"></circle>
+    <circle id="Ellipse_333" data-name="Ellipse 333" cx="2.785" cy="2.785" r="2.785" transform="translate(43.853 52.438)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"></circle>
+  </g>
+</svg>

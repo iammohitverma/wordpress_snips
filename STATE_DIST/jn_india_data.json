@@ -1,0 +1,3507 @@
+{
+  "States": [
+      {
+        "Andaman and Nicobar Islands": {
+          "capital": "Port Blair",
+          "Largest City": "Port Blair",
+          "districts": [
+            {
+              "name": "South Andaman",
+              "tehsils": ["Port Blair", "Bambooflat", "Mahatma Gandhi Marine National Park"]
+            },
+            {
+              "name": "North and Middle Andaman",
+              "tehsils": ["Mayabunder", "Diglipur", "Kalighat"]
+            },
+            {
+              "name": "Nicobar",
+              "tehsils": ["Car Nicobar", "Great Nicobar", "Katchal"]
+            }
+          ]
+        }
+      },
+      {
+        "Arunachal Pradesh": {
+          "capital": "Itanagar",
+          "Largest City": "Itanagar",
+          "districts": [
+            {
+              "name": "Tawang",
+              "tehsils": ["Tawang"]
+            },
+            {
+              "name": "West Kameng",
+              "tehsils": ["Bomdila", "Bhalukpong", "Jang"]
+            },
+            {
+              "name": "East Kameng",
+              "tehsils": ["Seppa", "Sangdupota", "Bhalukpong"]
+            },
+            {
+              "name": "Papum Pare",
+              "tehsils": ["Itanagar", "Doimukh", "Karsingsa"]
+            },
+            {
+              "name": "Kra Daadi",
+              "tehsils": ["Pangin", "Tali"]
+            },
+            {
+              "name": "Kurung Kumey",
+              "tehsils": ["Koloriang", "Daporijo", "Tali"]
+            },
+            {
+              "name": "Upper Subansiri",
+              "tehsils": ["Daporijo", "Tali"]
+            },
+            {
+              "name": "Lower Subansiri",
+              "tehsils": ["Ziro", "Yazali", "Raga"]
+            },
+            {
+              "name": "West Siang",
+              "tehsils": ["Aalo", "Bagra", "Kamba"]
+            },
+            {
+              "name": "East Siang",
+              "tehsils": ["Pasighat", "Mirem", "Ruksin"]
+            },
+            {
+              "name": "Siang",
+              "tehsils": ["Kaying", "Rumi", "Jomlo"]
+            },
+            {
+              "name": "Lohit",
+              "tehsils": ["Tezu", "Namsai", "Sunpura"]
+            },
+            {
+              "name": "Changlang",
+              "tehsils": ["Miao", "Changlang", "Kharsang"]
+            },
+            {
+              "name": "Tirap",
+              "tehsils": ["Khonsa", "Longding", "Deomali"]
+            },
+            {
+              "name": "Anjaw",
+              "tehsils": ["Hawa Camp", "Hindung", "Manlong"]
+            },
+            {
+              "name": "Namsai",
+              "tehsils": ["Namsai", "Ruhing", "Sunpura"]
+            },
+            {
+              "name": "Longding",
+              "tehsils": ["Longding", "Wakka", "Khonsa"]
+            },
+            {
+              "name": "Kamle",
+              "tehsils": ["Daporijo", "Tali"]
+            },
+            {
+              "name": "Lower Dibang Valley",
+              "tehsils": ["Roing", "Namsai", "Sunpura"]
+            },
+            {
+              "name": "Upper Dibang Valley",
+              "tehsils": ["Anini", "Mipi"]
+            },
+            {
+              "name": "Lepa Rada",
+              "tehsils": ["Bameng", "Khalari"]
+            },
+            {
+              "name": "Pakke Kessang",
+              "tehsils": ["Bhalukpong", "Seppa"]
+            }
+          ]
+        }
+      },
+      {
+        "Assam": {
+          "capital": "Dispur",
+          "Largest City": "Guwahati",
+          "districts": [
+            {
+              "name": "Barpeta",
+              "tehsils": ["Barpeta", "Bajali", "Chenga", "Patacharkuchi"]
+            },
+            {
+              "name": "Bongaigaon",
+              "tehsils": ["Bongaigaon", "Chandrapur", "Moukhali", "Salbari"]
+            },
+            {
+              "name": "Cachar",
+              "tehsils": ["Cachar", "Hailakandi", "Karimganj"]
+            },
+            {
+              "name": "Charaideo",
+              "tehsils": ["Sonari", "Mahmora", "Gosaigaon"]
+            },
+            {
+              "name": "Darrang",
+              "tehsils": ["Mangaldai", "Dalgaon", "Sipajhar", "Kharupetia"]
+            },
+            {
+              "name": "Dhemaji",
+              "tehsils": ["Dhemaji", "Jonai", "Sissiborgaon"]
+            },
+            {
+              "name": "Dhubri",
+              "tehsils": ["Dhubri", "Agomoni", "Fakirganj", "Gauripur"]
+            },
+            {
+              "name": "Goalpara",
+              "tehsils": ["Goalpara", "Bilasipara", "Lakhipur", "Dudhnoi"]
+            },
+            {
+              "name": "Golaghat",
+              "tehsils": ["Golaghat", "Bokakhat", "Khumtai", "Sarupathar"]
+            },
+            {
+              "name": "Hailakandi",
+              "tehsils": ["Hailakandi", "Lala", "Katlicherra"]
+            },
+            {
+              "name": "Kamrup",
+              "tehsils": ["Guwahati", "Rangia", "Chaygaon", "Palasbari"]
+            },
+            {
+              "name": "Kamrup Metropolitan",
+              "tehsils": ["Guwahati"]
+            },
+            {
+              "name": "Karbi Anglong",
+              "tehsils": ["Karbi Anglong", "Howraghat", "Congsuli", "Amreng"]
+            },
+            {
+              "name": "Karimganj",
+              "tehsils": ["Karimganj", "Ratabari", "Badarpur", "Patharkandi"]
+            },
+            {
+              "name": "Kokrajhar",
+              "tehsils": ["Kokrajhar", "Gossaigaon", "Chirang"]
+            },
+            {
+              "name": "Lakhimpur",
+              "tehsils": ["North Lakhimpur", "Dhakuakhana", "Bihpuria"]
+            },
+            {
+              "name": "Majuli",
+              "tehsils": ["Majuli"]
+            },
+            {
+              "name": "Morigaon",
+              "tehsils": ["Morigaon", "Mayong", "Laharighat", "Jagiroad"]
+            },
+            {
+              "name": "Nagaon",
+              "tehsils": ["Nagaon", "Koliabor", "Samaguri", "Raha"]
+            },
+            {
+              "name": "Nalbari",
+              "tehsils": ["Nalbari", "Barkhetri", "Pachim Nalbari"]
+            },
+            {
+              "name": "Sivasagar",
+              "tehsils": ["Sivasagar", "Amguri", "Nazira", "Jorhat"]
+            },
+            {
+              "name": "Sonitpur",
+              "tehsils": ["Tezpur", "Bihpuria", "Gohpur", "Dhekiajuli"]
+            },
+            {
+              "name": "Tinsukia",
+              "tehsils": ["Tinsukia", "Makum", "Margherita", "Sapekhati"]
+            },
+            {
+              "name": "Udalguri",
+              "tehsils": ["Udalguri", "Mazbat", "Tangla"]
+            },
+            {
+              "name": "West Karbi Anglong",
+              "tehsils": ["Diphu", "Bokajan", "Kheroni"]
+            }
+          ]
+        }
+      },
+      {
+        "Bihar": {
+          "capital": "Patna",
+          "Largest City": "Patna",
+          "districts": [
+            {
+              "name": "Araria",
+              "tehsils": ["Araria", "Forbesganj", "Jokihat", "Raniganj"]
+            },
+            {
+              "name": "Arwal",
+              "tehsils": ["Arwal", "Kaler", "Kurtha"]
+            },
+            {
+              "name": "Aurangabad",
+              "tehsils": ["Aurangabad", "Daudnagar", "Goh", "Barun"]
+            },
+            {
+              "name": "Banka",
+              "tehsils": ["Banka", "Amarpur", "Katoria", "Belhar"]
+            },
+            {
+              "name": "Begusarai",
+              "tehsils": ["Begusarai", "Balia", "Teghra", "Cheria Bariarpur"]
+            },
+            {
+              "name": "Bhagalpur",
+              "tehsils": ["Bhagalpur", "Kahalgaon", "Nathnagar", "Sultanganj"]
+            },
+            {
+              "name": "Bhojpur",
+              "tehsils": ["Ara", "Piro", "Shahpur", "Jagdishpur"]
+            },
+            {
+              "name": "Buxar",
+              "tehsils": ["Buxar", "Dumraon", "Itarhi", "Chausa"]
+            },
+            {
+              "name": "Darbhanga",
+              "tehsils": ["Darbhanga", "Benipur", "Jale", "Bahadurpur"]
+            },
+            {
+              "name": "East Champaran",
+              "tehsils": ["Motihari", "Chakia", "Raxaul", "Areraj"]
+            },
+            {
+              "name": "Gaya",
+              "tehsils": ["Gaya", "Bodh Gaya", "Sherghati", "Tekari"]
+            },
+            {
+              "name": "Gopalganj",
+              "tehsils": ["Gopalganj", "Hathua", "Barauli", "Kuchaikote"]
+            },
+            {
+              "name": "Jamui",
+              "tehsils": ["Jamui", "Jhajha", "Sono", "Chakai"]
+            },
+            {
+              "name": "Jehanabad",
+              "tehsils": ["Jehanabad", "Makhdumpur", "Hulasganj"]
+            },
+            {
+              "name": "Kaimur",
+              "tehsils": ["Bhabua", "Ramgarh", "Mohania", "Adhaura"]
+            },
+            {
+              "name": "Katihar",
+              "tehsils": ["Katihar", "Barsoi", "Kadwa", "Manihari"]
+            },
+            {
+              "name": "Khagaria",
+              "tehsils": ["Khagaria", "Parbatta", "Gogri", "Alauli"]
+            },
+            {
+              "name": "Kishanganj",
+              "tehsils": ["Kishanganj", "Bahadurganj", "Thakurganj", "Pothia"]
+            },
+            {
+              "name": "Lakhisarai",
+              "tehsils": ["Lakhisarai", "Barahiya", "Surajgarha", "Halsi"]
+            },
+            {
+              "name": "Madhepura",
+              "tehsils": ["Madhepura", "Bihariganj", "Murliganj", "Udakishunganj"]
+            },
+            {
+              "name": "Madhubani",
+              "tehsils": ["Madhubani", "Jhanjharpur", "Benipatti", "Pandaul"]
+            },
+            {
+              "name": "Munger",
+              "tehsils": ["Munger", "Kharagpur", "Jamalpur", "Tarapur"]
+            },
+            {
+              "name": "Muzaffarpur",
+              "tehsils": ["Muzaffarpur", "Kanti", "Saraiya", "Paroo"]
+            },
+            {
+              "name": "Nalanda",
+              "tehsils": ["Bihar Sharif", "Rajgir", "Hilsa", "Islampur"]
+            },
+            {
+              "name": "Nawada",
+              "tehsils": ["Nawada", "Hisua", "Rajauli", "Warisaliganj"]
+            },
+            {
+              "name": "Patna",
+              "tehsils": ["Patna", "Barh", "Masaurhi", "Paliganj"]
+            },
+            {
+              "name": "Purnia",
+              "tehsils": ["Purnia", "Dhamdaha", "Banmankhi", "Baisi"]
+            },
+            {
+              "name": "Rohtas",
+              "tehsils": ["Sasaram", "Dehri", "Bikramganj", "Chenari"]
+            },
+            {
+              "name": "Saharsa",
+              "tehsils": ["Saharsa", "Simri Bakhtiyarpur", "Mahishi", "Sonbarsa"]
+            },
+            {
+              "name": "Samastipur",
+              "tehsils": ["Samastipur", "Dalsinghsarai", "Rosera", "Patori"]
+            },
+            {
+              "name": "Saran",
+              "tehsils": ["Chhapra", "Marhaura", "Amnour", "Parsa"]
+            },
+            {
+              "name": "Sheikhpura",
+              "tehsils": ["Sheikhpura", "Ariari", "Barbigha", "Chewara"]
+            },
+            {
+              "name": "Sheohar",
+              "tehsils": ["Sheohar", "Tariyani"]
+            },
+            {
+              "name": "Sitamarhi",
+              "tehsils": ["Sitamarhi", "Bairgania", "Riga", "Pupri"]
+            },
+            {
+              "name": "Siwan",
+              "tehsils": ["Siwan", "Maharajganj", "Barharia", "Ziradei"]
+            },
+            {
+              "name": "Supaul",
+              "tehsils": ["Supaul", "Birpur", "Triveniganj", "Nirmali"]
+            },
+            {
+              "name": "Vaishali",
+              "tehsils": ["Hajipur", "Mahnar", "Lalganj", "Raghopur"]
+            },
+            {
+              "name": "West Champaran",
+              "tehsils": ["Bettiah", "Narkatiaganj", "Bagaha", "Ramnagar"]
+            }
+          ]
+        }
+      },
+      {
+        "Chandigarh": {
+          "capital": "Chandigarh",
+          "Largest City": "Chandigarh",
+          "districts": [
+            {
+              "name": "Chandigarh",
+              "tehsils": ["Chandigarh"]
+            }
+          ]
+        }
+      },
+      {
+        "Chhattisgarh": {
+          "capital": "Raipur",
+          "Largest City": "Raipur",
+          "districts": [
+            {
+              "name": "Balod",
+              "tehsils": ["Balod", "Dondi", "Dondi Lohara", "Gunderdehi"]
+            },
+            {
+              "name": "Baloda Bazar",
+              "tehsils": ["Baloda Bazar", "Palari", "Kasdol", "Bhatapara"]
+            },
+            {
+              "name": "Balrampur",
+              "tehsils": ["Balrampur", "Ramanujganj", "Rajpur", "Shankargarh"]
+            },
+            {
+              "name": "Bastar",
+              "tehsils": ["Jagdalpur", "Bastar", "Lohandiguda", "Tokapal"]
+            },
+            {
+              "name": "Bemetara",
+              "tehsils": ["Bemetara", "Saja", "Berla", "Navagarh"]
+            },
+            {
+              "name": "Bijapur",
+              "tehsils": ["Bijapur", "Bhairamgarh", "Bhopalpatnam", "Usur"]
+            },
+            {
+              "name": "Bilaspur",
+              "tehsils": ["Bilaspur", "Takhatpur", "Masturi", "Bilha"]
+            },
+            {
+              "name": "Dantewada",
+              "tehsils": ["Dantewada", "Katekalyan", "Kuakonda", "Barsoor"]
+            },
+            {
+              "name": "Dhamtari",
+              "tehsils": ["Dhamtari", "Kurud", "Magarlod", "Nagri"]
+            },
+            {
+              "name": "Durg",
+              "tehsils": ["Durg", "Patan", "Dhamdha", "Bhilai"]
+            },
+            {
+              "name": "Gariaband",
+              "tehsils": ["Gariaband", "Chhura", "Mainpur", "Deobhog"]
+            },
+            {
+              "name": "Gaurela-Pendra-Marwahi",
+              "tehsils": ["Gaurela", "Pendra", "Marwahi"]
+            },
+            {
+              "name": "Janjgir-Champa",
+              "tehsils": ["Janjgir", "Champa", "Pamgarh", "Akaltara"]
+            },
+            {
+              "name": "Jashpur",
+              "tehsils": ["Jashpur", "Pathalgaon", "Kunkuri", "Duldula"]
+            },
+            {
+              "name": "Kabirdham",
+              "tehsils": ["Kawardha", "Bodla", "Pandariya", "Sahaspur Lohara"]
+            },
+            {
+              "name": "Kanker",
+              "tehsils": ["Kanker", "Antagarh", "Charama", "Durgukondal"]
+            },
+            {
+              "name": "Kondagaon",
+              "tehsils": ["Kondagaon", "Makdi", "Farasgaon", "Baderajpur"]
+            },
+            {
+              "name": "Korba",
+              "tehsils": ["Korba", "Katghora", "Pali", "Kartala"]
+            },
+            {
+              "name": "Koriya",
+              "tehsils": ["Baikunthpur", "Manendragarh", "Sonhat", "Khongapani"]
+            },
+            {
+              "name": "Mahasamund",
+              "tehsils": ["Mahasamund", "Saraipali", "Bagbahara", "Basna"]
+            },
+            {
+              "name": "Mungeli",
+              "tehsils": ["Mungeli", "Pathariya", "Lormi"]
+            },
+            {
+              "name": "Narayanpur",
+              "tehsils": ["Narayanpur", "Orchha"]
+            },
+            {
+              "name": "Raigarh",
+              "tehsils": ["Raigarh", "Sarangarh", "Pusaur", "Gharghoda"]
+            },
+            {
+              "name": "Raipur",
+              "tehsils": ["Raipur", "Arang", "Abhanpur", "Tilda"]
+            },
+            {
+              "name": "Rajnandgaon",
+              "tehsils": ["Rajnandgaon", "Dongargarh", "Khairagarh", "Chhuikhadan"]
+            },
+            {
+              "name": "Sukma",
+              "tehsils": ["Sukma", "Chhindgarh", "Konta"]
+            },
+            {
+              "name": "Surajpur",
+              "tehsils": ["Surajpur", "Pratappur", "Odgi", "Ramanujnagar"]
+            },
+            {
+              "name": "Surguja",
+              "tehsils": ["Ambikapur", "Lakhanpur", "Sitapur", "Lundra"]
+            },
+            {
+              "name": "Balodabazar-Bhatapara",
+              "tehsils": ["Balodabazar", "Bhatapara", "Kasdol", "Palari"]
+            },
+            {
+              "name": "Sarangarh-Bilaigarh",
+              "tehsils": ["Sarangarh", "Bilaigarh"]
+            },
+            {
+              "name": "Manendragarh-Chirmiri-Bharatpur",
+              "tehsils": ["Manendragarh", "Chirmiri", "Bharatpur"]
+            },
+            {
+              "name": "Khairagarh-Chhuikhadan-Gandai",
+              "tehsils": ["Khairagarh", "Chhuikhadan", "Gandai"]
+            },
+            {
+              "name": "Mohla-Manpur-Chowki",
+              "tehsils": ["Mohla", "Manpur", "Chowki"]
+            }
+          ]
+        }
+      },
+      {
+        "Dadra and Nagar Haveli": {
+          "capital": "Dadar",
+          "Largest City": "Dadar",
+          "districts": [
+            {
+              "name": "Dadra and Nagar Haveli",
+              "tehsils": ["Dadra", "Nagar Haveli"]
+            }
+          ]
+        }
+      },
+      {
+        "Daman and Diu": {
+          "capital": "Daman",
+          "Largest City": "Daman",
+          "districts": [
+            {
+              "name": "Daman and Diu",
+              "tehsils": ["Daman", "Diu"]
+            }
+          ]
+        }
+      },
+      {
+        "Delhi": {
+          "capital": "New Delhi",
+          "Largest City": "New Delhi",
+          "districts": [
+            {
+              "name": "Central Delhi",
+              "tehsils": ["Delhi", "Karol Bagh", "Paharganj"]
+            },
+            {
+              "name": "East Delhi",
+              "tehsils": ["Preet Vihar", "Mayur Vihar", "Laxmi Nagar", "Karkardooma"]
+            },
+            {
+              "name": "New Delhi",
+              "tehsils": ["Chanakyapuri", "Janpath", "Connaught Place", "Rajendra Place"]
+            },
+            {
+              "name": "North Delhi",
+              "tehsils": ["Civil Lines", "Alipur", "Sarai Rohilla", "Burari"]
+            },
+            {
+              "name": "North East Delhi",
+              "tehsils": ["Seelampur", "Shahdara", "Welcome", "Kareemnagar"]
+            },
+            {
+              "name": "North West Delhi",
+              "tehsils": ["Rohini", "Kanjhawala", "Pitampura", "Shalimar Bagh"]
+            },
+            {
+              "name": "South Delhi",
+              "tehsils": ["Mehrauli", "Saket", "Vasant Kunj", "Kalkaji"]
+            },
+            {
+              "name": "South East Delhi",
+              "tehsils": ["Okhla", "Jasola", "Shaheen Bagh", "Sarai Kale Khan"]
+            },
+            {
+              "name": "South West Delhi",
+              "tehsils": ["Dwarka", "Najafgarh", "Palam", "Vasant Vihar"]
+            },
+            {
+              "name": "West Delhi",
+              "tehsils": ["Rajouri Garden", "Punjabi Bagh", "Janakpuri", "Moti Nagar"]
+            },
+            {
+              "name": "Shahdara",
+              "tehsils": ["Shahdara", "Seelampur", "Kundli", "Bhalswa"]
+            }
+          ]
+        }
+      },
+      {
+        "Goa": {
+          "capital": "Panaji",
+          "Largest City": "Vasco da Gama",
+          "districts": [
+            {
+              "name": "North Goa",
+              "tehsils": ["Bardez", "Bicholim", "Tiswadi", "Sattari", "Pernem"]
+            },
+            {
+              "name": "South Goa",
+              "tehsils": ["Quepem", "Canacona", "Mormugao", "Salcete", "Sanguem"]
+            }
+          ]
+        }
+      },
+      {
+        "Gujarat": {
+          "capital": "Gandhinagar",
+          "Largest City": "Ahmedabad",
+          "districts": [
+            {
+              "name": "Ahmedabad",
+              "tehsils": ["Ahmedabad", "Daskroi", "Sanand", "Vatva", "Nikol", "Bavla"]
+            },
+            {
+              "name": "Amreli",
+              "tehsils": ["Amreli", "Rajula", "Lathi", "Jafrabad", "Khambha"]
+            },
+            {
+              "name": "Anand",
+              "tehsils": ["Anand", "Borsad", "Khambhat", "Petlad", "Sojitra"]
+            },
+            {
+              "name": "Aravalli",
+              "tehsils": ["Modasa", "Bayad", "Malpur", "Himmatnagar"]
+            },
+            {
+              "name": "Banaskantha",
+              "tehsils": ["Palampur", "Deesa", "Tharad", "Vav", "Banta"]
+            },
+            {
+              "name": "Bharuch",
+              "tehsils": ["Bharuch", "Ankleshwar", "Jambusar", "Vagra", "Dahej"]
+            },
+            {
+              "name": "Bhavnagar",
+              "tehsils": ["Bhavnagar", "Gariadhar", "Palitana", "Valsad", "Mahuva"]
+            },
+            {
+              "name": "Botad",
+              "tehsils": ["Botad", "Barwala", "Gadhada"]
+            },
+            {
+              "name": "Chhota Udepur",
+              "tehsils": ["Chhota Udepur", "Pavi Jetpur", "Pehva"]
+            },
+            {
+              "name": "Dahod",
+              "tehsils": ["Dahod", "Jhalod", "Madhya", "Limkheda"]
+            },
+            {
+              "name": "Dangs",
+              "tehsils": ["Ahwa", "Waghai", "Subir"]
+            },
+            {
+              "name": "Gandhinagar",
+              "tehsils": ["Gandhinagar", "Mansa", "Kalol", "Dehgam"]
+            },
+            {
+              "name": "Gir Somnath",
+              "tehsils": ["Veraval", "Gir Gadhada", "Talala"]
+            },
+            {
+              "name": "Jamnagar",
+              "tehsils": ["Jamnagar", "Khambhalia", "Kalavad", "Jodiya"]
+            },
+            {
+              "name": "Junagadh",
+              "tehsils": ["Junagadh", "Mendarda", "Visavadar", "Bhesan"]
+            },
+            {
+              "name": "Kutch",
+              "tehsils": ["Bhuj", "Anjar", "Nakhtrana", "Mandvi", "Kandla"]
+            },
+            {
+              "name": "Kheda",
+              "tehsils": ["Nadiad", "Matar", "Vasna", "Khambhat"]
+            },
+            {
+              "name": "Mahisagar",
+              "tehsils": ["Lunawada", "Kheda", "Balasinor"]
+            },
+            {
+              "name": "Mehsana",
+              "tehsils": ["Mehsana", "Visnagar", "Kadi", "Unjha", "Patan"]
+            },
+            {
+              "name": "Morbi",
+              "tehsils": ["Morbi", "Wankaner", "Tankara", "Maliya"]
+            },
+            {
+              "name": "Narmada",
+              "tehsils": ["Rajpipla", "Sagbara", "Dediapada"]
+            },
+            {
+              "name": "Navsari",
+              "tehsils": ["Navsari", "Chikhli", "Gandevi", "Vijalpor"]
+            },
+            {
+              "name": "Panchmahal",
+              "tehsils": ["Godhra", "Halol", "Ghoghamba", "Morwa"]
+            },
+            {
+              "name": "Patan",
+              "tehsils": ["Patan", "Sidhpur", "Harij", "Radhanpur"]
+            },
+            {
+              "name": "Porbandar",
+              "tehsils": ["Porbandar", "Kutiyana", "Ranavav", "Jafrabad"]
+            },
+            {
+              "name": "Rajkot",
+              "tehsils": ["Rajkot", "Jasdan", "Kotda Sangani", "Bhayavadar"]
+            },
+            {
+              "name": "Sabarkantha",
+              "tehsils": ["Himmatnagar", "Idar", "Prantij", "Bayad"]
+            },
+            {
+              "name": "Surat",
+              "tehsils": ["Surat", "Kamrej", "Choryasi", "Olpad", "Mandvi"]
+            },
+            {
+              "name": "Surendranagar",
+              "tehsils": ["Surendranagar", "Chotila", "Muli", "Wadhwan"]
+            },
+            {
+              "name": "Tapi",
+              "tehsils": ["Vyara", "Umarpada", "Songadh"]
+            },
+            {
+              "name": "Vadodara",
+              "tehsils": ["Vadodara", "Savli", "Karjan", "Waghodia"]
+            },
+            {
+              "name": "Valsad",
+              "tehsils": ["Valsad", "Vapi", "Pardi", "Dharampur"]
+            }
+          ]
+        }
+      },
+      {
+        "Haryana": {
+          "capital": "Chandigarh",
+          "Largest City": "Faridabad",
+          "districts": [
+            {
+              "name": "Ambala",
+              "tehsils": [
+                "Ambala",
+                "Barara",
+                "Naraingarh",
+                "Shahzadpur",
+                "saha"
+              ]
+            },
+            {
+              "name": "Bhiwani",
+              "tehsils": [
+                "Bhiwani",
+                "Loharu",
+                "Siwani",
+                "Tosham",
+                "Charkhi Dadri"
+              ]
+            },
+            {
+              "name": "Charkhi Dadri",
+              "tehsils": [
+                "Charkhi Dadri",
+                "Badhra"
+              ]
+            },
+            {
+              "name": "Faridabad",
+              "tehsils": [
+                "Faridabad",
+                "Ballabgarh"
+              ]
+            },
+            {
+              "name": "Fatehabad",
+              "tehsils": [
+                "Fatehabad",
+                "Tohana",
+                "Ratia"
+              ]
+            },
+            {
+              "name": "Gurugram",
+              "tehsils": [
+                "Gurugram",
+                "Sohna",
+                "Pataudi",
+                "Farrukhnagar",
+                "Manesar"
+              ]
+            },
+            {
+              "name": "Hisar",
+              "tehsils": [
+                "Hisar",
+                "Hansi",
+                "Barwala",
+                "Narnaund"
+              ]
+            },
+            {
+              "name": "Jhajjar",
+              "tehsils": [
+                "Jhajjar",
+                "Bahadurgarh",
+                "Beri",
+                "Matanhail"
+              ]
+            },
+            {
+              "name": "Jind",
+              "tehsils": [
+                "Jind",
+                "Narwana",
+                "Safidon",
+                "Uchana"
+              ]
+            },
+            {
+              "name": "Kaithal",
+              "tehsils": [
+                "Kaithal",
+                "Guhla",
+                "Pundri",
+                "Rajound"
+              ]
+            },
+            {
+              "name": "Karnal",
+              "tehsils": [
+                "Karnal",
+                "Indri",
+                "Assandh",
+                "Gharaunda",
+                "Nilokheri"
+              ]
+            },
+            {
+              "name": "Kurukshetra",
+              "tehsils": [
+                "Kurukshetra",
+                "Thanesar",
+                "Pehowa",
+                "Ladwa",
+                "Shahabad"
+              ]
+            },
+            {
+              "name": "Mahendragarh",
+              "tehsils": [
+                "Mahendragarh",
+                "Narnaul",
+                "Kanina",
+                "Ateli"
+              ]
+            },
+            {
+              "name": "Nuh",
+              "tehsils": [
+                "Nuh",
+                "Ferozepur Jhirka",
+                "Punhana",
+                "Tauru"
+              ]
+            },
+            {
+              "name": "Palwal",
+              "tehsils": [
+                "Palwal",
+                "Hathin",
+                "Hodal"
+              ]
+            },
+            {
+              "name": "Panchkula",
+              "tehsils": [
+                "Panchkula",
+                "Kalka",
+                "Raipur Rani"
+              ]
+            },
+            {
+              "name": "Panipat",
+              "tehsils": [
+                "Panipat",
+                "Samalkha",
+                "Israna"
+              ]
+            },
+            {
+              "name": "Rewari",
+              "tehsils": [
+                "Rewari",
+                "Bawal",
+                "Kosli"
+              ]
+            },
+            {
+              "name": "Rohtak",
+              "tehsils": [
+                "Rohtak",
+                "Maham",
+                "Sampla",
+                "Kalanaur"
+              ]
+            },
+            {
+              "name": "Sirsa",
+              "tehsils": [
+                "Sirsa",
+                "Dabwali",
+                "Rania",
+                "Ellenabad"
+              ]
+            },
+            {
+              "name": "Sonipat",
+              "tehsils": [
+                "Sonipat",
+                "Gohana",
+                "Kharkhoda",
+                "Mundlana"
+              ]
+            },
+            {
+              "name": "Yamunanagar",
+              "tehsils": [
+                "Yamunanagar",
+                "Jagadhri",
+                "Radaur",
+                "Bilaspur",
+                "Chhachhrauli"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Himachal Pradesh": {
+          "capital": "Shimla",
+          "Largest City": "Shimla",
+            "districts": [
+            {
+                "name": "Bilaspur",
+                "tehsils": [
+                "Bilaspur",
+                "Jhandutta",
+                "Ghumarwin",
+                "Sri Nainadevi"
+                ]
+            },
+            {
+                "name": "Chamba",
+                "tehsils": [
+                "Chamba",
+                "Dalhousie",
+                "Bhattiyat",
+                "Pangi",
+                "Salooni"
+                ]
+            },
+            {
+                "name": "Hamirpur",
+                "tehsils": [
+                "Hamirpur",
+                "Nadaun",
+                "Bari",
+                "Bijhari"
+                ]
+            },
+            {
+                "name": "Kangra",
+                "tehsils": [
+                "Dharamshala",
+                "Palampur",
+                "Kangra",
+                "Nagrota",
+                "Jaisinghpur",
+                "Kangra",
+                "Indora"
+                ]
+            },
+            {
+                "name": "Kullu",
+                "tehsils": [
+                "Kullu",
+                "Manali",
+                "Banjar",
+                "Anni"
+                ]
+            },
+            {
+                "name": "Mandi",
+                "tehsils": [
+                "Mandi",
+                "Nerchowk",
+                "Sundernagar",
+                "Karsog",
+                "Seraj",
+                "Balh"
+                ]
+            },
+            {
+                "name": "Solan",
+                "tehsils": [
+                "Solan",
+                "Kasauli",
+                "Nalagarh",
+                "Arki",
+                "Saproon"
+                ]
+            },
+            {
+                "name": "Sirmaur",
+                "tehsils": [
+                "Nahan",
+                "Paonta Sahib",
+                "Shillai",
+                "Rajgarh"
+                ]
+            },
+            {
+                "name": "Una",
+                "tehsils": [
+                "Una",
+                "Haroli",
+                "Bangana",
+                "Gagret"
+                ]
+            },
+            {
+                "name": "Shimla",
+                "tehsils": [
+                "Shimla",
+                "Chopal",
+                "Theog",
+                "Kangra",
+                "Jubbal",
+                "Naldehra"
+                ]
+            },
+            {
+                "name": "Kinnaur",
+                "tehsils": [
+                "Reckong Peo",
+                "Kalpa",
+                "Nichar",
+                "Chini"
+                ]
+            },
+            {
+                "name": "Lahaul and Spiti",
+                "tehsils": [
+                "Keylong",
+                "Udaipur",
+                "Kaza"
+                ]
+            }
+            ]
+        }  
+      },
+      {
+        "Jammu & Kashmir": {
+          "capital": "Srinagar",
+          "Largest City": "Srinagar",
+        "districts": [
+            {
+            "name": "Anantnag",
+            "tehsils": [
+                "Anantnag",
+                "Bijbehara",
+                "Kokernag",
+                "Pahalgam",
+                "Doru"
+            ]
+            },
+            {
+            "name": "Bandipora",
+            "tehsils": [
+                "Bandipora",
+                "Gurez",
+                "Sumbal",
+                "Naidkhai"
+            ]
+            },
+            {
+            "name": "Baramulla",
+            "tehsils": [
+                "Baramulla",
+                "Pattan",
+                "Sopore",
+                "Tangmarg",
+                "Rafiabad"
+            ]
+            },
+            {
+            "name": "Budgam",
+            "tehsils": [
+                "Budgam",
+                "Chadoora",
+                "Khansahib",
+                "Magam",
+                "Narbal"
+            ]
+            },
+            {
+            "name": "Doda",
+            "tehsils": [
+                "Doda",
+                "Bhaderwah",
+                "Gandoh",
+                "Assar"
+            ]
+            },
+            {
+            "name": "Ganderbal",
+            "tehsils": [
+                "Ganderbal",
+                "Kangan",
+                "Wakoora"
+            ]
+            },
+            {
+            "name": "Jammu",
+            "tehsils": [
+                "Jammu",
+                "Akhnoor",
+                "RS Pura",
+                "Chhamb",
+                "Bishnah",
+                "Nagrota"
+            ]
+            },
+            {
+            "name": "Kathua",
+            "tehsils": [
+                "Kathua",
+                "Billawar",
+                "Hiranagar",
+                "Basohli",
+                "Mahanpur"
+            ]
+            },
+            {
+            "name": "Kishtwar",
+            "tehsils": [
+                "Kishtwar",
+                "Padder",
+                "Nagseni"
+            ]
+            },
+            {
+            "name": "Kulgam",
+            "tehsils": [
+                "Kulgam",
+                "Qazigund",
+                "Mirbazar",
+                "Wangund"
+            ]
+            },
+            {
+            "name": "Kupwara",
+            "tehsils": [
+                "Kupwara",
+                "Handwara",
+                "Langate",
+                "Lolab"
+            ]
+            },
+            {
+            "name": "Poonch",
+            "tehsils": [
+                "Poonch",
+                "Mandi",
+                "Surankote",
+                "Buffliaz",
+                "Sawjian"
+            ]
+            },
+            {
+            "name": "Pulwama",
+            "tehsils": [
+                "Pulwama",
+                "Tral",
+                "Awantipora",
+                "Rajpora"
+            ]
+            },
+            {
+            "name": "Rajouri",
+            "tehsils": [
+                "Rajouri",
+                "Nowshera",
+                "Kotranka",
+                "Darhal"
+            ]
+            },
+            {
+            "name": "Ramban",
+            "tehsils": [
+                "Ramban",
+                "Batote",
+                "Banihal",
+                "Gool"
+            ]
+            },
+            {
+            "name": "Reasi",
+            "tehsils": [
+                "Reasi",
+                "Arnas",
+                "Mahore",
+                "Pouni"
+            ]
+            },
+            {
+            "name": "Samba",
+            "tehsils": [
+                "Samba",
+                "Ghagwal",
+                "Vijaypur"
+            ]
+            },
+            {
+            "name": "Shopian",
+            "tehsils": [
+                "Shopian",
+                "Zainapora",
+                "Chitragam"
+            ]
+            },
+            {
+            "name": "Srinagar",
+            "tehsils": [
+                "Srinagar",
+                "Badamibagh",
+                "Shalimar",
+                "Sonwar",
+                "Khanyar"
+            ]
+            },
+            {
+            "name": "Udhampur",
+            "tehsils": [
+                "Udhampur",
+                "Chenani",
+                "Majalta",
+                "Ramnagar"
+            ]
+            }
+        ]
+        }
+      },
+      {
+        "Jharkhand": {
+          "capital": "Ranchi",
+          "Largest City": "Jamshedpur",
+          "districts": [
+            {
+              "name": "Bokaro",
+              "tehsils": ["Bokaro", "Chas", "Bermo", "Gomia"]
+            },
+            {
+              "name": "Chatra",
+              "tehsils": ["Chatra", "Hunterganj", "Simaria", "Kunda"]
+            },
+            {
+              "name": "Deoghar",
+              "tehsils": ["Deoghar", "Madhupur", "Sarwan", "Saraiyahat"]
+            },
+            {
+              "name": "Dhanbad",
+              "tehsils": ["Dhanbad", "Jharia", "Baliapur", "Govindpur"]
+            },
+            {
+              "name": "Dumka",
+              "tehsils": ["Dumka", "Ranishwar", "Gopikandar", "Kathikund"]
+            },
+            {
+              "name": "East Singhbhum",
+              "tehsils": ["Jamshedpur", "Ghatshila", "Baharagora", "Potka"]
+            },
+            {
+              "name": "Garhwa",
+              "tehsils": ["Garhwa", "Bishrampur", "Ranka", "Meral"]
+            },
+            {
+              "name": "Giridih",
+              "tehsils": ["Giridih", "Dhanwar", "Bagodar", "Jamua"]
+            },
+            {
+              "name": "Godda",
+              "tehsils": ["Godda", "Pathargama", "Mahagama", "Poreyahat"]
+            },
+            {
+              "name": "Gumla",
+              "tehsils": ["Gumla", "Bishunpur", "Chainpur", "Basia"]
+            },
+            {
+              "name": "Hazaribagh",
+              "tehsils": ["Hazaribagh", "Barhi", "Katkamsandi", "Barkagaon"]
+            },
+            {
+              "name": "Jamtara",
+              "tehsils": ["Jamtara", "Nala", "Kundahit", "Narayanpur"]
+            },
+            {
+              "name": "Khunti",
+              "tehsils": ["Khunti", "Murhu", "Arki", "Torpa"]
+            },
+            {
+              "name": "Koderma",
+              "tehsils": ["Koderma", "Jhumri Tilaiya", "Chandwara", "Domchanch"]
+            },
+            {
+              "name": "Latehar",
+              "tehsils": ["Latehar", "Balumath", "Barwadih", "Manika"]
+            },
+            {
+              "name": "Lohardaga",
+              "tehsils": ["Lohardaga", "Kuru", "Bhandra", "Senha"]
+            },
+            {
+              "name": "Pakur",
+              "tehsils": ["Pakur", "Maheshpur", "Amrapara", "Hiranpur"]
+            },
+            {
+              "name": "Palamu",
+              "tehsils": ["Medininagar", "Chhatarpur", "Nawa Bazar", "Hussainabad"]
+            },
+            {
+              "name": "Ramgarh",
+              "tehsils": ["Ramgarh", "Patratu", "Gola", "Mandu"]
+            },
+            {
+              "name": "Ranchi",
+              "tehsils": ["Ranchi", "Ormanjhi", "Kanke", "Mandar"]
+            },
+            {
+              "name": "Sahebganj",
+              "tehsils": ["Sahebganj", "Rajmahal", "Taljhari", "Barharwa"]
+            },
+            {
+              "name": "Seraikela-Kharsawan",
+              "tehsils": ["Seraikela", "Kharsawan", "Chandil", "Kuchai"]
+            },
+            {
+              "name": "Simdega",
+              "tehsils": ["Simdega", "Thethaitangar", "Kurdeg", "Bano"]
+            },
+            {
+              "name": "West Singhbhum",
+              "tehsils": ["Chaibasa", "Chakradharpur", "Noamundi", "Manoharpur"]
+            }
+          ]
+        }
+      },
+      {
+        "Karnataka": {
+          "capital": "Bengaluru",
+          "Largest City": "Bengaluru",
+          "districts": [
+            {
+              "name": "Bagalkot",
+              "tehsils": ["Bagalkot", "Bailhongal", "Badami", "Hunagund"]
+            },
+            {
+              "name": "Ballari",
+              "tehsils": ["Ballari", "Hospet", "Siruguppa", "Sandur"]
+            },
+            {
+              "name": "Belagavi",
+              "tehsils": ["Belagavi", "Hukeri", "Gokak", "Bailhongal"]
+            },
+            {
+              "name": "Bengaluru Rural",
+              "tehsils": ["Anekal", "Nelamangala", "Devanahalli", "Doddaballapura"]
+            },
+            {
+              "name": "Bengaluru Urban",
+              "tehsils": ["Bengaluru", "Krishna Rajendra Market", "Yelahanka", "Whitefield"]
+            },
+            {
+              "name": "Bidar",
+              "tehsils": ["Bidar", "Bhalki", "Humnabad", "Aurad"]
+            },
+            {
+              "name": "Chamarajanagar",
+              "tehsils": ["Chamarajanagar", "Yelandur", "Kollegal", "Challakere"]
+            },
+            {
+              "name": "Chikkaballapura",
+              "tehsils": ["Chikkaballapura", "Bagepalli", "Gauribidanur", "Chintamani"]
+            },
+            {
+              "name": "Chikkamagaluru",
+              "tehsils": ["Chikkamagaluru", "Kadur", "Tarikere", "Mudigere"]
+            },
+            {
+              "name": "Dakshina Kannada",
+              "tehsils": ["Mangalore", "Puttur", "Sullia", "Belthangady"]
+            },
+            {
+              "name": "Davanagere",
+              "tehsils": ["Davanagere", "Harihar", "Channagiri", "Jagalur"]
+            },
+            {
+              "name": "Dharmapuri",
+              "tehsils": ["Dharmapuri", "Harpanahalli", "Jagir", "Thungabhadra"]
+            },
+            {
+              "name": "Gadag",
+              "tehsils": ["Gadag", "Ron", "Nargund", "Shahapur"]
+            },
+            {
+              "name": "Hassan",
+              "tehsils": ["Hassan", "Channarayapatna", "Arsikere", "Hiriyur"]
+            },
+            {
+              "name": "Haveri",
+              "tehsils": ["Haveri", "Ranebennur", "Shiggaon", "Byadgi"]
+            },
+            {
+              "name": "Kalaburagi",
+              "tehsils": ["Kalaburagi", "Chincholi", "Sedam", "Afzalpur"]
+            },
+            {
+              "name": "Kodagu",
+              "tehsils": ["Madikeri", "Virajpet", "Somwarpet"]
+            },
+            {
+              "name": "Kolar",
+              "tehsils": ["Kolar", "Mulbagal", "Chikkaballapur", "Bangarpet"]
+            },
+            {
+              "name": "Koppal",
+              "tehsils": ["Koppal", "Hospet", "Jewargi", "Shahabad"]
+            },
+            {
+              "name": "Mandya",
+              "tehsils": ["Mandya", "Melukote", "Srirangapatna", "Pandavapura"]
+            },
+            {
+              "name": "Mysuru",
+              "tehsils": ["Mysuru", "Nanjangud", "Hunsur", "Periyapatna"]
+            },
+            {
+              "name": "Raichur",
+              "tehsils": ["Raichur", "Lingsugur", "Manvi", "Sindhanur"]
+            },
+            {
+              "name": "Ramanagara",
+              "tehsils": ["Ramanagara", "Channapatna", "Kanakapura"]
+            },
+            {
+              "name": "Shivamogga",
+              "tehsils": ["Shivamogga", "Bhadravati", "Sagar", "Shikaripura"]
+            },
+            {
+              "name": "Tumakuru",
+              "tehsils": ["Tumakuru", "Pavagada", "Gubbi", "Tiptur"]
+            },
+            {
+              "name": "Udupi",
+              "tehsils": ["Udupi", "Kundapura", "Karkala"]
+            },
+            {
+              "name": "Uttara Kannada",
+              "tehsils": ["Karwar", "Dandeli", "Kumta", "Ankola"]
+            },
+            {
+              "name": "Vijayapura",
+              "tehsils": ["Vijayapura", "Bijapur", "Bagalkot", "Sindagi"]
+            },
+            {
+              "name": "Yadgir",
+              "tehsils": ["Yadgir", "Gulbarga", "Shahabad", "Raichur"]
+            }
+          ]
+        }
+      },
+      {
+        "Kerala": {
+          "capital": "Thiruvananthapuram",
+          "Largest City": "Kochi",
+          "districts": [
+            {
+              "name": "Alappuzha",
+              "tehsils": ["Alappuzha", "Changanassery", "Mavelikkara", "Kuttanadu"]
+            },
+            {
+              "name": "Ernakulam",
+              "tehsils": ["Ernakulam", "Muvattupuzha", "Kochi", "Aluva"]
+            },
+            {
+              "name": "Idukki",
+              "tehsils": ["Idukki", "Thodupuzha", "Munnar", "Devikulam"]
+            },
+            {
+              "name": "Kannur",
+              "tehsils": ["Kannur", "Thalassery", "Payyannur", "Sreekandapuram"]
+            },
+            {
+              "name": "Kasaragod",
+              "tehsils": ["Kasaragod", "Badiadka", "Manjeshwaram", "Vidyagiri"]
+            },
+            {
+              "name": "Kollam",
+              "tehsils": ["Kollam", "Karunagappally", "Kunnathur", "Chavara"]
+            },
+            {
+              "name": "Kottayam",
+              "tehsils": ["Kottayam", "Changanassery", "Meenachil", "Vaikom"]
+            },
+            {
+              "name": "Kozhikode",
+              "tehsils": ["Kozhikode", "Calicut", "Vatakara", "Koyilandy"]
+            },
+            {
+              "name": "Malappuram",
+              "tehsils": ["Malappuram", "Ponnani", "Perinthalmanna", "Tirur"]
+            },
+            {
+              "name": "Palakkad",
+              "tehsils": ["Palakkad", "Mannarkkad", "Ottappalam", "Alathur"]
+            },
+            {
+              "name": "Pathanamthitta",
+              "tehsils": ["Pathanamthitta", "Adoor", "Ranni", "Konni"]
+            },
+            {
+              "name": "Thrissur",
+              "tehsils": ["Thrissur", "Irinjalakuda", "Kodungallur", "Chalakudy"]
+            },
+            {
+              "name": "Thiruvananthapuram",
+              "tehsils": ["Thiruvananthapuram", "Nedumangad", "Varkala", "Parassala"]
+            },
+            {
+              "name": "Wayanad",
+              "tehsils": ["Mananthavady", "Sultan Bathery", "Vythiri"]
+            }
+          ]
+        }
+      },
+      
+      {
+        "Ladakh": {
+          "capital": "Leh",
+          "Largest City": "Leh",
+            "districts": [
+                {
+                "name": "Leh",
+                "tehsils": [
+                    "Leh",
+                    "Nubra",
+                    "Zanskar",
+                    "Khaltsi",
+                    "Nyoma",
+                    "Diskit",
+                    "Turtuk"
+                ]
+                },
+                {
+                "name": "Kargil",
+                "tehsils": [
+                    "Kargil",
+                    "Zanskar",
+                    "Drass",
+                    "Shakar Chiktan",
+                    "Suru"
+                ]
+                }
+            ]
+        }
+      },
+      {
+        "Lakshadweep": {
+          "capital": "Kavaratti",
+          "Largest City": "Kavaratti",
+          "districts": [
+            {
+              "name": "Lakshadweep",
+              "tehsils": ["Kavaratti", "Agatti", "Minicoy", "Andrott", "Kalapeni", "Suheli Par"]
+            }
+          ]
+        }
+      },
+      {
+        "Madhya Pradesh": {
+          "capital": "Bhopal",
+          "Largest City": "Indore",
+          "districts": [
+            {
+              "name": "Agar Malwa",
+              "tehsils": ["Agar", "Biaora", "Nalkheda"]
+            },
+            {
+              "name": "Alirajpur",
+              "tehsils": ["Alirajpur", "Jobat", "Piploda"]
+            },
+            {
+              "name": "Anuppur",
+              "tehsils": ["Anuppur", "Burhar", "Jaithari"]
+            },
+            {
+              "name": "Ashok Nagar",
+              "tehsils": ["Ashok Nagar", "Chanderi", "Isagarh"]
+            },
+            {
+              "name": "Balaghat",
+              "tehsils": ["Balaghat", "Lohara", "Waraseoni"]
+            },
+            {
+              "name": "Barwani",
+              "tehsils": ["Barwani", "Pati", "Rajpur"]
+            },
+            {
+              "name": "Betul",
+              "tehsils": ["Betul", "Multai", "Shahpur"]
+            },
+            {
+              "name": "Bhind",
+              "tehsils": ["Bhind", "Gohad", "Madhya"]
+            },
+            {
+              "name": "Bhopal",
+              "tehsils": ["Bhopal", "Huzur", "Sehore"]
+            },
+            {
+              "name": "Burhanpur",
+              "tehsils": ["Burhanpur", "Nepanagar", "Shahpur"]
+            },
+            {
+              "name": "Chhindwara",
+              "tehsils": ["Chhindwara", "Chaurai", "Pandhurna"]
+            },
+            {
+              "name": "Dewas",
+              "tehsils": ["Dewas", "Bagli", "Dewkali"]
+            },
+            {
+              "name": "Dhar",
+              "tehsils": ["Dhar", "Manawar", "Sardarpur"]
+            },
+            {
+              "name": "Dindori",
+              "tehsils": ["Dindori", "Kundam", "Gandhinagar"]
+            },
+            {
+              "name": "Guna",
+              "tehsils": ["Guna", "Chhanchh", "Ruthiyai"]
+            },
+            {
+              "name": "Gwalior",
+              "tehsils": ["Gwalior", "Ghatigaon", "Bhitarwar"]
+            },
+            {
+              "name": "Harda",
+              "tehsils": ["Harda", "Timarni", "Khategaon"]
+            },
+            {
+              "name": "Hoshangabad",
+              "tehsils": ["Hoshangabad", "Itarsi", "Seoni Malwa"]
+            },
+            {
+              "name": "Indore",
+              "tehsils": ["Indore", "Mhow", "Depalpur"]
+            },
+            {
+              "name": "Jabalpur",
+              "tehsils": ["Jabalpur", "Madan Mahal", "Sihora"]
+            },
+            {
+              "name": "Jhabua",
+              "tehsils": ["Jhabua", "Rau", "Thandla"]
+            },
+            {
+              "name": "Katni",
+              "tehsils": ["Katni", "Sihora", "Baikunthpur"]
+            },
+            {
+              "name": "Khandwa",
+              "tehsils": ["Khandwa", "Pandhana", "Harsud"]
+            },
+            {
+              "name": "Khargone",
+              "tehsils": ["Khargone", "Khalwa", "Mundi"]
+            },
+            {
+              "name": "Mandla",
+              "tehsils": ["Mandla", "Bichhiya", "Niwas"]
+            },
+            {
+              "name": "Mandsaur",
+              "tehsils": ["Mandsaur", "Garoth", "Nimach"]
+            },
+            {
+              "name": "Morena",
+              "tehsils": ["Morena", "Ambah", "Joura"]
+            },
+            {
+              "name": "Narsinghpur",
+              "tehsils": ["Narsinghpur", "Gadarwara", "Chhindwara"]
+            },
+            {
+              "name": "Neemuch",
+              "tehsils": ["Neemuch", "Manasa", "Dhamnod"]
+            },
+            {
+              "name": "Pachmarhi",
+              "tehsils": ["Pachmarhi", "Chandpur"]
+            },
+            {
+              "name": "Pali",
+              "tehsils": ["Pali", "Dindori"]
+            },
+            {
+              "name": "Rajgarh",
+              "tehsils": ["Rajgarh", "Biaora", "Pachore"]
+            },
+            {
+              "name": "Ratlam",
+              "tehsils": ["Ratlam", "Alot", "Jawar"]
+            },
+            {
+              "name": "Rewa",
+              "tehsils": ["Rewa", "Teonthar", "Huzur"]
+            },
+            {
+              "name": "Sagar",
+              "tehsils": ["Sagar", "Rahatgarh", "Bina"]
+            },
+            {
+              "name": "Satna",
+              "tehsils": ["Satna", "Rampur", "Amarpatan"]
+            },
+            {
+              "name": "Sehore",
+              "tehsils": ["Sehore", "Shahgarh", "Ashta"]
+            },
+            {
+              "name": "Seoni",
+              "tehsils": ["Seoni", "Chhindwara", "Lakhnadon"]
+            },
+            {
+              "name": "Shajapur",
+              "tehsils": ["Shajapur", "Khurai", "Maksi"]
+            },
+            {
+              "name": "Sheopur",
+              "tehsils": ["Sheopur", "Kherli", "Vikramgarh"]
+            },
+            {
+              "name": "Shivpuri",
+              "tehsils": ["Shivpuri", "Kolaras", "Pachore"]
+            },
+            {
+              "name": "Sidhi",
+              "tehsils": ["Sidhi", "Rampur", "Muriya"]
+            },
+            {
+              "name": "Singrauli",
+              "tehsils": ["Singrauli", "Chitrangi", "Deosar"]
+            },
+            {
+              "name": "Tikamgarh",
+              "tehsils": ["Tikamgarh", "Jatara", "Pali"]
+            },
+            {
+              "name": "Ujjain",
+              "tehsils": ["Ujjain", "Nagda", "Khilchipur"]
+            },
+            {
+              "name": "Umaria",
+              "tehsils": ["Umaria", "Shahdol", "Birsinghpur"]
+            },
+            {
+              "name": "Vidisha",
+              "tehsils": ["Vidisha", "Gyaraspur", "Shamshabad"]
+            },
+            {
+              "name": "Betul",
+              "tehsils": ["Betul", "Shahpur", "Ghoradongri"]
+            }
+          ]
+        }
+      },
+      {
+        "Maharashtra": {
+          "capital": "Mumbai",
+          "Largest City": "Mumbai",
+          "districts": [
+            {
+              "name": "Ahmednagar",
+              "tehsils": ["Ahmednagar", "Shirur", "Parner", "Rahuri", "Akole"]
+            },
+            {
+              "name": "Akola",
+              "tehsils": ["Akola", "Patur", "Barshitakli", "Murtizapur"]
+            },
+            {
+              "name": "Amravati",
+              "tehsils": ["Amravati", "Chandur Bazar", "Nandgaon Khandeshwar", "Anjangaon"]
+            },
+            {
+              "name": "Aurangabad",
+              "tehsils": ["Aurangabad", "Paithan", "Sillod", "Phulambri"]
+            },
+            {
+              "name": "Beed",
+              "tehsils": ["Beed", "Ashti", "Waghala", "Shirur"]
+            },
+            {
+              "name": "Bhandara",
+              "tehsils": ["Bhandara", "Lakhandur", "Tumsar", "Pauni"]
+            },
+            {
+              "name": "Buldhana",
+              "tehsils": ["Buldhana", "Chikhli", "Khamgaon", "Malkapur"]
+            },
+            {
+              "name": "Chandrapur",
+              "tehsils": ["Chandrapur", "Warora", "Brahmapuri", "Rajura"]
+            },
+            {
+              "name": "Dhule",
+              "tehsils": ["Dhule", "Sakri", "Shahada", "Nawapur"]
+            },
+            {
+              "name": "Gadchiroli",
+              "tehsils": ["Gadchiroli", "Armori", "Dhanora", "Desaiganj"]
+            },
+            {
+              "name": "Gondia",
+              "tehsils": ["Gondia", "Amgaon", "Deori", "Tirora"]
+            },
+            {
+              "name": "Hingoli",
+              "tehsils": ["Hingoli", "Kalamnuri", "Sengaon", "Jalna"]
+            },
+            {
+              "name": "Jalgaon",
+              "tehsils": ["Jalgaon", "Chopda", "Bhadgaon", "Muktainagar"]
+            },
+            {
+              "name": "Kolhapur",
+              "tehsils": ["Kolhapur", "Radhanagari", "Shahuwadi", "Hatkanangale"]
+            },
+            {
+              "name": "Latur",
+              "tehsils": ["Latur", "Renapur", "Ahmadpur", "Jalkot"]
+            },
+            {
+              "name": "Mumbai City",
+              "tehsils": ["Colaba", "Fort", "Byculla", "Mazgaon"]
+            },
+            {
+              "name": "Mumbai Suburban",
+              "tehsils": ["Andheri", "Borivali", "Kurla", "Kandivali"]
+            },
+            {
+              "name": "Nagpur",
+              "tehsils": ["Nagpur", "Narkhed", "Kalmeshwar", "Mihan"]
+            },
+            {
+              "name": "Nanded",
+              "tehsils": ["Nanded", "Mudkhed", "Deglur", "Bhokar"]
+            },
+            {
+              "name": "Nandurbar",
+              "tehsils": ["Nandurbar", "Shahada", "Navapur", "Akrani"]
+            },
+            {
+              "name": "Nasik",
+              "tehsils": ["Nasik", "Niphad", "Igatpuri", "Manmad"]
+            },
+            {
+              "name": "Osmanabad",
+              "tehsils": ["Osmanabad", "Tuljapur", "Paranda", "Omerga"]
+            },
+            {
+              "name": "Palghar",
+              "tehsils": ["Palghar", "Vasai", "Nallasopara", "Boisar"]
+            },
+            {
+              "name": "Parbhani",
+              "tehsils": ["Parbhani", "Jintur", "Sonpada", "Pathri"]
+            },
+            {
+              "name": "Pune",
+              "tehsils": ["Pune", "Haveli", "Baramati", "Khed"]
+            },
+            {
+              "name": "Raigad",
+              "tehsils": ["Alibag", "Uran", "Panvel", "Khalapur"]
+            },
+            {
+              "name": "Ratnagiri",
+              "tehsils": ["Ratnagiri", "Chiplun", "Rajapur", "Khed"]
+            },
+            {
+              "name": "Sangli",
+              "tehsils": ["Sangli", "Miraj", "Kavathe Mahankal", "Jat"]
+            },
+            {
+              "name": "Satara",
+              "tehsils": ["Satara", "Karad", "Koregaon", "Patan"]
+            },
+            {
+              "name": "Sindhudurg",
+              "tehsils": ["Sindhudurg", "Kankavli", "Malwan", "Vengurla"]
+            },
+            {
+              "name": "Solapur",
+              "tehsils": ["Solapur", "Pandharpur", "Mangalvedha", "Baranjala"]
+            },
+            {
+              "name": "Thane",
+              "tehsils": ["Thane", "Bhiwandi", "Kalyan", "Ulhasnagar"]
+            },
+            {
+              "name": "Wardha",
+              "tehsils": ["Wardha", "Arvi", "Hinganghat", "Selu"]
+            },
+            {
+              "name": "Washim",
+              "tehsils": ["Washim", "Karanja", "Mangrulpir", "Majalgaon"]
+            },
+            {
+              "name": "Yavatmal",
+              "tehsils": ["Yavatmal", "Malkapur", "Pusad", "Wani"]
+            }
+          ]
+        }
+      },
+      {
+        "Manipur": {
+          "capital": "Imphal",
+          "Largest City": "Imphal",
+          "districts": [
+            {
+              "name": "Imphal East",
+              "tehsils": ["Imphal", "Keirao", "Porompat"]
+            },
+            {
+              "name": "Imphal West",
+              "tehsils": ["Imphal", "Lamshang", "Patsoi"]
+            },
+            {
+              "name": "Bishnupur",
+              "tehsils": ["Bishnupur", "Moirang", "Nambol"]
+            },
+            {
+              "name": "Thoubal",
+              "tehsils": ["Thoubal", "Yairipok", "Khangabok"]
+            },
+            {
+              "name": "Chandel",
+              "tehsils": ["Chandel", "Singtam", "Moreh"]
+            },
+            {
+              "name": "Churachandpur",
+              "tehsils": ["Churachandpur", "Saikot", "Lambui"]
+            },
+            {
+              "name": "Ukhrul",
+              "tehsils": ["Ukhrul", "Muirang", "Khangshim"]
+            },
+            {
+              "name": "Senapati",
+              "tehsils": ["Senapati", "Mao", "Maring"]
+            },
+            {
+              "name": "Tamenglong",
+              "tehsils": ["Tamenglong", "Tousem"]
+            },
+            {
+              "name": "Tengnoupal",
+              "tehsils": ["Tengnoupal", "Mengkhang", "Chandel"]
+            },
+            {
+              "name": "Kangpokpi",
+              "tehsils": ["Kangpokpi", "Kanglatongbi"]
+            },
+            {
+              "name": "Pherzawl",
+              "tehsils": ["Pherzawl", "Rongmei"]
+            },
+            {
+              "name": "Noney",
+              "tehsils": ["Noney", "Nungba"]
+            },
+            {
+              "name": "Kakching",
+              "tehsils": ["Kakching", "Wabagai"]
+            },
+            {
+              "name": "Jiribam",
+              "tehsils": ["Jiribam"]
+            },
+            {
+              "name": "Imphal",
+              "tehsils": ["Imphal"]
+            }
+          ]
+        }
+      },
+      {
+        "Meghalaya": {
+          "capital": "Shillong",
+          "Largest City": "Shillong",
+          "districts": [
+            {
+              "name": "East Khasi Hills",
+              "tehsils": ["Shillong", "Nongpoh", "Mawphlang", "Pynursla"]
+            },
+            {
+              "name": "West Khasi Hills",
+              "tehsils": ["Nongstoin", "Mawkyrwat"]
+            },
+            {
+              "name": "Ri Bhoi",
+              "tehsils": ["Nongpoh", "Khasi"]
+            },
+            {
+              "name": "West Jaintia Hills",
+              "tehsils": ["Jowai", "Nartiang"]
+            },
+            {
+              "name": "East Jaintia Hills",
+              "tehsils": ["Khliehriat", "Thadlaskein"]
+            },
+            {
+              "name": "South West Khasi Hills",
+              "tehsils": ["Mawkynrew"]
+            },
+            {
+              "name": "South West Garo Hills",
+              "tehsils": ["Tikrikilla"]
+            },
+            {
+              "name": "North Garo Hills",
+              "tehsils": ["Resubelpara"]
+            },
+            {
+              "name": "West Garo Hills",
+              "tehsils": ["Tura", "Phulbari", "Dalu"]
+            },
+            {
+              "name": "South Garo Hills",
+              "tehsils": ["Baghmara"]
+            },
+            {
+              "name": "EASTERN Garo Hills",
+              "tehsils": ["Chokpot"]
+            }
+          ]
+        }
+      },
+      {
+        "Mizoram": {
+          "capital": "Aizawl",
+          "Largest City": "Aizawl",
+          "districts": [
+            {
+              "name": "Aizawl",
+              "tehsils": ["Aizawl"]
+            },
+            {
+              "name": "Champhai",
+              "tehsils": ["Champhai", "Khawzawl"]
+            },
+            {
+              "name": "Kolasib",
+              "tehsils": ["Kolasib"]
+            },
+            {
+              "name": "Lunglei",
+              "tehsils": ["Lunglei"]
+            },
+            {
+              "name": "Mamit",
+              "tehsils": ["Mamit"]
+            },
+            {
+              "name": "Serchhip",
+              "tehsils": ["Serchhip"]
+            },
+            {
+              "name": "Hnahthial",
+              "tehsils": ["Hnahthial"]
+            },
+            {
+              "name": "Saitual",
+              "tehsils": ["Saitual"]
+            },
+            {
+              "name": "Lawngtlai",
+              "tehsils": ["Lawngtlai"]
+            },
+            {
+              "name": "Khawzawl",
+              "tehsils": ["Khawzawl"]
+            },
+            {
+              "name": "Pui",
+              "tehsils": ["Pui"]
+            }
+          ]
+        }
+      },
+      {
+        "Nagaland": {
+          "capital": "Kohima",
+          "Largest City": "Dimapur",
+          "districts": [
+            {
+              "name": "Kohima",
+              "tehsils": ["Kohima"]
+            },
+            {
+              "name": "Dimapur",
+              "tehsils": ["Dimapur"]
+            },
+            {
+              "name": "Mokokchung",
+              "tehsils": ["Mokokchung", "Chuchuyimlang"]
+            },
+            {
+              "name": "Mon",
+              "tehsils": ["Mon", "Chare", "Mongkotcha"]
+            },
+            {
+              "name": "Zunheboto",
+              "tehsils": ["Zunheboto"]
+            },
+            {
+              "name": "Wokha",
+              "tehsils": ["Wokha"]
+            },
+            {
+              "name": "Tuensang",
+              "tehsils": ["Tuensang", "Chungtia"]
+            },
+            {
+              "name": "Peren",
+              "tehsils": ["Peren"]
+            },
+            {
+              "name": "Phek",
+              "tehsils": ["Phek"]
+            },
+            {
+              "name": "Longleng",
+              "tehsils": ["Longleng"]
+            },
+            {
+              "name": "Kiphire",
+              "tehsils": ["Kiphire"]
+            },
+            {
+              "name": "Noklak",
+              "tehsils": ["Noklak"]
+            }
+          ]
+        }
+      },
+      {
+        "Odisha": {
+          "capital": "Bhubaneswar",
+          "Largest City": "Bhubaneswar",
+          "districts": [
+            {
+              "name": "Angul",
+              "tehsils": ["Angul", "Banarpal", "Chhendipada", "Talcher", "Kaniha"]
+            },
+            {
+              "name": "Balangir",
+              "tehsils": ["Balangir", "Deogaon", "Loisinga", "Patnagarh", "Saintala"]
+            },
+            {
+              "name": "Baleswar",
+              "tehsils": ["Baleswar", "Bhograi", "Remuna", "Sadar", "Jaleswar"]
+            },
+            {
+              "name": "Bargarh",
+              "tehsils": ["Bargarh", "Attabira", "Bhatli", "Jujumura", "Paikmal"]
+            },
+            {
+              "name": "Bhadrak",
+              "tehsils": ["Bhadrak", "Bansada", "Basudevpur", "Dhamra", "Tihidi"]
+            },
+            {
+              "name": "Cuttack",
+              "tehsils": ["Cuttack", "Baranga", "Banki", "Narsinghpur", "Choudwar"]
+            },
+            {
+              "name": "Dhenkanal",
+              "tehsils": ["Dhenkanal", "Kamakhyanagar", "Parjang", "Odapada"]
+            },
+            {
+              "name": "Ganjam",
+              "tehsils": ["Ganjam", "Chhatrapur", "Brahmapur", "Berhampur", "Digapahandi"]
+            },
+            {
+              "name": "Gajapati",
+              "tehsils": ["Gajapati", "Paralakhemundi", "Rayagada", "R Udayagiri"]
+            },
+            {
+              "name": "Jagatsinghpur",
+              "tehsils": ["Jagatsinghpur", "Balikuda", "Erasama", "Raghunathpur", "Tirtol"]
+            },
+            {
+              "name": "Jajpur",
+              "tehsils": ["Jajpur", "Kalinga", "Ranishwar", "Binjharpur"]
+            },
+            {
+              "name": "Jharsuguda",
+              "tehsils": ["Jharsuguda", "Lakhanpur", "Kirmira", "Kolabira"]
+            },
+            {
+              "name": "Kalahandi",
+              "tehsils": ["Kalahandi", "Bhawanipatna", "Junagarh", "Kalampur", "Kesinga"]
+            },
+            {
+              "name": "Kandhamal",
+              "tehsils": ["Kandhamal", "Phulbani", "Baliguda", "Daringbadi"]
+            },
+            {
+              "name": "Kendrapara",
+              "tehsils": ["Kendrapara", "Kujang", "Aul", "Derabishi", "Marsaghai"]
+            },
+            {
+              "name": "Keonjhar",
+              "tehsils": ["Keonjhar", "Ghatagaon", "Patna", "Jhumpura"]
+            },
+            {
+              "name": "Koraput",
+              "tehsils": ["Koraput", "Jeypore", "Baipariguda", "Kotpad"]
+            },
+            {
+              "name": "Malkangiri",
+              "tehsils": ["Malkangiri", "Mathili", "Khairaput", "Malkangiri"]
+            },
+            {
+              "name": "Mayurbhanj",
+              "tehsils": ["Mayurbhanj", "Karanjia", "Rairangpur", "Betnoti"]
+            },
+            {
+              "name": "Nabarangpur",
+              "tehsils": ["Nabarangpur", "Raighar", "Umerkote", "Borrigumma"]
+            },
+            {
+              "name": "Nayagarh",
+              "tehsils": ["Nayagarh", "Khandapada", "Daspalla", "Odagaon"]
+            },
+            {
+              "name": "Nuapada",
+              "tehsils": ["Nuapada", "Khariar", "Komna"]
+            },
+            {
+              "name": "Puri",
+              "tehsils": ["Puri", "Sadar", "Kakatpur", "Gop", "Astaranga"]
+            },
+            {
+              "name": "Rayagada",
+              "tehsils": ["Rayagada", "Bissamcuttack", "Kalyansinghpur", "Muniguda"]
+            },
+            {
+              "name": "Sambalpur",
+              "tehsils": ["Sambalpur", "Rengali", "Jujumura", "Naktideul"]
+            },
+            {
+              "name": "Subarnapur",
+              "tehsils": ["Subarnapur", "Birmaharajpur", "Dharamgarh"]
+            },
+            {
+              "name": "Sundargarh",
+              "tehsils": ["Sundargarh", "Tangarpali", "Rajgangpur", "Kutra"]
+            },
+            {
+              "name": "Bhubaneswar",
+              "tehsils": ["Bhubaneswar"]
+            },
+            {
+              "name": "Cuttack",
+              "tehsils": ["Cuttack", "Choudwar"]
+            },
+            {
+              "name": "Rourkela",
+              "tehsils": ["Rourkela"]
+            }
+          ]
+        }
+      },
+      {
+        "Punjab": {
+          "capital": "Chandigarh",
+          "Largest City": "Ludhiana",
+          "districts": [
+            {
+              "name": "Amritsar",
+              "tehsils": [
+                "Amritsar",
+                "Ajnala",
+                "Tarn Taran",
+                "Raya",
+                "Chheharta"
+              ]
+            },
+            {
+              "name": "Bathinda",
+              "tehsils": [
+                "Bathinda",
+                "Mansa",
+                "Maur",
+                "Rampura Phul",
+                "Bhadaur"
+              ]
+            },
+            {
+              "name": "Fatehgarh Sahib",
+              "tehsils": [
+                "Fatehgarh Sahib",
+                "Khamano",
+                "Amloh",
+                "Bassi Pathana"
+              ]
+            },
+            {
+              "name": "Faridkot",
+              "tehsils": [
+                "Faridkot",
+                "Jaito",
+                "Kotkapura",
+                "Mandi"
+              ]
+            },
+            {
+              "name": "Gurdaspur",
+              "tehsils": [
+                "Gurdaspur",
+                "Batala",
+                "Dhariwal",
+                "Qadian",
+                "Kahnuwan"
+              ]
+            },
+            {
+              "name": "Hoshiarpur",
+              "tehsils": [
+                "Hoshiarpur",
+                "Dasuya",
+                "Talwara",
+                "Mahilpur",
+                "Tanda"
+              ]
+            },
+            {
+              "name": "Jalandhar",
+              "tehsils": [
+                "Jalandhar",
+                "Nakodar",
+                "Shahkot",
+                "Kartarpur",
+                "Phillaur"
+              ]
+            },
+            {
+              "name": "Kapurthala",
+              "tehsils": [
+                "Kapurthala",
+                "Phagwara",
+                "Bholath",
+                "Fattuwal"
+              ]
+            },
+            {
+              "name": "Ludhiana",
+              "tehsils": [
+                "Ludhiana",
+                "Jagraon",
+                "Samrala",
+                "Khanna",
+                "Payal"
+              ]
+            },
+            {
+              "name": "Mansa",
+              "tehsils": [
+                "Mansa",
+                "Budhlada",
+                "Sardulgarh",
+                "Jhunir"
+              ]
+            },
+            {
+              "name": "Muktsar",
+              "tehsils": [
+                "Muktsar",
+                "Malout",
+                "Lambi",
+                "Gidderbaha"
+              ]
+            },
+            {
+              "name": "Nawan Shahr",
+              "tehsils": [
+                "Nawan Shahr",
+                "Balachaur",
+                "Sarhind"
+              ]
+            },
+            {
+              "name": "Pathankot",
+              "tehsils": [
+                "Pathankot",
+                "Shahpur",
+                "Dinanagar"
+              ]
+            },
+            {
+              "name": "Patiala",
+              "tehsils": [
+                "Patiala",
+                "Rajpura",
+                "Samana",
+                "Raja Pura",
+                "Ghagga"
+              ]
+            },
+            {
+              "name": "Rupnagar",
+              "tehsils": [
+                "Rupnagar",
+                "Kharar",
+                "Nawanshahr",
+                "Morinda"
+              ]
+            },
+            {
+              "name": "Sangrur",
+              "tehsils": [
+                "Sangrur",
+                "Malerkotla",
+                "Dirba",
+                "Lehra"
+              ]
+            },
+            {
+              "name": "Tarn Taran",
+              "tehsils": [
+                "Tarn Taran",
+                "Khemkaran",
+                "Baba Bakala",
+                "Goindwal"
+              ]
+            },
+            {
+              "name": "Shaheed Bhagat Singh Nagar",
+              "tehsils": [
+                "Nawanshahr",
+                "Banga",
+                "Balachaur"
+              ]
+            },
+            {
+              "name": "Firozpur",
+              "tehsils": [
+                "Firozpur",
+                "Guru Har Sahai",
+                "Moga",
+                "Zira"
+              ]
+            },
+            {
+              "name": "Moga",
+              "tehsils": [
+                "Moga",
+                "Bajakhana",
+                "Dharamkot"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "Puducherry": {
+          "capital": "Puducherry",
+          "Largest City": "Puducherry",
+          "districts": [
+            {
+              "name": "Puducherry",
+              "tehsils": ["Puducherry"]
+            },
+            {
+              "name": "Karaikal",
+              "tehsils": ["Karaikal"]
+            },
+            {
+              "name": "Mahe",
+              "tehsils": ["Mahe"]
+            },
+            {
+              "name": "Yanam",
+              "tehsils": ["Yanam"]
+            }
+          ]
+        }
+      },
+      {
+        "Rajasthan": {
+          "capital": "Jaipur",
+          "Largest City": "Jaipur",
+          "districts": [
+            {
+              "name": "Ajmer",
+              "tehsils": ["Ajmer", "Kishangarh", "Beawar", "Masuda", "Pushkar", "Sawai Madhopur"]
+            },
+            {
+              "name": "Alwar",
+              "tehsils": ["Alwar", "Bansur", "Behror", "Kathumar", "Rajgarh", "Thana Ghazi"]
+            },
+            {
+              "name": "Banswara",
+              "tehsils": ["Banswara", "Ghatol", "Kushalgarh", "Mahi", "Sagwara", "Shahbad"]
+            },
+            {
+              "name": "Baran",
+              "tehsils": ["Baran", "Chhabra", "Atru", "Shahbad", "Kota", "Ladpura"]
+            },
+            {
+              "name": "Barmer",
+              "tehsils": ["Barmer", "Balotra", "Sindhari", "Siwana", "Jalore", "Bhinmal"]
+            },
+            {
+              "name": "Bhilwara",
+              "tehsils": ["Bhilwara", "Khilchipur", "Shahpura", "Raipur", "Banera"]
+            },
+            {
+              "name": "Bikaner",
+              "tehsils": ["Bikaner", "Deshnok", "Palanpur", "Ladnu", "Nagaur", "Churu"]
+            },
+            {
+              "name": "Bundi",
+              "tehsils": ["Bundi", "Indergarh", "Keshoraipatan", "Shahpura", "Nainwa"]
+            },
+            {
+              "name": "Chittorgarh",
+              "tehsils": ["Chittorgarh", "Nimbahera", "Bhilwara", "Rawatbhata", "Kapasan", "Chhoti Sadri"]
+            },
+            {
+              "name": "Churu",
+              "tehsils": ["Churu", "Sardarshahar", "Ratangarh", "Taranagar", "Rajgarh"]
+            },
+            {
+              "name": "Dholpur",
+              "tehsils": ["Dholpur", "Rajakhera", "Bari", "Kachnara", "Shahbajpur"]
+            },
+            {
+              "name": "Dungarpur",
+              "tehsils": ["Dungarpur", "Sagwara", "Kushalgarh", "Simalwara"]
+            },
+            {
+              "name": "Hanumangarh",
+              "tehsils": ["Hanumangarh", "Tibbi", "Nohar", "Sardarshahar"]
+            },
+            {
+              "name": "Jaipur",
+              "tehsils": ["Jaipur", "Amer", "Sanganer", "Kotputli", "Chaksu", "Vidyadhar Nagar"]
+            },
+            {
+              "name": "Jaisalmer",
+              "tehsils": ["Jaisalmer", "Sam", "Ramgarh", "Jodhpur"]
+            },
+            {
+              "name": "Jalore",
+              "tehsils": ["Jalore", "Sanchore", "Raniwara", "Bhinmal", "Jalor"]
+            },
+            {
+              "name": "Jhalawar",
+              "tehsils": ["Jhalawar", "Karauli", "Kuchaman", "Shahpura"]
+            },
+            {
+              "name": "Jhunjhunu",
+              "tehsils": ["Jhunjhunu", "Nawalgarh", "Chirawa", "Udaipurwati"]
+            },
+            {
+              "name": "Jodhpur",
+              "tehsils": ["Jodhpur", "Osian", "Bhopalgarh", "Pali", "Mandor"]
+            },
+            {
+              "name": "Karauli",
+              "tehsils": ["Karauli", "Hindaun", "Rajgarh", "Gangapur City"]
+            },
+            {
+              "name": "Kota",
+              "tehsils": ["Kota", "Sawai Madhopur", "Rajasthan", "Ramganj Mandi"]
+            },
+            {
+              "name": "Nagaur",
+              "tehsils": ["Nagaur", "Merta", "Khatu", "Didwana"]
+            },
+            {
+              "name": "Pali",
+              "tehsils": ["Pali", "Sojat", "Rani", "Jaitaran", "Marwar Junction"]
+            },
+            {
+              "name": "Rajsamand",
+              "tehsils": ["Rajsamand", "Kumbhalgarh", "Amet", "Nathdwara"]
+            },
+            {
+              "name": "Sawai Madhopur",
+              "tehsils": ["Sawai Madhopur", "Bamanwas", "Khandar"]
+            },
+            {
+              "name": "Sikar",
+              "tehsils": ["Sikar", "Neem Ka Thana", "Danta Ramgarh", "Losal"]
+            },
+            {
+              "name": "Sirohi",
+              "tehsils": ["Sirohi", "Abu Road", "Reodar", "Sheoganj"]
+            },
+            {
+              "name": "Tonk",
+              "tehsils": ["Tonk", "Deoli", "Malpura", "Aligarh"]
+            },
+            {
+              "name": "Udaipur",
+              "tehsils": ["Udaipur", "Salumbar", "Jhadol", "Mavli", "Girwa"]
+            }
+          ]
+        }
+      },
+      {
+        "Sikkim": {
+          "capital": "Gangtok",
+          "Largest City": "Gangtok",
+          "districts": [
+            {
+              "name": "East Sikkim",
+              "tehsils": ["Gangtok", "Rangpo", "Singtam", "Tadong"]
+            },
+            {
+              "name": "West Sikkim",
+              "tehsils": ["Gyalshing", "Soreng", "Chungthang"]
+            },
+            {
+              "name": "South Sikkim",
+              "tehsils": ["Namchi", "Melli", "Jorethang"]
+            },
+            {
+              "name": "North Sikkim",
+              "tehsils": ["Mangan", "Lachung", "Lachen"]
+            }
+          ]
+        }
+      },
+      {
+        "Tamil Nadu": {
+          "capital": "Chennai",
+          "Largest City": "Chennai",
+          "districts": [
+            {
+              "name": "Chennai",
+              "tehsils": ["Chennai", "Ambattur", "Alandur", "Perungudi", "Madhavaram"]
+            },
+            {
+              "name": "Coimbatore",
+              "tehsils": ["Coimbatore", "Kinathukadavu", "Pollachi", "Sulur", "Valparai"]
+            },
+            {
+              "name": "Cuddalore",
+              "tehsils": ["Cuddalore", "Chidambaram", "Kattumannarkoil", "Bhuvanagiri", "Parangipettai"]
+            },
+            {
+              "name": "Dharmapuri",
+              "tehsils": ["Dharmapuri", "Harur", "Pennagaram", "Palacode"]
+            },
+            {
+              "name": "Dindigul",
+              "tehsils": ["Dindigul", "Nilakottai", "Vedasandur", "Athoor"]
+            },
+            {
+              "name": "Erode",
+              "tehsils": ["Erode", "Bhavani", "Modakkurichi", "Perundurai", "Nambiyur"]
+            },
+            {
+              "name": "Kanchipuram",
+              "tehsils": ["Kanchipuram", "Chengalpattu", "Uthiramerur", "Cheyyar"]
+            },
+            {
+              "name": "Kanyakumari",
+              "tehsils": ["Nagercoil", "Padmanabhapuram", "Thuckalay", "Villukuri"]
+            },
+            {
+              "name": "Karur",
+              "tehsils": ["Karur", "Aravakurichi", "Kundadam", "Krishnarayapuram"]
+            },
+            {
+              "name": "Krishnagiri",
+              "tehsils": ["Krishnagiri", "Hosur", "Pochampalli", "Rayakottai"]
+            },
+            {
+              "name": "Madurai",
+              "tehsils": ["Madurai", "Melur", "Peraiyur", "Usilampatti", "Kottampatti"]
+            },
+            {
+              "name": "Nagapattinam",
+              "tehsils": ["Nagapattinam", "Kilvelur", "Thiruthuraipoondi", "Vedaranyam"]
+            },
+            {
+              "name": "Namakkal",
+              "tehsils": ["Namakkal", "Paramathi-Velur", "Rasipuram", "Mallasamudram"]
+            },
+            {
+              "name": "Perambalur",
+              "tehsils": ["Perambalur", "Veppanthattai", "Kunnam", "Alathur"]
+            },
+            {
+              "name": "Pudukkottai",
+              "tehsils": ["Pudukkottai", "Alangudi", "Aranthangi", "Kulathur", "Mudukulathur"]
+            },
+            {
+              "name": "Ramanathapuram",
+              "tehsils": ["Ramanathapuram", "Tiruvadanai", "Kadaladi", "Paramakudi", "Mudukulathur"]
+            },
+            {
+              "name": "Salem",
+              "tehsils": ["Salem", "Omalur", "Attur", "Namakkal", "Mettur"]
+            },
+            {
+              "name": "Sivagangai",
+              "tehsils": ["Sivagangai", "Manamadurai", "Sakkottai", "Kalaiyarkovil"]
+            },
+            {
+              "name": "Thanjavur",
+              "tehsils": ["Thanjavur", "Kumbakonam", "Orathanadu", "Papanasam", "Valangaiman"]
+            },
+            {
+              "name": "The Nilgiris",
+              "tehsils": ["Udhagamandalam", "Coonoor", "Kotagiri", "Gudalur"]
+            },
+            {
+              "name": "Theni",
+              "tehsils": ["Theni", "Periyakulam", "Bodinayakkanur", "Uthamapalayam"]
+            },
+            {
+              "name": "Tiruchirappalli",
+              "tehsils": ["Tiruchirappalli", "Lalgudi", "Srirangam", "Manachanallur", "Thuraiyur"]
+            },
+            {
+              "name": "Tirunelveli",
+              "tehsils": ["Tirunelveli", "Palayamkottai", "Tiruchendur", "Vickramasingapuram"]
+            },
+            {
+              "name": "Tiruppur",
+              "tehsils": ["Tiruppur", "Avinashi", "Udumalaipettai", "Kangeyam"]
+            },
+            {
+              "name": "Vellore",
+              "tehsils": ["Vellore", "Ambur", "Arcot", "Gudiyattam", "Vaniyambadi"]
+            },
+            {
+              "name": "Villupuram",
+              "tehsils": ["Villupuram", "Ulundurpet", "Kandamangalam", "Melnariyapanur"]
+            },
+            {
+              "name": "Virudhunagar",
+              "tehsils": ["Virudhunagar", "Sivakasi", "Aruppukottai", "Srivilliputhur"]
+            },
+            {
+              "name": "Ariyalur",
+              "tehsils": ["Ariyalur", "Sendurai", "Veppur"]
+            },
+            {
+              "name": "Tiruvarur",
+              "tehsils": ["Tiruvarur", "Mannargudi", "Thiruthuraipoondi"]
+            },
+            {
+              "name": "Ramanathapuram",
+              "tehsils": ["Ramanathapuram", "Mudukulathur", "Tiruvadanai", "Paramakudi"]
+            },
+            {
+              "name": "Dindigul",
+              "tehsils": ["Dindigul", "Vedasandur", "Nilakottai", "Athoor"]
+            },
+            {
+              "name": "Vellore",
+              "tehsils": ["Vellore", "Ambur", "Arcot", "Gudiyattam"]
+            }
+          ]
+        }
+      },
+      {
+        "Telangana": {
+          "capital": "Hyderabad",
+          "Largest City": "Hyderabad",
+          "districts": [
+            {
+              "name": "Adilabad",
+              "tehsils": ["Adilabad", "Asifabad", "Nirmal", "Bazarhathnoor", "Utnoor"]
+            },
+            {
+              "name": "Hyderabad",
+              "tehsils": ["Hyderabad", "Secunderabad", "Khairatabad", "Musheerabad", "L.B. Nagar"]
+            },
+            {
+              "name": "Khammam",
+              "tehsils": ["Khammam", "Kothagudem", "Paloncha", "Sathupally"]
+            },
+            {
+              "name": "Karimnagar",
+              "tehsils": ["Karimnagar", "Choppadandi", "Peddapalli", "Sircilla"]
+            },
+            {
+              "name": "Warangal",
+              "tehsils": ["Warangal", "Mulugu", "Khila Warangal", "Parkal", "Warangal Rural"]
+            },
+            {
+              "name": "Nalgonda",
+              "tehsils": ["Nalgonda", "Suryapet", "Miryalaguda", "Peddapalli", "Neredcherla"]
+            },
+            {
+              "name": "Nizamabad",
+              "tehsils": ["Nizamabad", "Kamareddy", "Bodhan", "Armoor"]
+            },
+            {
+              "name": "Medak",
+              "tehsils": ["Medak", "Sangareddy", "Zahirabad", "Patancheru"]
+            },
+            {
+              "name": "Mahabubnagar",
+              "tehsils": ["Mahabubnagar", "Wanaparthy", "Peddagattu", "Balanagar"]
+            },
+            {
+              "name": "Khammam",
+              "tehsils": ["Khammam", "Kothagudem", "Paloncha", "Sathupally"]
+            },
+            {
+              "name": "Sangareddy",
+              "tehsils": ["Sangareddy", "Patancheru", "Zahirabad", "Sadasivpet"]
+            },
+            {
+              "name": "Jagtial",
+              "tehsils": ["Jagtial", "Karimnagar", "Sircilla", "Choppadandi"]
+            },
+            {
+              "name": "Jagitial",
+              "tehsils": ["Jagitial", "Karimnagar", "Rajanna Sircilla", "Sircilla"]
+            },
+            {
+              "name": "Mahabubabad",
+              "tehsils": ["Mahabubabad", "Kesamudram", "Maripeda", "Chennur"]
+            },
+            {
+              "name": "Mancherial",
+              "tehsils": ["Mancherial", "Bellampalli", "Chandrapur", "Asifabad"]
+            },
+            {
+              "name": "Rangareddy",
+              "tehsils": ["Rangareddy", "Hyderabad", "Malkajgiri", "Saroornagar"]
+            },
+            {
+              "name": "Medchal-Malkajgiri",
+              "tehsils": ["Medchal", "Malkajgiri", "Qutubullapur", "Ghatkesar"]
+            },
+            {
+              "name": "Mahabubabad",
+              "tehsils": ["Mahabubabad", "Kesamudram", "Maripeda", "Chennur"]
+            },
+            {
+              "name": "Nirmal",
+              "tehsils": ["Nirmal", "Asifabad", "Bellampalli", "Nirmal"]
+            },
+            {
+              "name": "Peddapalli",
+              "tehsils": ["Peddapalli", "Jammikunta", "Bobbili"]
+            },
+            {
+              "name": "Siddipet",
+              "tehsils": ["Siddipet", "Gajwel", "Dharmapuri", "Cherlapally"]
+            },
+            {
+              "name": "Suryapet",
+              "tehsils": ["Suryapet", "Nalgonda", "Miryalaguda", "Neredcherla"]
+            },
+            {
+              "name": "Warangal Rural",
+              "tehsils": ["Warangal Rural", "Parkal", "Warangal", "Mulugu"]
+            },
+            {
+              "name": "Mahabubnagar",
+              "tehsils": ["Mahabubnagar", "Wanaparthy", "Peddagattu", "Balanagar"]
+            },
+            {
+              "name": "Rajanna Sircilla",
+              "tehsils": ["Rajanna", "Sircilla", "Jagtial", "Karimnagar"]
+            },
+            {
+              "name": "Adilabad",
+              "tehsils": ["Adilabad", "Asifabad", "Nirmal", "Bazarhathnoor", "Utnoor"]
+            },
+            {
+              "name": "Bhongir",
+              "tehsils": ["Bhongir", "Bhongir", "Pochampalli", "Jangaon"]
+            },
+            {
+              "name": "Sircilla",
+              "tehsils": ["Sircilla", "Jagtial", "Peddapalli", "Sircilla"]
+            },
+            {
+              "name": "Rajanna",
+              "tehsils": ["Rajanna", "Warangal", "Parkal", "Khammam"]
+            }
+          ]
+        }
+      },
+      {
+        "Tripura": {
+          "capital": "Agartala",
+          "Largest City": "Agartala",
+          "districts": [
+            {
+              "name": "West Tripura",
+              "tehsils": ["Agartala", "Jirania", "Sonamura"]
+            },
+            {
+              "name": "Sepahijala",
+              "tehsils": ["Bishalgarh", "Jampuijala", "Sonamura"]
+            },
+            {
+              "name": "Unakoti",
+              "tehsils": ["Kailashahar", "Unakoti"]
+            },
+            {
+              "name": "Dhalai",
+              "tehsils": ["Ambassa", "Chawmanu", "Khowai"]
+            },
+            {
+              "name": "Khowai",
+              "tehsils": ["Khowai", "Mungiakami"]
+            },
+            {
+              "name": "South Tripura",
+              "tehsils": ["Udaipur", "Belonia", "Amarpur"]
+            },
+            {
+              "name": "North Tripura",
+              "tehsils": ["Dharmanagar", "Panisagar", "Kanchanpur"]
+            },
+            {
+              "name": "Gomati",
+              "tehsils": ["Udaipur", "Matabari"]
+            }
+          ]
+        }
+      },
+      {
+        "Uttar Pradesh": {
+          "capital": "Lucknow",
+          "Largest City": "Kanpur",
+          "districts": [
+            {
+              "name": "Agra",
+              "tehsils": ["Agra", "Fatehabad", "Kheragarh", "Etmadpur"]
+            },
+            {
+              "name": "Aligarh",
+              "tehsils": ["Aligarh", "Atrauli", "Koil", "Iglas"]
+            },
+            {
+              "name": "Ambedkar Nagar",
+              "tehsils": ["Akbarpur", "Tanda", "Jalalpur", "Bhiti"]
+            },
+            {
+              "name": "Amethi",
+              "tehsils": ["Gauriganj", "Amethi", "Tiloi", "Musafirkhana"]
+            },
+            {
+              "name": "Amroha",
+              "tehsils": ["Amroha", "Dhanaura", "Hasanpur"]
+            },
+            {
+              "name": "Auraiya",
+              "tehsils": ["Auraiya", "Bidhuna", "Ajitmal"]
+            },
+            {
+              "name": "Ayodhya",
+              "tehsils": ["Ayodhya", "Rudauli", "Milkipur", "Sohawal"]
+            },
+            {
+              "name": "Azamgarh",
+              "tehsils": ["Azamgarh", "Sagri", "Burhanpur", "Maharajganj", "Mehnagar"]
+            },
+            {
+              "name": "Baghpat",
+              "tehsils": ["Baghpat", "Baraut", "Khekra"]
+            },
+            {
+              "name": "Bahraich",
+              "tehsils": ["Bahraich", "Nanpara", "Kaiserganj", "Payagpur", "Mahasi"]
+            },
+            {
+              "name": "Ballia",
+              "tehsils": ["Ballia", "Rasra", "Bansdih"]
+            },
+            {
+              "name": "Balrampur",
+              "tehsils": ["Balrampur", "Tulsipur", "Utraula"]
+            },
+            {
+              "name": "Banda",
+              "tehsils": ["Banda", "Naraini", "Atarra", "Baberu"]
+            },
+            {
+              "name": "Barabanki",
+              "tehsils": ["Barabanki", "Ramnagar", "Fatehpur", "Haidergarh"]
+            },
+            {
+              "name": "Bareilly",
+              "tehsils": ["Bareilly", "Nawabganj", "Baheri", "Faridpur", "Aonla"]
+            },
+            {
+              "name": "Basti",
+              "tehsils": ["Basti", "Harraiya", "Rudhauli"]
+            },
+            {
+              "name": "Bhadohi",
+              "tehsils": ["Gyanpur", "Aurai", "Bhadohi"]
+            },
+            {
+              "name": "Bijnor",
+              "tehsils": ["Bijnor", "Dhampur", "Najibabad", "Nagina", "Chandpur"]
+            },
+            {
+              "name": "Bulandshahr",
+              "tehsils": ["Bulandshahr", "Sikandrabad", "Khair", "Anupshahr"]
+            },
+            {
+              "name": "Chandauli",
+              "tehsils": ["Chandauli", "Sakaldiha", "Mughalsarai"]
+            },
+            {
+              "name": "Chitrakoot",
+              "tehsils": ["Karwi", "Mau"]
+            },
+            {
+              "name": "Deoria",
+              "tehsils": ["Deoria", "Salempur", "Barhaj", "Rudrapur"]
+            },
+            {
+              "name": "Etah",
+              "tehsils": ["Etah", "Jalesar", "Aliganj"]
+            },
+            {
+              "name": "Etawah",
+              "tehsils": ["Etawah", "Bharthana", "Chakarnagar", "Saifai"]
+            },
+            {
+              "name": "Farrukhabad",
+              "tehsils": ["Farrukhabad", "Kaimganj", "Amritpur"]
+            },
+            {
+              "name": "Fatehpur",
+              "tehsils": ["Fatehpur", "Khaga", "Bindki"]
+            },
+            {
+              "name": "Firozabad",
+              "tehsils": ["Firozabad", "Shikohabad", "Jasrana", "Tundla"]
+            },
+            {
+              "name": "Gautam Buddh Nagar",
+              "tehsils": ["Noida", "Dadri", "Jewar"]
+            },
+            {
+              "name": "Ghaziabad",
+              "tehsils": ["Ghaziabad", "Hapur", "Modinagar"]
+            },
+            {
+              "name": "Ghazipur",
+              "tehsils": ["Ghazipur", "Zamania", "Saidpur", "Mohammadabad"]
+            },
+            {
+              "name": "Gonda",
+              "tehsils": ["Gonda", "Tarabganj", "Colonelganj", "Katra Bazar"]
+            },
+            {
+              "name": "Gorakhpur",
+              "tehsils": ["Gorakhpur", "Sahjanwa", "Chauri Chaura", "Bansgaon"]
+            },
+            {
+              "name": "Hamirpur",
+              "tehsils": ["Hamirpur", "Rath", "Maudaha", "Sarila"]
+            },
+            {
+              "name": "Hardoi",
+              "tehsils": ["Hardoi", "Sandila", "Shahabad", "Sawayajpur", "Bilgram"]
+            },
+            {
+              "name": "Hathras",
+              "tehsils": ["Hathras", "Sasni", "Sadabad"]
+            },
+            {
+              "name": "Jalaun",
+              "tehsils": ["Orai", "Kalpi", "Madhogarh", "Konch"]
+            },
+            {
+              "name": "Jaunpur",
+              "tehsils": ["Jaunpur", "Shahganj", "Badlapur", "Machhlishahr"]
+            },
+            {
+              "name": "Jhansi",
+              "tehsils": ["Jhansi", "Mauranipur", "Moth", "Garautha"]
+            },
+            {
+              "name": "Kannauj",
+              "tehsils": ["Kannauj", "Tirwa", "Chhibramau"]
+            },
+            {
+              "name": "Kanpur Dehat",
+              "tehsils": ["Akbarpur", "Rasulabad", "Derapur", "Sikandra"]
+            },
+            {
+              "name": "Kanpur Nagar",
+              "tehsils": ["Kanpur", "Bilhaur", "Ghatampur"]
+            },
+            {
+              "name": "Kasganj",
+              "tehsils": ["Kasganj", "Amanpur", "Patiyali"]
+            },
+            {
+              "name": "Kaushambi",
+              "tehsils": ["Manjhanpur", "Saraswati", "Chail"]
+            },
+            {
+              "name": "Kheri",
+              "tehsils": ["Lakhimpur", "Gola Gokarannath", "Dhaurahara", "Mohammadi"]
+            },
+            {
+              "name": "Kushinagar",
+              "tehsils": ["Padrauna", "Hata", "Tamkuhi Raj", "Kasia"]
+            },
+            {
+              "name": "Lalitpur",
+              "tehsils": ["Lalitpur", "Talbehat", "Mehroni"]
+            },
+            {
+              "name": "Lucknow",
+              "tehsils": ["Lucknow", "Malihabad", "Mohanlalganj", "Sarojininagar"]
+            },
+            {
+              "name": "Maharajganj",
+              "tehsils": ["Maharajganj", "Nautanwa", "Nichlaul", "Siswa Bazar"]
+            },
+            {
+              "name": "Mahoba",
+              "tehsils": ["Mahoba", "Charkhari", "Kulpahar"]
+            },
+            {
+              "name": "Mainpuri",
+              "tehsils": ["Mainpuri", "Bhogaon", "Kishni"]
+            },
+            {
+              "name": "Mathura",
+              "tehsils": ["Mathura", "Chhata", "Goverdhan", "Mant"]
+            },
+            {
+              "name": "Meerut",
+              "tehsils": ["Meerut", "Mawana", "Sardhana"]
+            },
+            {
+              "name": "Mirzapur",
+              "tehsils": ["Mirzapur", "Lalganj", "Chunar", "Marihan"]
+            },
+            {
+              "name": "Moradabad",
+              "tehsils": ["Moradabad", "Kundarki", "Bilari", "Thakurdwara"]
+            },
+            {
+              "name": "Muzaffarnagar",
+              "tehsils": ["Muzaffarnagar", "Shamli", "Budhana", "Kairana"]
+            },
+            {
+              "name": "Pilibhit",
+              "tehsils": ["Pilibhit", "Bisalpur", "Puranpur"]
+            },
+            {
+              "name": "Pratapgarh",
+              "tehsils": ["Pratapgarh", "Raniganj", "Kunda"]
+            },
+            {
+              "name": "Prayagraj",
+              "tehsils": ["Sadar", "Koraon", "Handia", "Phulpur", "Soraon", "Meja"]
+            },
+            {
+              "name": "Raebareli",
+              "tehsils": ["Raebareli", "Lalganj", "Maharajganj"]
+            },
+            {
+              "name": "Rampur",
+              "tehsils": ["Rampur", "Suar", "Bilaspur"]
+            },
+            {
+              "name": "Saharanpur",
+              "tehsils": ["Saharanpur", "Deoband", "Nakur"]
+            },
+            {
+              "name": "Sant Kabir Nagar",
+              "tehsils": ["Khalilabad", "Mehdawal", "Ghanghata"]
+            },
+            {
+              "name": "Sant Ravidas Nagar",
+              "tehsils": ["Bhadohi", "Gyanpur", "Aurai"]
+            },
+            {
+              "name": "Shahjahanpur",
+              "tehsils": ["Shahjahanpur", "Jalalabad", "Tilhar", "Powayan"]
+            },
+            {
+              "name": "Shrawasti",
+              "tehsils": ["Bhinga", "Ikauna"]
+            },
+            {
+              "name": "Siddharthnagar",
+              "tehsils": ["Naugarh", "Bansi", "Shohratgarh", "Domariaganj"]
+            },
+            {
+              "name": "Sitapur",
+              "tehsils": ["Sitapur", "Biswan", "Mahmudabad", "Sidhauli"]
+            },
+            {
+              "name": "Sonbhadra",
+              "tehsils": ["Robertsganj", "Duddhi", "Ghorawal"]
+            },
+            {
+              "name": "Sultanpur",
+              "tehsils": ["Sultanpur", "Kadipur", "Lambhua"]
+            },
+            {
+              "name": "Unnao",
+              "tehsils": ["Unnao", "Safipur", "Bighapur", "Hasanganj"]
+            },
+            {
+              "name": "Varanasi",
+              "tehsils": ["Varanasi", "Pindra", "Rohaniya"]
+            }
+          ]
+        }
+      },
+      {
+        "Uttarakhand": {
+          "capital": "Dehradun",
+          "Largest City": "Dehradun",
+          "districts": [
+            {
+              "name": "Almora",
+              "tehsils": [
+                "Almora",
+                "Ranikhet",
+                "Bhikiyasain",
+                "Dwarahat",
+                "Syalde"
+              ]
+            },
+            {
+              "name": "Bageshwar",
+              "tehsils": [
+                "Bageshwar",
+                "Kapkot",
+                "Garur"
+              ]
+            },
+            {
+              "name": "Chamoli",
+              "tehsils": [
+                "Chamoli",
+                "Joshimath",
+                "Karnaprayag",
+                "Gairsain",
+                "Pokhari"
+              ]
+            },
+            {
+              "name": "Champawat",
+              "tehsils": [
+                "Champawat",
+                "Lohaghat",
+                "Pati",
+                "Barakot"
+              ]
+            },
+            {
+              "name": "Dehradun",
+              "tehsils": [
+                "Dehradun",
+                "Rishikesh",
+                "Vikasnagar",
+                "Chakrata",
+                "Tyuni"
+              ]
+            },
+            {
+              "name": "Haridwar",
+              "tehsils": [
+                "Haridwar",
+                "Roorkee",
+                "Laksar",
+                "Bhagwanpur"
+              ]
+            },
+            {
+              "name": "Nainital",
+              "tehsils": [
+                "Nainital",
+                "Haldwani",
+                "Ramnagar",
+                "Kaladhungi",
+                "Kosya Kutauli"
+              ]
+            },
+            {
+              "name": "Pauri Garhwal",
+              "tehsils": [
+                "Pauri",
+                "Kotdwar",
+                "Srinagar",
+                "Dugadda",
+                "Dhoomakot"
+              ]
+            },
+            {
+              "name": "Pithoragarh",
+              "tehsils": [
+                "Pithoragarh",
+                "Dharchula",
+                "Berinag",
+                "Munsiari",
+                "Gangolihat"
+              ]
+            },
+            {
+              "name": "Rudraprayag",
+              "tehsils": [
+                "Rudraprayag",
+                "Ukhimath",
+                "Jakholi"
+              ]
+            },
+            {
+              "name": "Tehri Garhwal",
+              "tehsils": [
+                "New Tehri",
+                "Narendranagar",
+                "Devprayag",
+                "Ghansali",
+                "Pratapnagar"
+              ]
+            },
+            {
+              "name": "Udham Singh Nagar",
+              "tehsils": [
+                "Rudrapur",
+                "Kashipur",
+                "Khatima",
+                "Sitarganj",
+                "Gadarpur",
+                "Jaspur"
+              ]
+            },
+            {
+              "name": "Uttarkashi",
+              "tehsils": [
+                "Uttarkashi",
+                "Bhatwari",
+                "Dunda",
+                "Purola",
+                "Mori"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "West Bengal": {
+          "capital": "Kolkata",
+          "Largest City": "Kolkata",
+          "districts": [
+            {
+              "name": "Alipurduar",
+              "tehsils": ["Alipurduar", "Falakata", "Kalchini", "Madhya Alipurduar", "Siliguri"]
+            },
+            {
+              "name": "Bankura",
+              "tehsils": ["Bankura", "Bishnupur", "Indas", "Saltora", "Taldangra"]
+            },
+            {
+              "name": "Birbhum",
+              "tehsils": ["Suri", "Bolpur", "Nanoor", "Ranishwar", "Santiniketan"]
+            },
+            {
+              "name": "Cooch Behar",
+              "tehsils": ["Cooch Behar", "Dinhata", "Mekhliganj", "Tufanganj", "Mathabhanga"]
+            },
+            {
+              "name": "Dakshin Dinajpur",
+              "tehsils": ["Balurghat", "Hili", "Kumirdaha", "Gangarampur"]
+            },
+            {
+              "name": "Darjeeling",
+              "tehsils": ["Darjeeling", "Kalimpong", "Kurseong", "Siliguri"]
+            },
+            {
+              "name": "Hooghly",
+              "tehsils": ["Chandannagar", "Chinsurah", "Serampore", "Srirampur", "Haripal"]
+            },
+            {
+              "name": "Howrah",
+              "tehsils": ["Howrah", "Sankrail", "Uluberia", "Shibpur", "Domjur"]
+            },
+            {
+              "name": "Jalpaiguri",
+              "tehsils": ["Jalpaiguri", "Rajganj", "Siliguri", "Madhyapara", "Kaliaganj"]
+            },
+            {
+              "name": "Jhargram",
+              "tehsils": ["Jhargram", "Gopiballavpur", "Chandrakona", "Binpur", "Salboni"]
+            },
+            {
+              "name": "Kolkata",
+              "tehsils": ["Kolkata"]
+            },
+            {
+              "name": "Malda",
+              "tehsils": ["Malda", "Kaliachak", "English Bazar", "Mothabari", "Sutia"]
+            },
+            {
+              "name": "Murshidabad",
+              "tehsils": ["Berhampore", "Jangipur", "Lalgola", "Beldanga", "Kandi"]
+            },
+            {
+              "name": "Nadia",
+              "tehsils": ["Krishnanagar", "Nabadwip", "Ranaghat", "Chakdaha", "Shantipur"]
+            },
+            {
+              "name": "North 24 Parganas",
+              "tehsils": ["Barasat", "Bongaon", "Basirhat", "Canning", "Dumdum"]
+            },
+            {
+              "name": "Purba Bardhaman",
+              "tehsils": ["Bardhaman", "Asansol", "Durgapur", "Katwa", "Memari"]
+            },
+            {
+              "name": "Purulia",
+              "tehsils": ["Purulia", "Jhalda", "Raghunathganj", "Manbazar", "Chhatna"]
+            },
+            {
+              "name": "South 24 Parganas",
+              "tehsils": ["Alambazar", "Diamond Harbour", "Canning", "Kolkata", "Tollygunge"]
+            },
+            {
+              "name": "Siliguri",
+              "tehsils": ["Siliguri", "Sukna", "Mahananda", "Dudhia"]
+            },
+            {
+              "name": "Uttar Dinajpur",
+              "tehsils": ["Raiganj", "Islampur", "Chopra", "Karandighi"]
+            }
+          ]
+        }
+      }
+  ]
+}
+  

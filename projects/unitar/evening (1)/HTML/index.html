@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./elementor.css" />
+    <link rel="stylesheet" href="./filters.css" />
+    <link rel="stylesheet" href="./unitar.css" />
+    <link rel="stylesheet" href="./customizer.css" />
+  </head>
+  <body>
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="elementor-widget-wrap elementor-element-populated">
+            <div
+              class="elementor-element elementor-element-7678fa64 elementor-widget elementor-widget-shortcode"
+              data-id="7678fa64"
+              data-element_type="widget"
+              data-widget_type="shortcode.default"
+            >
+              <div class="elementor-widget-container">
+                <div class="elementor-shortcode">
+                  <script>
+                    var codeArray = {};
+
+                    function showLoading() {
+                      document.getElementById("loading-page").style.display =
+                        "block";
+                    }
+                  </script>
+                  <div class="program_filter">
+                    <div class="programme-filter-wrapper">
+                      <button class="cross">
+                        <i class="fas fa-times"></i>
+                      </button>
+                      <div class="programme-filter-wrapper_wrap">
+                        <div class="programme-filter-title">
+                          <h2>Find a programme</h2>
+                        </div>
+                        <div class="programme-filter">
+                          <ul>
+                            <li class="programme-filter-li">
+                              <button
+                                type="button"
+                                id="category"
+                                style="
+                                  background-image: url('https://staging.unitar.my/wp-content/plugins/unitar-custom-plugin-revamp//img/catagory.png');
+                                "
+                              >
+                                <span class="mobile-hide"> Area of Study </span>
+                                <div class="dropdown-icon">
+                                  <i
+                                    class="fa fa-chevron-down"
+                                    aria-hidden="true"
+                                  ></i>
+                                </div>
+                              </button>
+                              <div
+                                class="programme-category-box"
+                                id="category-box"
+                              >
+                                <div class="box-title">
+                                  <p class="blue-text---">
+                                    <strong> Area of Study </strong>
+                                  </p>
+                                  <i
+                                    class="fa fa-refresh refresh-icon"
+                                    aria-hidden="true"
+                                  ></i>
+                                  <i
+                                    class="fa fa-times close-icon"
+                                    aria-hidden="true"
+                                  ></i>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="programme-filter-li">
+                              <div class="programme-campus-box" id="campus-box">
+                                <ul class="campus-list mohe-filter">
+                                  <li class="conventional">Centres:</li>
+                                  <ul>
+                                    <li id="alor-setar">
+                                      <input
+                                        id="check-alor-setar"
+                                        value="alor-setar"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="alor-setar"
+                                        >Alor Setar</label
+                                      >
+                                    </li>
+                                    <li id="ipoh">
+                                      <input
+                                        id="check-ipoh"
+                                        value="ipoh"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="ipoh">Ipoh</label>
+                                    </li>
+                                    <li id="johor-bahru">
+                                      <input
+                                        id="check-johor-bahru"
+                                        value="johor-bahru"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="johor-bahru"
+                                        >Johor Bahru</label
+                                      >
+                                    </li>
+                                    <li id="kota-bharu">
+                                      <input
+                                        id="check-kota-bharu"
+                                        value="kota-bharu"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kota-bharu"
+                                        >Kota Bharu</label
+                                      >
+                                    </li>
+                                    <li id="kota-kinabalu">
+                                      <input
+                                        id="check-kota-kinabalu"
+                                        value="kota-kinabalu"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kota-kinabalu"
+                                        >Kota Kinabalu</label
+                                      >
+                                    </li>
+                                    <li id="kuala-lumpur">
+                                      <input
+                                        id="check-kuala-lumpur"
+                                        value="kuala-lumpur"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kuala-lumpur"
+                                        >Kuala Lumpur</label
+                                      >
+                                    </li>
+                                    <li id="kuala-terengganu">
+                                      <input
+                                        id="check-kuala-terengganu"
+                                        value="kuala-terengganu"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kuala-terengganu"
+                                        >Kuala Terengganu</label
+                                      >
+                                    </li>
+                                    <li id="kuantan">
+                                      <input
+                                        id="check-kuantan"
+                                        value="kuantan"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kuantan">Kuantan</label>
+                                    </li>
+                                    <li id="kuching">
+                                      <input
+                                        id="check-kuching"
+                                        value="kuching"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kuching">Kuching</label>
+                                    </li>
+                                    <li id="melaka">
+                                      <input
+                                        id="check-melaka"
+                                        value="melaka"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="melaka">Melaka</label>
+                                    </li>
+                                    <li id="petaling-jaya-main">
+                                      <input
+                                        id="check-petaling-jaya-main"
+                                        value="petaling-jaya-main"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="petaling-jaya-main"
+                                        >Petaling Jaya (Main)</label
+                                      >
+                                    </li>
+                                    <li id="pulau-pinang">
+                                      <input
+                                        id="check-pulau-pinang"
+                                        value="pulau-pinang"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="pulau-pinang"
+                                        >Pulau Pinang</label
+                                      >
+                                    </li>
+                                    <li id="sungai-petani">
+                                      <input
+                                        id="check-sungai-petani"
+                                        value="sungai-petani"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="sungai-petani"
+                                        >Sungai Petani</label
+                                      >
+                                    </li>
+                                    <li id="alor-setar">
+                                      <input
+                                        id="check-alor-setar"
+                                        value="alor-setar"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="alor-setar"
+                                        >Alor Setar</label
+                                      >
+                                    </li>
+                                    <li id="ipoh">
+                                      <input
+                                        id="check-ipoh"
+                                        value="ipoh"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="ipoh">Ipoh</label>
+                                    </li>
+                                    <li id="johor-bahru">
+                                      <input
+                                        id="check-johor-bahru"
+                                        value="johor-bahru"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="johor-bahru"
+                                        >Johor Bahru</label
+                                      >
+                                    </li>
+                                    <li id="kota-bharu">
+                                      <input
+                                        id="check-kota-bharu"
+                                        value="kota-bharu"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kota-bharu"
+                                        >Kota Bharu</label
+                                      >
+                                    </li>
+                                    <li id="kota-kinabalu">
+                                      <input
+                                        id="check-kota-kinabalu"
+                                        value="kota-kinabalu"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kota-kinabalu"
+                                        >Kota Kinabalu</label
+                                      >
+                                    </li>
+                                    <li id="kuala-lumpur">
+                                      <input
+                                        id="check-kuala-lumpur"
+                                        value="kuala-lumpur"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kuala-lumpur"
+                                        >Kuala Lumpur</label
+                                      >
+                                    </li>
+                                    <li id="kuala-terengganu">
+                                      <input
+                                        id="check-kuala-terengganu"
+                                        value="kuala-terengganu"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kuala-terengganu"
+                                        >Kuala Terengganu</label
+                                      >
+                                    </li>
+                                    <li id="kuantan">
+                                      <input
+                                        id="check-kuantan"
+                                        value="kuantan"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kuantan">Kuantan</label>
+                                    </li>
+                                    <li id="kuching">
+                                      <input
+                                        id="check-kuching"
+                                        value="kuching"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="kuching">Kuching</label>
+                                    </li>
+                                    <li id="melaka">
+                                      <input
+                                        id="check-melaka"
+                                        value="melaka"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="melaka">Melaka</label>
+                                    </li>
+                                    <li id="petaling-jaya-main">
+                                      <input
+                                        id="check-petaling-jaya-main"
+                                        value="petaling-jaya-main"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="petaling-jaya-main"
+                                        >Petaling Jaya (Main)</label
+                                      >
+                                    </li>
+                                    <li id="pulau-pinang">
+                                      <input
+                                        id="check-pulau-pinang"
+                                        value="pulau-pinang"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="pulau-pinang"
+                                        >Pulau Pinang</label
+                                      >
+                                    </li>
+                                    <li id="sungai-petani">
+                                      <input
+                                        id="check-sungai-petani"
+                                        value="sungai-petani"
+                                        type="checkbox"
+                                        class="checkbox-campus"
+                                        name="prog_campus[]"
+                                      /><label for="sungai-petani"
+                                        >Sungai Petani</label
+                                      >
+                                    </li>
+                                  </ul>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <h3 class="program_filter_result_title">Filter</h3>
+                        <div id="programme-filter-results-wrapper">
+                          <div class="programme-filter-results">
+                            <div
+                              class="results"
+                              id="totalresults"
+                              style="display: inline-block"
+                            >
+                              Programmes (169)
+                              <div class="appended"></div>
+                            </div>
+                            <div id="category-results"></div>
+                            <div id="certification-results"></div>
+                            <div id="campus-results"></div>
+                            <!-- <div id="no-results"></div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="program_filter_overlay"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product woocommerce columns-3">
+            <ul class="products columns-3">
+              <li
+                class="post-2129 product type-product status-publish has-post-thumbnail entity-university product_cat-education campus-alor-setar campus-ipoh campus-johor-bahru campus-kota-bharu campus-kota-kinabalu campus-kuala-terengganu campus-kuantan campus-kuching campus-melaka campus-petaling-jaya-main level_of_study-undergraduate certifications-diploma language-english first instock shipping-taxable purchasable product-type-simple"
+                style=""
+                previousitemindex="5"
+                currentitemcode="Ipoh"
+              >
+                <div class="inner-list revamp-2023">
+                  <div class="programme-header-loop revamp-2023">
+                    <div class="programme-image-loop">
+                      <a
+                        href="https://staging.unitar.my/programme/diploma-in-early-childhood-education/"
+                      >
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width="450"
+                          height="450"
+                          src="https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-450x450.jpg"
+                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                          alt="Diploma in Early Childhood Education - UNITAR International University"
+                          srcset="
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-450x450.jpg    450w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-100x100.jpg    100w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-600x600.jpg    600w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-300x300.jpg    300w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-1024x1024.jpg 1024w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-150x150.jpg    150w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-768x768.jpg    768w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD.jpg           1200w
+                          "
+                          sizes="(max-width: 450px) 100vw, 450px"
+                        />
+                      </a>
+                    </div>
+                    <div class="programme-heading-loop">
+                      <div>
+                        <h3 class="no-margin-bottom">
+                          <a
+                            href="https://staging.unitar.my/programme/diploma-in-early-childhood-education/"
+                            class="elementor-heading-title"
+                            >Diploma in Early Childhood Education</a
+                          >
+                        </h3>
+                      </div>
+                      <!-- <div class="programme-meta-loop">
+                      <div class="programme-meta-code">
+                  <div>
+                  <div class="tm-mohe-box">
+          <div class="mohe-code"><a href="#">(R2/0112/4/0020) (01/29) (MQA/FA 1703)</a></div>
+          <div class="tm-campus-box">
+          <div class="location_wrap">
+          <div class="icon_text">
+          <div class="location_img"><img decoding="async" alt="" src="https://staging.unitar.my/wp-content/uploads/2025/05/marker.webp"></div>
+          <div class="a_wrap"><a href="/programme/bachelor-of-accounting-hons/">UNITAR International University Regional Center</a></div>
+          </div>
+          <div class="campus_img_wrap"><img decoding="async" alt="" src="https://staging.unitar.my/wp-content/uploads/2025/05/arrow-grey.webp" style="display:none"> <img decoding="async" alt="" src="https://staging.unitar.my/wp-content/uploads/2025/05/arrow-color.webp"></div>
+          </div>
+          <div class="dt_ut_center">
+          <div class="st_ut_main">
+          <div class="align-items-center d-flex location_icon_wrap">
+          <div class="location_img"><img decoding="async" alt="" src="https://staging.unitar.my/wp-content/uploads/2025/05/marker.webp"></div>
+          <div class="a_wrap"><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University" data-location="main" data-code="(R2/0112/4/0020) (01/29) (MQA/FA 1703)" id="replace_code">UNITAR International University<small>(R2/0112/4/0020) (01/29) (MQA/FA 1703)</small></a></div>
+          </div>
+          </div>
+          <div class="st_ut_list"><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Kuantan" data-location="Kuantan" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Kuantan<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Kota Kinabalu" data-location="Kota Kinabalu" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Kota Kinabalu<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Kota Bharu" data-location="Kota Bharu" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Kota Bharu<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Johor Bahru" data-location="Johor Bahru" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Johor Bahru<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Melaka" data-location="Melaka" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Melaka<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Ipoh" data-location="Ipoh" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Ipoh<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Alor Setar" data-location="Alor Setar" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Alor Setar<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Kuching" data-location="Kuching" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Kuching<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a></div>
+          </div>
+          </div>
+          </div>
+                </div>
+                
+            
+                    </div> -->
+                    </div>
+                  </div>
+                  <div class="custom-loop-div revamp-2023">
+                    <!-- <div class="programme-meta-loop">
+                <div class="programme-meta-code">
+                  <div>
+                  <div class="tm-mohe-box">
+          <div class="mohe-code"><a href="#">(R2/0112/4/0020) (01/29) (MQA/FA 1703)</a></div>
+          <div class="tm-campus-box">
+          <div class="location_wrap">
+          <div class="icon_text">
+          <div class="location_img"><img decoding="async" alt="" src="https://staging.unitar.my/wp-content/uploads/2025/05/marker.webp"></div>
+          <div class="a_wrap"><a href="/programme/bachelor-of-accounting-hons/">UNITAR International University Regional Center</a></div>
+          </div>
+          <div class="campus_img_wrap"><img decoding="async" alt="" src="https://staging.unitar.my/wp-content/uploads/2025/05/arrow-grey.webp" style="display:none"> <img decoding="async" alt="" src="https://staging.unitar.my/wp-content/uploads/2025/05/arrow-color.webp"></div>
+          </div>
+          <div class="dt_ut_center">
+          <div class="st_ut_main">
+          <div class="align-items-center d-flex location_icon_wrap">
+          <div class="location_img"><img decoding="async" alt="" src="https://staging.unitar.my/wp-content/uploads/2025/05/marker.webp"></div>
+          <div class="a_wrap"><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University" data-location="main" data-code="(R2/0112/4/0020) (01/29) (MQA/FA 1703)" id="replace_code">UNITAR International University<small>(R2/0112/4/0020) (01/29) (MQA/FA 1703)</small></a></div>
+          </div>
+          </div>
+          <div class="st_ut_list"><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Kuantan" data-location="Kuantan" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Kuantan<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Kota Kinabalu" data-location="Kota Kinabalu" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Kota Kinabalu<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Kota Bharu" data-location="Kota Bharu" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Kota Bharu<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Johor Bahru" data-location="Johor Bahru" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Johor Bahru<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Melaka" data-location="Melaka" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Melaka<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Ipoh" data-location="Ipoh" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Ipoh<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Alor Setar" data-location="Alor Setar" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Alor Setar<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a><a href="/programme/bachelor-of-accounting-hons/" data-campus="UNITAR International University Regional Centre Kuching" data-location="Kuching" data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)">UNITAR International University Regional Centre Kuching<small>(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)</small></a></div>
+          </div>
+          </div>
+          </div>
+                </div>
+                
+            
+              </div> -->
+                    <div class="programme-meta-loop">
+                      <!-- <div class="elementor-widget-icon-box elementor-position-left ">	
+                <div class="elementor-icon-box-wrapper">
+                  <div class="elementor-icon-box-icon"><img decoding="async" src="https://staging.unitar.my/wp-content/themes/UNITAR-Revamp/img/icon-cap.svg" alt="Certifcations" /></div>
+                  <div class="elementor-icon-box-content">Diploma</div>
+                </div>
+                <div class="elementor-icon-box-wrapper">
+                  <div class="elementor-icon-box-icon"><img decoding="async" src="https://staging.unitar.my/wp-content/themes/UNITAR-Revamp/img/icon-calendar.svg" alt="Duration" /></div>
+                  <div class="elementor-icon-box-content">7 Semesters / 2 Years 6 Months</div>
+                </div>
+                <div class="elementor-icon-box-wrapper">
+                  <div class="elementor-icon-box-icon"><img decoding="async" src="https://staging.unitar.my/wp-content/themes/UNITAR-Revamp/img/icon-pin.svg" alt="Campus" /></div>
+                  <div class="elementor-icon-box-content">Alor Setar | Ipoh | Johor Bahru | Kota Bharu | Kota Kinabalu | Kuala Terengganu | Kuantan | Kuching | Melaka and Petaling Jaya (Main)</div>
+                </div>  
+              </div>  -->
+                      <div class="multi_code">
+                        <div class="programme-meta-loop">
+                          <div class="programme-meta-code">
+                            <div>
+                              <div class="tm-mohe-box">
+                                <div class="mohe-code">
+                                  <a href="#"
+                                    >(R2/0112/4/0020) (01/29) (MQA/FA 1703)</a
+                                  >
+                                </div>
+                                <div class="tm-campus-box">
+                                  <div class="location_wrap">
+                                    <div class="icon_text">
+                                      <div class="location_img">
+                                        <img
+                                          decoding="async"
+                                          alt=""
+                                          src="https://staging.unitar.my/wp-content/uploads/2025/05/marker.webp"
+                                        />
+                                      </div>
+                                      <div class="a_wrap">
+                                        <a
+                                          href="/programme/bachelor-of-accounting-hons/"
+                                          data-campus="UNITAR International University"
+                                          data-location="main"
+                                          data-code="(R2/0112/4/0020) (01/29) (MQA/FA 1703)"
+                                          id="replace_code"
+                                          >UNITAR International University<small
+                                            >(R2/0112/4/0020) (01/29) (MQA/FA
+                                            1703)</small
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                    <div class="campus_img_wrap">
+                                      <img
+                                        decoding="async"
+                                        alt=""
+                                        src="https://staging.unitar.my/wp-content/uploads/2025/05/arrow-grey.webp"
+                                        style="display: none"
+                                      />
+                                      <img
+                                        decoding="async"
+                                        alt=""
+                                        src="https://staging.unitar.my/wp-content/uploads/2025/05/arrow-color.webp"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="dt_ut_center">
+                                    <div class="st_ut_main">
+                                      <div
+                                        class="align-items-center d-flex location_icon_wrap"
+                                      >
+                                        <div class="location_img">
+                                          <img
+                                            decoding="async"
+                                            alt=""
+                                            src="https://staging.unitar.my/wp-content/uploads/2025/05/marker.webp"
+                                          />
+                                        </div>
+                                        <div class="a_wrap">
+                                          <a
+                                            href="/programme/bachelor-of-accounting-hons/"
+                                            data-campus="UNITAR International University"
+                                            data-location="main"
+                                            data-code="(R2/0112/4/0020) (01/29) (MQA/FA 1703)"
+                                            id="replace_code"
+                                            >UNITAR International
+                                            University<small
+                                              >(R2/0112/4/0020) (01/29) (MQA/FA
+                                              1703)</small
+                                            ></a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="st_ut_list">
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Alor Setar"
+                                        data-location="Alor Setar"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Alor Setar<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Ipoh"
+                                        data-location="Ipoh"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Ipoh<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Johor Bahru"
+                                        data-location="Johor Bahru"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Johor Bahru<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Kota Bharu"
+                                        data-location="Kota Bharu"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Kota Bharu<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Kota Kinabalu"
+                                        data-location="Kota Kinabalu"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Kota Kinabalu<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Kuala Lumpur"
+                                        data-location="Kuala Lumpur"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Kuala Lumpur<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Kuala Terengganu"
+                                        data-location="Kuala Terengganu"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Kuala Terengganu<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="programme-meta-shortcode-ul">
+                        <div class="programme-certifications">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="Group_58"
+                            data-name="Group 58"
+                            width="23.414"
+                            height="17.853"
+                            viewBox="0 0 23.414 17.853"
+                          >
+                            <path
+                              id="Path_52"
+                              data-name="Path 52"
+                              d="M31.414,25.683,19.707,21,8,25.683l11.707,5.268Z"
+                              transform="translate(-8 -21)"
+                              fill="#024b72"
+                            ></path>
+                            <path
+                              id="Path_53"
+                              data-name="Path 53"
+                              d="M23,48.137v6.4c0,1.94,3.276,3.512,7.317,3.512s7.317-1.573,7.317-3.512v-6.4L30.317,51.43Z"
+                              transform="translate(-18.61 -40.195)"
+                              fill="#024b72"
+                            ></path>
+                            <path
+                              id="Path_54"
+                              data-name="Path 54"
+                              d="M80.756,42.737l-1.171.527v5.7L79,49.545v3.512h2.341V49.545l-.585-.585Z"
+                              transform="translate(-58.22 -36.375)"
+                              fill="#024b72"
+                            ></path>
+                          </svg>
+                          <div>Diploma</div>
+                        </div>
+                        <div class="programme-duration">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="341.312"
+                            height="341.312"
+                            viewBox="0 0 341.312 341.312"
+                          >
+                            <g transform="translate(-11.377 -2)">
+                              <path
+                                d="M77.005,47.182A10.851,10.851,0,0,1,78.358,30.4,170.674,170.674,0,1,1,35.412,71.21a10.837,10.837,0,0,1,16.432-.919,12.122,12.122,0,0,1,.967,15.675,147.815,147.815,0,1,0,39.4-37.441A12.149,12.149,0,0,1,77.005,47.182Z"
+                                transform="translate(9.377)"
+                              ></path>
+                              <path
+                                d="M41.377,15.5A11.377,11.377,0,0,1,52.754,26.877v77.771l47.865,47.864A11.377,11.377,0,0,1,84.529,168.6l-51.2-51.2A11.377,11.377,0,0,1,30,109.361V26.877A11.377,11.377,0,0,1,41.377,15.5Z"
+                                transform="translate(140.656 63.295)"
+                              ></path>
+                            </g>
+                          </svg>
+                          <div>7 Semesters / 2 Years 6 Months</div>
+                        </div>
+                        <div class="programme-funding">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22.114"
+                            height="24.909"
+                            viewBox="0 0 22.114 24.909"
+                          >
+                            <g
+                              id="Group_2914"
+                              data-name="Group 2914"
+                              transform="translate(-6.731 -1.209)"
+                            >
+                              <g
+                                id="Group_2913"
+                                data-name="Group 2913"
+                                transform="translate(7.031 1.569)"
+                              >
+                                <g
+                                  id="Group_2911"
+                                  data-name="Group 2911"
+                                  transform="translate(0 0)"
+                                >
+                                  <path
+                                    id="Path_1786"
+                                    data-name="Path 1786"
+                                    d="M22.177,47.05H13.4c-3.5,0-6.358-2.47-6.367-5.5,0-4.979,4.539-9.68,6.939-11.471a.939.939,0,0,1,.557-.184h6.522a.938.938,0,0,1,.556.184c2.4,1.79,6.94,6.481,6.94,11.419v.058C28.535,44.584,25.679,47.05,22.177,47.05Zm-7.65-16.378a.148.148,0,0,0-.089.03c-1.842,1.375-6.625,6-6.625,10.842.008,2.6,2.513,4.724,5.585,4.724h8.779c3.072,0,5.577-2.116,5.585-4.718v-.057c0-4.8-4.782-9.416-6.625-10.791a.146.146,0,0,0-.089-.029H14.527Z"
+                                    transform="translate(-7.031 -22.8)"
+                                    fill="#024b72"
+                                    stroke="#024b72"
+                                    stroke-width="0.6"
+                                  ></path>
+                                  <path
+                                    id="Path_1787"
+                                    data-name="Path 1787"
+                                    d="M28.378,9.5,26.909,4.618a1.488,1.488,0,0,1,.584-1.693,1.693,1.693,0,0,1,2.017.033l.362.276L31.6,1.911a1.723,1.723,0,0,1,2.061,0L35.4,3.234l.362-.276a1.7,1.7,0,0,1,2.017-.033,1.489,1.489,0,0,1,.577,1.714L36.89,9.5l-.749-.225L37.607,4.4a.716.716,0,0,0-.284-.838.916.916,0,0,0-1.09.016l-.461.352a.636.636,0,0,1-.751,0l-1.832-1.4a.93.93,0,0,0-1.112,0l-1.832,1.4a.638.638,0,0,1-.75,0l-.461-.353a.916.916,0,0,0-1.09-.016.713.713,0,0,0-.29.821l1.472,4.89ZM35.3,3.31h0Z"
+                                    transform="translate(-21.877 -1.569)"
+                                    fill="#024b72"
+                                    stroke="#024b72"
+                                    stroke-width="0.6"
+                                  ></path>
+                                </g>
+                                <g
+                                  id="Group_2912"
+                                  data-name="Group 2912"
+                                  transform="translate(14.225 6.385)"
+                                >
+                                  <path
+                                    id="Path_1788"
+                                    data-name="Path 1788"
+                                    d="M64.254,28.9a.391.391,0,0,1-.18-.738c.4-.207,3.955-1.982,5.461-.5a.391.391,0,0,1-.549.557c-.935-.923-3.668.176-4.551.634A.393.393,0,0,1,64.254,28.9Z"
+                                    transform="translate(-63.86 -27.075)"
+                                    fill="#024b72"
+                                    stroke="#024b72"
+                                    stroke-width="0.6"
+                                  ></path>
+                                  <path
+                                    id="Path_1789"
+                                    data-name="Path 1789"
+                                    d="M70.186,33.732a.39.39,0,0,1-.323-.171c-.394-.577-2.122-1.071-5.138-1.47-.629-.083-.917-.121-.866-.521a.391.391,0,0,1,.437-.339.408.408,0,0,1,.092.023c.074.013.259.038.439.061,2.419.319,4.986.784,5.682,1.8a.391.391,0,0,1-.323.612Zm-5.562-2.217a.4.4,0,0,1,.011.153A.391.391,0,0,0,64.624,31.515Z"
+                                    transform="translate(-63.853 -30.189)"
+                                    fill="#024b72"
+                                    stroke="#024b72"
+                                    stroke-width="0.6"
+                                  ></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                          <div>Up to 100% PTPTN</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mv_div">
+                      <div class="programme-price-loop">
+                        <div class="from"><span>From</span></div>
+                        <div class="price-per-month-loop">
+                          <span class="month-price">RM 750.00</span
+                          ><span class="month-text"
+                            >per <br />
+                            month</span
+                          >
+                        </div>
+                        <div class="price-per-annum-loop">
+                          <span class="full-price"
+                            ><span class="woocommerce-Price-amount amount"
+                              ><bdi
+                                ><span class="woocommerce-Price-currencySymbol"
+                                  >RM</span
+                                >&nbsp;22,500.00</bdi
+                              ></span
+                            >
+                            total tuition fee</span
+                          >
+                        </div>
+                      </div>
+
+                      <div class="programme-cta-loop">
+                        <div class="apply-btn-loop grey-btn">
+                          <a
+                            href="https://staging.unitar.my/programme/diploma-in-early-childhood-education/#programme-apply"
+                            class="button"
+                            >Request Info</a
+                          >
+                        </div>
+                        <div class="learn-btn-loop undergraduate">
+                          <a
+                            href="https://staging.unitar.my/programme/diploma-in-early-childhood-education/"
+                            class="button"
+                            >Learn More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- .custom-loop-div -->
+                </div>
+                <!-- .custom-loop-div -->
+              </li>
+              <li
+                class="post-2129 product type-product status-publish has-post-thumbnail entity-university product_cat-education campus-alor-setar campus-ipoh campus-johor-bahru campus-kota-bharu campus-kota-kinabalu campus-kuala-terengganu campus-kuantan campus-kuching campus-melaka campus-petaling-jaya-main level_of_study-undergraduate certifications-diploma language-english first instock shipping-taxable purchasable product-type-simple"
+                style=""
+                previousitemindex="5"
+                currentitemcode="Ipoh"
+              >
+                <div class="inner-list revamp-2023">
+                  <div class="programme-header-loop revamp-2023">
+                    <div class="programme-image-loop">
+                      <a
+                        href="https://staging.unitar.my/programme/diploma-in-early-childhood-education/"
+                      >
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width="450"
+                          height="450"
+                          src="https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-450x450.jpg"
+                          class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                          alt="Diploma in Early Childhood Education - UNITAR International University"
+                          srcset="
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-450x450.jpg    450w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-100x100.jpg    100w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-600x600.jpg    600w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-300x300.jpg    300w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-1024x1024.jpg 1024w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-150x150.jpg    150w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD-768x768.jpg    768w,
+                            https://staging.unitar.my/wp-content/uploads/2021/06/21_Dip-ECD.jpg           1200w
+                          "
+                          sizes="(max-width: 450px) 100vw, 450px"
+                        />
+                      </a>
+                    </div>
+                    <div class="programme-heading-loop">
+                      <div>
+                        <h3 class="no-margin-bottom">
+                          <a
+                            href="https://staging.unitar.my/programme/diploma-in-early-childhood-education/"
+                            class="elementor-heading-title"
+                            >Diploma in Early Childhood Education</a
+                          >
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="custom-loop-div revamp-2023">
+                    <div class="programme-meta-loop">
+                      <div class="multi_code">
+                        <div class="programme-meta-loop">
+                          <div class="programme-meta-code">
+                            <div>
+                              <div class="tm-mohe-box">
+                                <div class="mohe-code">
+                                  <a href="#"
+                                    >(R2/0112/4/0020) (01/29) (MQA/FA 1703)</a
+                                  >
+                                </div>
+                                <div class="tm-campus-box">
+                                  <div class="location_wrap">
+                                    <div class="icon_text">
+                                      <div class="location_img">
+                                        <img
+                                          decoding="async"
+                                          alt=""
+                                          src="https://staging.unitar.my/wp-content/uploads/2025/05/marker.webp"
+                                        />
+                                      </div>
+                                      <div class="a_wrap">
+                                        <a
+                                          href="/programme/bachelor-of-accounting-hons/"
+                                          data-campus="UNITAR International University Regional Centre Ipoh"
+                                          data-location="Ipoh"
+                                          data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                          >UNITAR International University
+                                          Regional Centre Ipoh<small
+                                            >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                            1883)</small
+                                          ></a
+                                        >
+                                      </div>
+                                    </div>
+                                    <div class="campus_img_wrap">
+                                      <img
+                                        decoding="async"
+                                        alt=""
+                                        src="https://staging.unitar.my/wp-content/uploads/2025/05/arrow-grey.webp"
+                                        style="display: none"
+                                      />
+                                      <img
+                                        decoding="async"
+                                        alt=""
+                                        src="https://staging.unitar.my/wp-content/uploads/2025/05/arrow-color.webp"
+                                      />
+                                    </div>
+                                  </div>
+                                  <div class="dt_ut_center">
+                                    <div class="st_ut_main">
+                                      <div
+                                        class="align-items-center d-flex location_icon_wrap"
+                                      >
+                                        <div class="location_img">
+                                          <img
+                                            decoding="async"
+                                            alt=""
+                                            src="https://staging.unitar.my/wp-content/uploads/2025/05/marker.webp"
+                                          />
+                                        </div>
+                                        <div class="a_wrap">
+                                          <a
+                                            href="/programme/bachelor-of-accounting-hons/"
+                                            data-campus="UNITAR International University"
+                                            data-location="main"
+                                            data-code="(R2/0112/4/0020) (01/29) (MQA/FA 1703)"
+                                            id="replace_code"
+                                            >UNITAR International
+                                            University<small
+                                              >(R2/0112/4/0020) (01/29) (MQA/FA
+                                              1703)</small
+                                            ></a
+                                          >
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="st_ut_list">
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Alor Setar"
+                                        data-location="Alor Setar"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Alor Setar<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Ipoh"
+                                        data-location="Ipoh"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Ipoh<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Johor Bahru"
+                                        data-location="Johor Bahru"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Johor Bahru<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Kuantan"
+                                        data-location="Kuantan"
+                                        data-code="(N/0112/4/0071)(05/29)(MQA/PA17032)"
+                                        >UNITAR International University
+                                        Regional Centre Kuantan<small
+                                          >(N/0112/4/0071)(05/29)(MQA/PA17032)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Kuching"
+                                        data-location="Kuching"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Kuching<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Melaka"
+                                        data-location="Melaka"
+                                        data-code="(R2-DL/0112/4/0045) (05/29) (MQA/FA 1883)"
+                                        >UNITAR International University
+                                        Regional Centre Melaka<small
+                                          >(R2-DL/0112/4/0045) (05/29) (MQA/FA
+                                          1883)</small
+                                        ></a
+                                      >
+                                      <a
+                                        href="/programme/bachelor-of-accounting-hons/"
+                                        data-campus="UNITAR International University Regional Centre Sungai Petani"
+                                        data-location="Sungai Petani"
+                                        data-code="(N/0112/4/0001)(05/27)(MQA/PA15574)"
+                                        >UNITAR International University
+                                        Regional Centre Sungai Petani<small
+                                          >(N/0112/4/0001)(05/27)(MQA/PA15574)</small
+                                        ></a
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="programme-meta-shortcode-ul">
+                        <div class="programme-certifications">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            id="Group_58"
+                            data-name="Group 58"
+                            width="23.414"
+                            height="17.853"
+                            viewBox="0 0 23.414 17.853"
+                          >
+                            <path
+                              id="Path_52"
+                              data-name="Path 52"
+                              d="M31.414,25.683,19.707,21,8,25.683l11.707,5.268Z"
+                              transform="translate(-8 -21)"
+                              fill="#024b72"
+                            ></path>
+                            <path
+                              id="Path_53"
+                              data-name="Path 53"
+                              d="M23,48.137v6.4c0,1.94,3.276,3.512,7.317,3.512s7.317-1.573,7.317-3.512v-6.4L30.317,51.43Z"
+                              transform="translate(-18.61 -40.195)"
+                              fill="#024b72"
+                            ></path>
+                            <path
+                              id="Path_54"
+                              data-name="Path 54"
+                              d="M80.756,42.737l-1.171.527v5.7L79,49.545v3.512h2.341V49.545l-.585-.585Z"
+                              transform="translate(-58.22 -36.375)"
+                              fill="#024b72"
+                            ></path>
+                          </svg>
+                          <div>Diploma</div>
+                        </div>
+                        <div class="programme-duration">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="341.312"
+                            height="341.312"
+                            viewBox="0 0 341.312 341.312"
+                          >
+                            <g transform="translate(-11.377 -2)">
+                              <path
+                                d="M77.005,47.182A10.851,10.851,0,0,1,78.358,30.4,170.674,170.674,0,1,1,35.412,71.21a10.837,10.837,0,0,1,16.432-.919,12.122,12.122,0,0,1,.967,15.675,147.815,147.815,0,1,0,39.4-37.441A12.149,12.149,0,0,1,77.005,47.182Z"
+                                transform="translate(9.377)"
+                              ></path>
+                              <path
+                                d="M41.377,15.5A11.377,11.377,0,0,1,52.754,26.877v77.771l47.865,47.864A11.377,11.377,0,0,1,84.529,168.6l-51.2-51.2A11.377,11.377,0,0,1,30,109.361V26.877A11.377,11.377,0,0,1,41.377,15.5Z"
+                                transform="translate(140.656 63.295)"
+                              ></path>
+                            </g>
+                          </svg>
+                          <div>7 Semesters / 2 Years 6 Months</div>
+                        </div>
+                        <div class="programme-funding">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22.114"
+                            height="24.909"
+                            viewBox="0 0 22.114 24.909"
+                          >
+                            <g
+                              id="Group_2914"
+                              data-name="Group 2914"
+                              transform="translate(-6.731 -1.209)"
+                            >
+                              <g
+                                id="Group_2913"
+                                data-name="Group 2913"
+                                transform="translate(7.031 1.569)"
+                              >
+                                <g
+                                  id="Group_2911"
+                                  data-name="Group 2911"
+                                  transform="translate(0 0)"
+                                >
+                                  <path
+                                    id="Path_1786"
+                                    data-name="Path 1786"
+                                    d="M22.177,47.05H13.4c-3.5,0-6.358-2.47-6.367-5.5,0-4.979,4.539-9.68,6.939-11.471a.939.939,0,0,1,.557-.184h6.522a.938.938,0,0,1,.556.184c2.4,1.79,6.94,6.481,6.94,11.419v.058C28.535,44.584,25.679,47.05,22.177,47.05Zm-7.65-16.378a.148.148,0,0,0-.089.03c-1.842,1.375-6.625,6-6.625,10.842.008,2.6,2.513,4.724,5.585,4.724h8.779c3.072,0,5.577-2.116,5.585-4.718v-.057c0-4.8-4.782-9.416-6.625-10.791a.146.146,0,0,0-.089-.029H14.527Z"
+                                    transform="translate(-7.031 -22.8)"
+                                    fill="#024b72"
+                                    stroke="#024b72"
+                                    stroke-width="0.6"
+                                  ></path>
+                                  <path
+                                    id="Path_1787"
+                                    data-name="Path 1787"
+                                    d="M28.378,9.5,26.909,4.618a1.488,1.488,0,0,1,.584-1.693,1.693,1.693,0,0,1,2.017.033l.362.276L31.6,1.911a1.723,1.723,0,0,1,2.061,0L35.4,3.234l.362-.276a1.7,1.7,0,0,1,2.017-.033,1.489,1.489,0,0,1,.577,1.714L36.89,9.5l-.749-.225L37.607,4.4a.716.716,0,0,0-.284-.838.916.916,0,0,0-1.09.016l-.461.352a.636.636,0,0,1-.751,0l-1.832-1.4a.93.93,0,0,0-1.112,0l-1.832,1.4a.638.638,0,0,1-.75,0l-.461-.353a.916.916,0,0,0-1.09-.016.713.713,0,0,0-.29.821l1.472,4.89ZM35.3,3.31h0Z"
+                                    transform="translate(-21.877 -1.569)"
+                                    fill="#024b72"
+                                    stroke="#024b72"
+                                    stroke-width="0.6"
+                                  ></path>
+                                </g>
+                                <g
+                                  id="Group_2912"
+                                  data-name="Group 2912"
+                                  transform="translate(14.225 6.385)"
+                                >
+                                  <path
+                                    id="Path_1788"
+                                    data-name="Path 1788"
+                                    d="M64.254,28.9a.391.391,0,0,1-.18-.738c.4-.207,3.955-1.982,5.461-.5a.391.391,0,0,1-.549.557c-.935-.923-3.668.176-4.551.634A.393.393,0,0,1,64.254,28.9Z"
+                                    transform="translate(-63.86 -27.075)"
+                                    fill="#024b72"
+                                    stroke="#024b72"
+                                    stroke-width="0.6"
+                                  ></path>
+                                  <path
+                                    id="Path_1789"
+                                    data-name="Path 1789"
+                                    d="M70.186,33.732a.39.39,0,0,1-.323-.171c-.394-.577-2.122-1.071-5.138-1.47-.629-.083-.917-.121-.866-.521a.391.391,0,0,1,.437-.339.408.408,0,0,1,.092.023c.074.013.259.038.439.061,2.419.319,4.986.784,5.682,1.8a.391.391,0,0,1-.323.612Zm-5.562-2.217a.4.4,0,0,1,.011.153A.391.391,0,0,0,64.624,31.515Z"
+                                    transform="translate(-63.853 -30.189)"
+                                    fill="#024b72"
+                                    stroke="#024b72"
+                                    stroke-width="0.6"
+                                  ></path>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                          <div>Up to 100% PTPTN</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mv_div">
+                      <div class="programme-price-loop">
+                        <!-- <div class="price-per-month-loop">
+              <span class="month-price">&#82;&#77; 750.00</span><span class="month-text">per <br /> month</span>		</div>
+            <div class="price-per-annum-loop">
+              <span class="full-price">&#82;&#77; 22500</span>		</div> -->
+                        <div class="from"><span>From</span></div>
+                        <div class="price-per-month-loop">
+                          <span class="month-price">RM 750.00</span
+                          ><span class="month-text"
+                            >per <br />
+                            month</span
+                          >
+                        </div>
+                        <div class="price-per-annum-loop">
+                          <span class="full-price"
+                            ><span class="woocommerce-Price-amount amount"
+                              ><bdi
+                                ><span class="woocommerce-Price-currencySymbol"
+                                  >RM</span
+                                >&nbsp;22,500.00</bdi
+                              ></span
+                            >
+                            total tuition fee</span
+                          >
+                        </div>
+                      </div>
+
+                      <div class="programme-cta-loop">
+                        <div class="apply-btn-loop grey-btn">
+                          <a
+                            href="https://staging.unitar.my/programme/diploma-in-early-childhood-education/#programme-apply"
+                            class="button"
+                            >Request Info</a
+                          >
+                        </div>
+                        <div class="learn-btn-loop undergraduate">
+                          <a
+                            href="https://staging.unitar.my/programme/diploma-in-early-childhood-education/"
+                            class="button"
+                            >Learn More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- .custom-loop-div -->
+                </div>
+                <!-- .custom-loop-div -->
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      section {
+        padding: 100px 0;
+      }
+      .programme-header-loop {
+        display: none !important;
+      }
+      .container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .row {
+        display: flex;
+      }
+      .row > .elementor-widget-wrap {
+        width: 450px;
+      }
+      label {
+        cursor: pointer;
+      }
+      label.checked {
+        border: 1px solid green;
+      }
+      .programme-category-box,
+      .programme-certificate-box,
+      .programme-campus-box {
+        position: relative !important;
+        display: block !important;
+      }
+      .woocommerce.columns-3 ul.products li.product {
+        width: 50% !important;
+      }
+      .inner-list.revamp-2023 > .programme-header-loop {
+        display: block !important;
+        height: 240px;
+        overflow: hidden;
+      }
+      .mv_div {
+        display: none !important;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./unitar.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

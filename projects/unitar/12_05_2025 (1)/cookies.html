@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cookie Example</title>
+  </head>
+  <body>
+    <button onclick="setCookie()">Set Cookie</button>
+    <button onclick="getCookie()">Get Cookie</button>
+
+    <script>
+      function setCookie() {
+        const d = new Date();
+        d.setTime(d.getTime() + 7 * 24 * 60 * 60 * 1000); // 7 days
+        const expires = "expires=" + d.toUTCString();
+        document.cookie = "user=JaneDoe;" + expires + ";path=/";
+        alert("Cookie set!");
+      }
+
+      function getCookie() {
+        alert(document.cookie); // Shows all cookies for this domain/path
+      }
+    </script>
+  </body>
+</html>

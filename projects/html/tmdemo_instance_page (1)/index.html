@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TM Demo Instance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            max-width: 1140px;
+            width: 100%;
+            padding: 0 20px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            padding: 100px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            background: linear-gradient(-45deg, #c4ef61, #b5e24a, #8db239, rgb(195, 231, 31));
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .hero .content {
+            position: relative;
+            text-align: center;
+            padding: 50px;
+            background-color: #ffffff;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            border-radius: 20px;
+        }
+
+        .hero .content .img_wrap {
+            margin-bottom: 40px;
+        }
+
+        .hero .content .img_wrap img {
+            max-width: 100%;
+            width: 400px;
+            vertical-align: middle;
+            animation: imgAnim 3s ease-in-out alternate infinite;
+        }
+
+        @keyframes imgAnim {
+            0% {
+                transform: translateY(-10px);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .hero .content .text_wrap {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .hero .content .text_wrap h1 {
+            font-size: 32px;
+            color: #8db239;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .hero .content .text_wrap p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #111111;
+            margin-bottom: 10px;
+        }
+
+        .hero .content .btn_wrap {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .btn {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 15px 30px;
+            display: inline-block;
+            text-decoration: none;
+            background-color: #8db239;
+            color: #fff;
+            border-radius: 10px;
+            text-transform: uppercase;
+            margin: 10px;
+            transition: 0.5s;
+        }
+
+        .btn:hover {
+            background-color: #2f2e41;
+        }
+
+        .btn.dark {
+            background-color: #2f2e41;
+        }
+
+        .btn.dark:hover {
+            background-color: #8db239;
+        }
+
+
+        @media (max-width: 991.98px) {
+            .hero {
+                padding: 60px 0;
+            }
+
+            .hero .content {
+                padding: 30px;
+            }
+
+            .hero .content .text_wrap h1 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .hero {
+                padding: 40px 0;
+            }
+
+            .hero .content {
+                padding: 20px;
+            }
+
+            .hero .content .text_wrap h1 {
+                font-size: 20px;
+            }
+
+            .hero .content .text_wrap p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .btn {
+                font-size: 14px;
+                width: 100%;
+                margin: 0 0 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <div class="content">
+                <div class="img_wrap">
+                    <img src="./banner_image.svg" alt="banner_image">
+                </div>
+                <div class="text_wrap">
+                    <h1>Welcome to the TMdemo Instance</h1>
+                    <p>This is a demo environment created for developing and testing the Technind website. It offers a
+                        controlled space to explore features, design elements, and overall functionality throughout the
+                        development process.</p>
+                </div>
+                <div class="btn_wrap">
+                    <a href="https://techmind.co.in/" class="btn" target="_blank">Visit Our Website</a>
+                    <a href="https://portfolio.techmind.co.in/" class="btn dark" target="_blank">Explore Our
+                        Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

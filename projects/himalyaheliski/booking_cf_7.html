@@ -1,0 +1,67 @@
+<div class="input_wrap">
+    <label> Package<span class="required">*</span> </label>
+    <div class="field_wrap">
+        [select* package class:form-select first_as_label "Please choose" "Private"
+        "Classic" "Ski Touring - 6000 Meter Peak" "Lodge-Based Himalayan
+        Exploration" "Himalayan Standby"]
+    </div>
+</div>
+
+<div class="input_wrap">
+    <label> Date / Week<span class="required">*</span> </label>
+    <div class="field_wrap">
+        [date date_week min:next_Friday+7days max:2025-09-01 class:form-control]
+    </div>
+</div>
+
+<div class="input_wrap">
+    <label> Salutation<span class="required">*</span> </label>
+    <div class="field_wrap">
+        [select* salutation class:form-select first_as_label "Please choose" "Mr."
+        "Mrs." "Ms."]
+    </div>
+</div>
+
+<div class="input_wrap">
+    <label> First Name<span class="required">*</span> </label>
+    <div class="field_wrap">[text* first_name class:form-control]</div>
+</div>
+
+<div class="input_wrap">
+    <label> Last Name<span class="required">*</span> </label>
+    <div class="field_wrap">[text* last_name class:form-control]</div>
+</div>
+
+<div class="input_wrap">
+    <label> Address<span class="required">*</span> </label>
+    <div class="field_wrap">[text* address class:form-control]</div>
+</div>
+
+<div class="input_wrap">
+    <label> Zip / City<span class="required">*</span> </label>
+    <div class="field_wrap">[text* zip_city class:form-control]</div>
+</div>
+
+<div class="input_wrap">
+    <label> Phone<span class="required">*</span> </label>
+    <div class="field_wrap">[tel* phone class:form-control]</div>
+</div>
+
+<div class="input_wrap">
+    <label> Email<span class="required">*</span> </label>
+    <div class="field_wrap">[email* email class:form-control]</div>
+</div>
+
+<div class="input_wrap">
+    <label> Your Message<span class="required">*</span> </label>
+    <div class="field_wrap">[textarea* message class:form-control]</div>
+</div>
+
+<div class="form_footer">
+    <div class="check_wrap">
+        [acceptance privacy_accept optional] I have read and accepted the
+        <a href="/privacy-policy" target="_blank">privacy declaration.</a>
+        [/acceptance]
+    </div>
+    <div class="submit_wrap">[submit "Submit"]</div>
+</div>

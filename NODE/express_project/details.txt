@@ -1,0 +1,9 @@
+React Frontend 
+npm install
+cmd: `npm run dev`
+
+
+
+Express Backend 
+npm install
+cmd: `node index.js`

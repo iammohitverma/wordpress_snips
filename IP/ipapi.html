@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IP Location Finder</title>
+</head>
+<body>
+    <h2>User IP & Location</h2>
+
+    <p><b>IP:</b> <span id="ip"></span></p>
+    <p><b>City:</b> <span id="city"></span></p>
+    <p><b>Region:</b> <span id="region"></span></p>
+    <p><b>Country:</b> <span id="country"></span></p>
+    <p><b>Latitude:</b> <span id="lat"></span></p>
+    <p><b>Longitude:</b> <span id="lon"></span></p>
+
+    <script>
+        fetch("https://ipapi.co/json/")
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("ip").textContent = data.ip;
+                document.getElementById("city").textContent = data.city;
+                document.getElementById("region").textContent = data.region;
+                document.getElementById("country").textContent = data.country_name;
+                document.getElementById("lat").textContent = data.latitude;
+                document.getElementById("lon").textContent = data.longitude;
+            })
+            .catch(err => console.error(err));
+    </script>
+</body>
+</html>

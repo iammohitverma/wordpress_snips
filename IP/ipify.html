@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User IP Address</title>
+</head>
+<body>
+    <h1>User ka IP Address:</h1>
+    <p id="ip">Loading...</p>
+
+    <script>
+        fetch("https://api.ipify.org?format=json")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                
+                document.getElementById("ip").textContent = data.ip;
+            })
+            .catch(error => {
+                document.getElementById("ip").textContent = "Ip not fetched";
+                console.error(error);
+            });
+    </script>
+</body>
+</html>

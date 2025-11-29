@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User IP Location</title>
+</head>
+<body>
+    <h2>User IP & Location</h2>
+
+    <p><b>IP:</b> <span id="ip"></span></p>
+    <p><b>City:</b> <span id="city"></span></p>
+    <p><b>Region:</b> <span id="region"></span></p>
+    <p><b>Country:</b> <span id="country"></span></p>
+    <p><b>Latitude:</b> <span id="lat"></span></p>
+    <p><b>Longitude:</b> <span id="lon"></span></p>
+    <p><b>ISP:</b> <span id="isp"></span></p>
+
+    <script>
+        fetch("https://ipwho.is/")
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("ip").textContent = data.ip;
+                document.getElementById("city").textContent = data.city;
+                document.getElementById("region").textContent = data.region;
+                document.getElementById("country").textContent = data.country;
+                document.getElementById("lat").textContent = data.latitude;
+                document.getElementById("lon").textContent = data.longitude;
+                document.getElementById("isp").textContent = data.connection.isp;
+            })
+            .catch(err => console.error(err));
+    </script>
+</body>
+</html>

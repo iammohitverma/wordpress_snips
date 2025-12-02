@@ -1,0 +1,197 @@
+.justco_form_mv {
+  position: relative;
+  padding: 0 12px;
+  .form_heading {
+    margin-bottom: 30px;
+    @media (max-width: 991.98px) {
+      margin-bottom: 20px;
+    }
+    h4 {
+      color: var(--darkgrey);
+      font-size: 20px;
+      font-weight: 700;
+      @media (max-width: 991.98px) {
+        font-size: 18px;
+      }
+    }
+  }
+  .form_wrap {
+    form {
+      .form_inner {
+        .form_body {
+          .field_wrap {
+            margin-bottom: 20px;
+            label {
+              display: block;
+              font-size: 16px;
+              font-weight: 600;
+              color: var(--darkgrey);
+              margin-bottom: 8px;
+            }
+            input,
+            select,
+            textarea {
+              width: 100%;
+              padding: 12px 15px;
+              font-size: 16px;
+              border: 1px solid transparent;
+              border-radius: 8px;
+              background-color: var(--lightblue);
+              color: var(--lightgrey2);
+              outline: none;
+              transition: background-color 0.3s, border-color 0.3s,
+                box-shadow 0.3s;
+              &:focus {
+                background-color: var(--white);
+                border-color: var(--secondary);
+                box-shadow: var(--fieldActive) 0px 0px 0px 4px;
+              }
+              @media (max-width: 991.98px) {
+                font-size: 14px;
+              }
+
+              &::placeholder {
+                color: var(--lightgrey2);
+              }
+            }
+            select {
+              appearance: non;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+            }
+            textarea {
+              min-height: 100px;
+              resize: vertical;
+            }
+            .select2-container {
+              .select2-selection {
+                height: auto;
+                border: none !important;
+              }
+              .select2-selection__rendered {
+                padding: 10px 15px;
+                font-size: 16px;
+                border: 1px solid transparent;
+                border-radius: 8px;
+                background-color: var(--lightblue);
+                color: var(--lightgrey2);
+                @media (max-width: 991.98px) {
+                  font-size: 14px;
+                }
+              }
+              .select2-selection__arrow {
+                top: 8px !important;
+                b {
+                  border: none;
+                  left: 0 !important;
+                  width: 10px;
+                  height: 10px;
+                  border: unset;
+                  border-bottom: 2px solid var(--darkgrey) !important;
+                  border-right: 2px solid var(--darkgrey);
+                  transform: rotate(45deg);
+                }
+              }
+            }
+            .select2-dropdown {
+              box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+              border: none !important;
+              border-radius: 7px;
+              overflow: hidden;
+            }
+          }
+        }
+        .form_footer {
+          .form-check {
+            input:checked {
+              background-color: var(--success);
+              border-color: var(--success);
+              box-shadow: unset;
+            }
+            label {
+              font-size: 14px;
+              color: var(--darkgrey);
+              cursor: pointer;
+            }
+            a {
+              color: var(--neublue);
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .form_btn {
+    background-color: var(--neublue);
+    padding: 10px 40px;
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    margin-left: auto;
+    display: block;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 991.98px) {
+      padding: 8px 25px;
+      border-radius: 40px;
+      font-size: 14px;
+      margin-left: unset;
+      margin-top: 15px;
+    }
+  }
+  .jc__field_error {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    select,
+    textarea,
+    .select2-selection__rendered {
+      border-color: var(--crimson) !important;
+      box-shadow: var(--fieldError) 0px 0px 0px 4px;
+      background-color: var(--white) !important;
+      padding-right: 40px !important;
+      background: url(../icons/error.svg) no-repeat center right 12px !important;
+    }
+    .select2-selection__arrow {
+      right: 30px !important;
+    }
+  }
+  .jc__field_success {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    select,
+    textarea,
+    .select2-selection__rendered {
+      border-color: var(--success) !important;
+      box-shadow: var(--fieldValid) 0px 0px 0px 4px;
+      background-color: var(--white) !important;
+      padding-right: 40px !important;
+      background: url(../icons/success.svg) no-repeat center right 12px !important;
+    }
+    .select2-selection__arrow {
+      right: 30px !important;
+    }
+  }
+  .errorBox {
+    background: var(--fieldError);
+    font-size: 14px;
+    padding: 5px 10px;
+    display: block;
+    border-radius: 5px;
+    color: var(--fieldErrorDark);
+    border: 1px solid var(--crimson);
+    margin-top: 10px;
+  }
+}

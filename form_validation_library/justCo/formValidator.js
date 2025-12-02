@@ -39,13 +39,30 @@ class FormValidator {
   }
 
   setError(element, message) {
+    // remove success first
+    element.parentElement.classList.remove("jc__field_success");
     let errorBox = document.createElement("span");
     errorBox.classList.add("errorBox");
     errorBox.innerText = message;
     element.parentElement.appendChild(errorBox);
+    element.parentElement.classList.add("jc__field_error");
+  }
+
+  setSuccess(element) {
+    // remove errors first
+    element.parentElement.classList.remove("jc__field_error");
+    element.parentElement
+      .querySelectorAll(".errorBox")
+      ?.forEach((e) => e.remove());
+    element.parentElement.classList.add("jc__field_success");
   }
 
   clearErrors() {
+    this.form
+      .querySelectorAll(".jc__field_error, .jc__field_success")
+      .forEach((el) => {
+        el.classList.remove("jc__field_error", "jc__field_success");
+      });
     this.form.querySelectorAll(".errorBox").forEach((e) => e.remove());
   }
 
@@ -61,24 +78,29 @@ class FormValidator {
       if (classList.contains("check-radio-wrap")) {
         const checked = field.querySelectorAll("input:checked");
         if (checked.length === 0) {
-          this.setError(
-            field.children[0],
-            "Please select at least one checkbox"
-          );
+          this.setError(field, "This field is required");
           isValid = false;
+        } else {
+          console.log(field);
+          this.setSuccess(field);
         }
+        return;
       }
 
       if (value === "") {
         this.setError(field, "This field is required");
         isValid = false;
         return;
+      } else {
+        this.setSuccess(field);
       }
 
       if (classList.contains("email")) {
         if (!/\S+@\S+\.\S+/.test(value)) {
           this.setError(field, "Invalid email format");
           isValid = false;
+        } else {
+          this.setSuccess(field);
         }
       }
 
@@ -87,6 +109,8 @@ class FormValidator {
         if (cleaned.length !== 10) {
           this.setError(field, "Phone number must be 10 digits");
           isValid = false;
+        } else {
+          this.setSuccess(field);
         }
       }
 
@@ -94,6 +118,8 @@ class FormValidator {
         if (isNaN(value)) {
           this.setError(field, "Only numbers allowed");
           isValid = false;
+        } else {
+          this.setSuccess(field);
         }
       }
 
@@ -101,6 +127,8 @@ class FormValidator {
         if (value.length < 6) {
           this.setError(field, "Password must be at least 6 characters");
           isValid = false;
+        } else {
+          this.setSuccess(field);
         }
       }
 
@@ -109,16 +137,11 @@ class FormValidator {
         if (value !== password) {
           this.setError(field, "Passwords do not match");
           isValid = false;
+        } else {
+          this.setSuccess(field);
         }
       }
     });
-
-    // if (!isValid) {
-    //   event.preventDefault();
-    // } else if (this.onSuccess && typeof this.onSuccess === "function") {
-    //   event.preventDefault(); // prevent default submit
-    //   this.onSuccess(new FormData(this.form)); // pass form data
-    // }
 
     if (!isValid) {
       event.preventDefault();

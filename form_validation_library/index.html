@@ -167,6 +167,19 @@ if (document.querySelector("#tbo_promotion_form_rec")) {
             });
         }
     });
+    // for multiple forms
+    document.querySelectorAll(".justco_form_mv form").forEach((formEl) => {
+        new FormValidator(formEl, {
+        onSuccess: function (formData, formElement) {
+            const formId = formElement.id;
+            console.log("Form Submitted:", formId);
+    
+            if (formId === "talktous") {
+                console.log("talktous Form Success Logic");
+            }
+        },
+    });
+  });
 &lt;/script>
 </code></pre>
             </div>

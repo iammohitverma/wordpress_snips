@@ -1,0 +1,24 @@
+:root {
+  --white: #fff;
+  --darkgrey: #474747;
+  --lightgrey: #cfcfcf;
+  --lightgrey2: #939393;
+  --neublue: #21b5ff;
+  --lightblue: #e2f5ff;
+  --accent: #f5f5f5;
+  --secondary: #003a5c;
+  --fieldActive: #d3d3f3;
+  --success: #31d0aa;
+  --fieldValid: #ceeee6;
+  --crimson: #f95d49;
+  --fieldError: #f3d3e4;
+  --fieldErrorDark: #58151c;
+}
+body.page-id-131092,
+body.page-id-131147 {
+  background-color: #e2f5ff;
+}
+.mw_700 {
+  max-width: 700px;
+  width: 100%;
+}

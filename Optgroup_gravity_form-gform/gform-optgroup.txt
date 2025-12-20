@@ -1,0 +1,15 @@
+//add this code in functions.php to enable the optgroup in gravity form
+add_filter( 'gform_field_choice_markup_pre_render', function ( $choice_markup, $choice, $field ) {
+	if ( $field->get_input_type() == 'select' ) {
+		$choice_value = rgar( $choice, 'value' );
+		if ( $choice_value === 'optgroup-start' ) {
+			return sprintf( '<optgroup label="%s">', esc_html( $choice['text'] ) );
+		} elseif ( $choice_value === 'optgroup-end' ) {
+			return '</optgroup>';
+		}
+	}
+ 
+	return $choice_markup;
+}, 10, 3 );
+ 
+ 
